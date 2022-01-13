@@ -37,6 +37,7 @@ Now type in:
 
 ``
 cd NocticOS
+
 code .
 ``
 
@@ -68,6 +69,7 @@ If you wanna get an older version of NocticOS, please visit the releases page.
 
 ``
 cd NocticOS
+
 dotnet run
 ``
 
