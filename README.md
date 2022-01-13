@@ -33,15 +33,9 @@ Make sure you have **Git** installed for this.
 
 Once you have followed those steps. open up your desired Terminal (Command Prompt, PowerShell or Windows Terminal)
 
-Now type in:
+Now type in, `cd NocticOS`, and then `code .`
 
-``
-cd NocticOS
-
-code .
-``
-
-And it should open up VS-Code and the project.
+After running `code .` it should open up VS-Code and the project.
 
 ### Additional Note
 
@@ -65,14 +59,7 @@ If you wanna get an older version of NocticOS, please visit the releases page.
 ## Running The Program
 
 * Open up your desired Terminal.
-* Type in:
-
-``
-cd NocticOS
-
-dotnet run
-``
-
+* Type in, `cd NocticOS`, and then `dotnet run` to run the program.
 * It's gonna take a few seconds before it leads you up to the NocticOS prompt.
 
 If this pops up , that means the program is working:
