@@ -1,14 +1,34 @@
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+using NocticOS.NocticISO.Sources.Classes.Utility;
+
 namespace NocticOS.NocticISO.Sources
 {
     public class ISO
     {
-        public void IsoMode()
+        public void IsoMode(bool showInfo)
         {
+            ISO_Help IsoHelp = new ISO_Help();
+            ISO_CmdList IsoList = new ISO_CmdList();
             var curCmd = "";
 
-            Console.WriteLine("NocticOS (ISO) - Version 1.0\n");
-            Console.Write("\n> ");
+            if (showInfo) {
+                Console.WriteLine("\nNocticOS (ISO) - Version 1.0\nType '.h' for help.");
+            }
+            Console.Write("> ");
             curCmd = Console.ReadLine();
+
+            switch (curCmd)
+            {
+                case ".h":
+                    IsoHelp.IsoHelpCmd();
+                    break;
+
+                case ".l":
+                    IsoList.ExecCmdList();
+                    break;
+            }
         }
     }
 }
