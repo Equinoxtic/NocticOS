@@ -1,14 +1,35 @@
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+using NocticOS.NocticBase.Sources.UtilityCommands;
+
 namespace NocticOS.NocticBase.Sources
 {
     public class Base
     {
-        public void BaseMode()
+        public void BaseMode(bool showInfo)
         {
+            CmdHelp HelpCmd = new CmdHelp();
+            CmdList ListCmd = new CmdList();
             var curCmd = "";
 
-            Console.WriteLine("NocticOS (Base) - Version 1\n");
-            Console.Write("\n> ");
+            if (showInfo) {
+                Console.WriteLine("\nNocticOS (Base) - Version 1.0\nType, '-h' for help.");
+            }
+
+            Console.Write("> ");
             curCmd = Console.ReadLine();
+
+            switch (curCmd)
+            {
+                case "-h":
+                    HelpCmd.HelpCommand();
+                    break;
+
+                case "-l":
+                    ListCmd.ExecCmdList();
+                    break;
+            }
         }
     }
 }
