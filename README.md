@@ -31,12 +31,6 @@ Make sure you have **Git** installed for this.
 * Let it finish.
 * Now check if the NocticOS folder is in the directory `C:\Users\<YourUser>`, You should see it there.
 
-Once you have followed those steps. open up your desired Terminal (Command Prompt, PowerShell or Windows Terminal)
-
-Now type in, `cd NocticOS`, and then `code .`
-
-After running `code .` it should open up VS-Code and the project.
-
 ### Additional Note
 
 If you wanna get an older version of NocticOS, please visit the releases page. 
@@ -54,7 +48,13 @@ If you wanna get an older version of NocticOS, please visit the releases page.
 * **.NET (6.0):** https://dotnet.microsoft.com/en-us/
 * **Visual Studio Code:** https://code.visualstudio.com
 * **C# Extension:** https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
-* **C# IDE Extensions:** https://marketplace.visualstudio.com/items?itemName=jchannon.csharpextensions 
+* **C# IDE Extensions:** https://marketplace.visualstudio.com/items?itemName=jchannon.csharpextensions
+
+Once you have followed those steps. open up your desired Terminal (Command Prompt, PowerShell or Windows Terminal)
+
+Now type in, `cd NocticOS`, and then `code .`
+
+After running `code .` it should open up VS-Code and the project.
 
 ## Running The Program
 
