@@ -2,7 +2,8 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using NocticOS.NocticISO.Sources;
-using NocticOS.NocticBase.Sources;
+using Main.ISO.Program;
+using Main.Base.Program;
 
 namespace NocticOS
 {
@@ -10,8 +11,8 @@ namespace NocticOS
 	{
 		public static void Main(String[] args)
 		{
-			ISO Iso = new ISO();
-			Base Nbase = new Base();
+			ISO_Mode IsoMain = new ISO_Mode();
+			Base_Mode baseMain = new Base_Mode();
 			var curMode = "";
 
 			Console.WriteLine("\nNocticOS - Version (1.0)");
@@ -21,11 +22,11 @@ namespace NocticOS
 			switch (curMode)
 			{
 				case "base":
-					Nbase.BaseMode(true);
+					baseMain.BaseMode(true);
 					break;
 
 				case "iso":
-					Iso.IsoMode(true);
+					IsoMain.IsoMode(true);
 					break;
 			}
 		}
