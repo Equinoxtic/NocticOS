@@ -15,15 +15,16 @@ namespace NocticOS.Base.Sources.UtilCommands
                 "-ls  : Shows the list of commands for '-input'",
                 "-str : Standard string input.",
                 "-int : Standard integer input.",
-                "-fl  : Standard float input.",
-                "-dou : Standard double input."
+                "-fld : Standard double input."
             };
 
             if (isMissingParams) {
-                Console.WriteLine("\nMissing parameters, you can enter the following:");
+                Console.WriteLine("\nMissing parameters, you can enter the following:\n");
+            } else {
+                Console.Write("\nCommands for '-input':\n\n");
             }
 
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < 4; i++) {
                 Console.WriteLine("-input " + inputListArr[i]);
             }
             Console.Write("\n");

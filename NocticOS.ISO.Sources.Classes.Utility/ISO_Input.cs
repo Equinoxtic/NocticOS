@@ -26,20 +26,11 @@ namespace NocticOS.ISO.Sources.Classes.Utility
             IsoMain.IsoMode(false);
         }
 
-        public void InputFloat()
-        {
-            var curFloat = 0;
-            Console.Write("\nInput some numbers for your float: ");
-            curFloat = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("\nFloat: " + curFloat + "\n");
-            IsoMain.IsoMode(false);
-        }
-
         public void InputDouble()
         {
             var curDouble = 0.0;
             Console.Write("\nInput some numbers for your double: ");
-            curDouble = Convert.ToInt32(Console.ReadLine());
+            curDouble = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("\nDouble: " + curDouble + "\n");
             IsoMain.IsoMode(false);
         }
