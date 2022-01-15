@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using NocticOS;
 using NocticOS.Base.Sources.UtilCommands;
 
 namespace Main.Base.Program
@@ -13,6 +14,10 @@ namespace Main.Base.Program
             CmdList ListCmd = new CmdList();
             CmdInput InputCmd = new CmdInput();
             CmdInputList InputListCmd = new CmdInputList();
+            CmdMath MathCmd = new CmdMath();
+            CmdMathList MathListCmd = new CmdMathList();
+            ProgramReturn ReturnToProgram = new ProgramReturn();
+
             var curCmd = "";
 
             if (showInfo) {
@@ -30,8 +35,15 @@ namespace Main.Base.Program
                 case "-input -ls" : InputListCmd.ExecInputList(false); break;
                 case "-input -str" : InputCmd.InputStr(); break;
                 case "-input -int" : InputCmd.InputInt(); break;
-                case "-input -fl" : InputCmd.InputFloat(); break;
-                case "-input -dou" :  InputCmd.InputDouble(); break;
+                case "-input -fld" :  InputCmd.InputDouble(); break;
+                case "-math" : MathListCmd.ExecMathList(true); break;
+                case "-math -ls" : MathListCmd.ExecMathList(false); break;
+                case "-math -init" : MathCmd.ExecMathCmd("", true); break;
+                case "-math -add" : MathCmd.ExecMathCmd("-math -add", false); break;
+                case "-math -subtract" : MathCmd.ExecMathCmd("-math -subtract", false); break;
+                case "-math -multiply" : MathCmd.ExecMathCmd("-math -multiply", false); break;
+                case "-math -divide" : MathCmd.ExecMathCmd("-math -divide", false); break;
+                case "return" : ReturnToProgram.DoReturn(); break;
             }
         }
     }

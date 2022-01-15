@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using NocticOS;
 using NocticOS.ISO.Sources.Classes.Utility;
 
 namespace Main.ISO.Program
@@ -13,6 +14,10 @@ namespace Main.ISO.Program
             ISO_CmdList IsoList = new ISO_CmdList();
             ISO_Input inputForISO = new ISO_Input();
             ISO_InputList InputListForIso = new ISO_InputList();
+            ISO_Math MathForIso = new ISO_Math();
+            ISO_MathList MathListForIso = new ISO_MathList();
+            ProgramReturn ReturnToProgram = new ProgramReturn();
+
             var curCmd = "";
 
             if (showInfo) {
@@ -29,8 +34,15 @@ namespace Main.ISO.Program
                 case ".input -ls" : InputListForIso.InputList(false); break;
                 case ".input -str" : inputForISO.InputStr(); break;
                 case ".input -int" : inputForISO.InputInt(); break;
-                case ".input -fl" : inputForISO.InputFloat(); break;
-                case ".input -dou" : inputForISO.InputDouble(); break;
+                case ".input -fld" : inputForISO.InputDouble(); break;
+                case ".math" : MathListForIso.ExecMathList(true); break;
+                case ".math -ls" : MathListForIso.ExecMathList(false); break;
+                case ".math -init" : MathForIso.IsoMath("", true); break;
+                case ".math -add" : MathForIso.IsoMath(".math -add", false); break;
+                case ".math -subtract" : MathForIso.IsoMath(".math -subtract", false); break;
+                case ".math -muliply" : MathForIso.IsoMath(".math -multiply", false); break;
+                case ".math -divide" : MathForIso.IsoMath(".math -divide", false); break;
+                case "return" : ReturnToProgram.DoReturn(); break;
             }
         }
     }
