@@ -12,18 +12,18 @@ namespace NocticOS.ISO.Sources.Classes.Utility
             ISO_Mode IsoMain = new ISO_Mode();
 
             string[] InputListArr = {
-                "-str : Standard string Input.",
-                "-int : Standard integer Input.",
-                "-fl  : Standard float Input.",
-                "-dou : Standard double Input."
+                "-str : Standard string input.",
+                "-int : Standard integer input.",
+                "-fl  : Standard float input.",
+                "-dou : Standard double input."
             };
 
-            Console.WriteLine("Missing parameters, you can enter the following:\n");
+            Console.WriteLine("\nMissing parameters, you can enter the following:");
 
             for (int i = 0; i < 4; i++) {
                 Console.WriteLine(".input " + InputListArr[i]);
             }
-            Console.WriteLine("\n");
+            Console.Write("\n");
             IsoMain.IsoMode(false);
         }
     }

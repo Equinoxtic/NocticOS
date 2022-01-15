@@ -13,7 +13,7 @@ namespace NocticOS.Base.Sources.UtilCommands
             var curStr = "";
             Console.Write("\nInput some text for your string: ");
             curStr = Console.ReadLine();
-            Console.WriteLine("String: " + curStr + "\n");
+            Console.WriteLine("\nString: " + curStr + "\n");
             BaseMain.BaseMode(false);
         }
 
@@ -22,7 +22,7 @@ namespace NocticOS.Base.Sources.UtilCommands
             var curInt = 0;
             Console.Write("\nInput some numbers for your integer: ");
             curInt = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Integer: " + curInt + "\n");
+            Console.WriteLine("\nInteger: " + curInt + "\n");
             BaseMain.BaseMode(false);
         }
 
@@ -31,7 +31,7 @@ namespace NocticOS.Base.Sources.UtilCommands
             var curFloat = 0;
             Console.Write("\nInput some numbers for your float: ");
             curFloat = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Float: " + curFloat + "\n");
+            Console.WriteLine("\nFloat: " + curFloat + "\n");
             BaseMain.BaseMode(false);
         }
 
@@ -40,7 +40,7 @@ namespace NocticOS.Base.Sources.UtilCommands
             var curDouble = 0.0;
             Console.Write("\nInput some numbers for your double: ");
             curDouble = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Double: " + curDouble + "\n");
+            Console.WriteLine("\nDouble: " + curDouble + "\n");
             BaseMain.BaseMode(false);
         }
     }
