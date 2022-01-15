@@ -40,7 +40,7 @@ namespace Main.ISO.Program
                 case ".math -init" : MathForIso.IsoMath("", true); break;
                 case ".math -add" : MathForIso.IsoMath(".math -add", false); break;
                 case ".math -subtract" : MathForIso.IsoMath(".math -subtract", false); break;
-                case ".math -muliply" : MathForIso.IsoMath(".math -multiply", false); break;
+                case ".math -multiply" : MathForIso.IsoMath(".math -multiply", false); break;
                 case ".math -divide" : MathForIso.IsoMath(".math -divide", false); break;
                 case "return" : ReturnToProgram.DoReturn(); break;
             }
