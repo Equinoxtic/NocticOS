@@ -59,7 +59,7 @@ After running `code .` it should open up VS-Code and the project.
 ## Running The Program
 
 * Open up your desired Terminal.
-* Type in, `cd NocticOS`, and then `dotnet run` to run the program.
+* Type in, `cd NocticOS`, and then `dotnet build` to build the .exe, .dll and .pdb files for the program, and then type in `dotnet run` and it should run the program.
 * It's gonna take a few seconds before it leads you up to the NocticOS prompt.
 
 If this pops up , that means the program is working:
