@@ -19,7 +19,7 @@ namespace NocticOS.ISO.Sources.Classes.Utility
             Console.WriteLine(
                 "\n" + strCmdList[0] + " " + cmdTypeList[0] + " - Helps display information of all commands.\n" +
                 strCmdList[1] + " " + cmdTypeList[1] + " - Displays all commands without displaying the information.\n" +
-                strCmdList[2] + " " + cmdTypeList[0] + " - Standard Input command that allows you to input a string, integer, float and double.\n"
+                strCmdList[2] + " <type> " + cmdTypeList[0] + " - Standard Input command that allows you to input a string, integer, float and double.\n"
             );
             IsoMain.IsoMode(false);
         }

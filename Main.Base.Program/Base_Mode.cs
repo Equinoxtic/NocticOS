@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using NocticOS.Base.Sources.UtilityCommands;
+using NocticOS.Base.Sources.UtilCommands;
 
 namespace Main.Base.Program
 {
@@ -11,6 +11,8 @@ namespace Main.Base.Program
         {
             CmdHelp HelpCmd = new CmdHelp();
             CmdList ListCmd = new CmdList();
+            CmdInput InputCmd = new CmdInput();
+            CmdInputList InputListCmd = new CmdInputList();
             var curCmd = "";
 
             if (showInfo) {
@@ -22,13 +24,13 @@ namespace Main.Base.Program
 
             switch (curCmd)
             {
-                case "-h":
-                    HelpCmd.HelpCommand();
-                    break;
-
-                case "-l":
-                    ListCmd.ExecCmdList();
-                    break;
+                case "-h" : HelpCmd.HelpCommand(); break;
+                case "-l" : ListCmd.ExecCmdList(); break;
+                case "-input" : InputListCmd.ExecInputList(); break;
+                case "-input -str" : InputCmd.InputStr(); break;
+                case "-input -int" : InputCmd.InputInt(); break;
+                case "-input -fl" : InputCmd.InputFloat(); break;
+                case "-input -dou" :  InputCmd.InputDouble(); break;
             }
         }
     }

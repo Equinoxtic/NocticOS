@@ -1,20 +1,20 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Main.ISO.Program;
+using Main.Base.Program;
 
-namespace NocticOS.ISO.Sources.Classes.Utility
+namespace NocticOS.Base.Sources.UtilCommands
 {
-    public class ISO_Input
+    public class CmdInput
     {
-        ISO_Mode IsoMain = new ISO_Mode();
+        Base_Mode BaseMain = new Base_Mode();
         public void InputStr()
         {
             var curStr = "";
             Console.Write("\nInput some text for your string: ");
             curStr = Console.ReadLine();
             Console.WriteLine("String: " + curStr + "\n");
-            IsoMain.IsoMode(false);
+            BaseMain.BaseMode(false);
         }
 
         public void InputInt()
@@ -23,7 +23,7 @@ namespace NocticOS.ISO.Sources.Classes.Utility
             Console.Write("\nInput some numbers for your integer: ");
             curInt = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Integer: " + curInt + "\n");
-            IsoMain.IsoMode(false);
+            BaseMain.BaseMode(false);
         }
 
         public void InputFloat()
@@ -32,7 +32,7 @@ namespace NocticOS.ISO.Sources.Classes.Utility
             Console.Write("\nInput some numbers for your float: ");
             curFloat = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Float: " + curFloat + "\n");
-            IsoMain.IsoMode(false);
+            BaseMain.BaseMode(false);
         }
 
         public void InputDouble()
@@ -41,7 +41,7 @@ namespace NocticOS.ISO.Sources.Classes.Utility
             Console.Write("\nInput some numbers for your double: ");
             curDouble = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Double: " + curDouble + "\n");
-            IsoMain.IsoMode(false);
+            BaseMain.BaseMode(false);
         }
     }
 }
