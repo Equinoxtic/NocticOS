@@ -11,7 +11,7 @@ namespace NocticOS.ISO.Sources.Classes.Utility
         {
             ISO_Mode IsoMain = new ISO_Mode();
             string[] strCmdList = {
-                ".h", ".l", ".input"
+                ".h", ".l", ".input", ".math"
             };
 
             string[] cmdType = { "[Utility]", "[Misc]", "[Creation]" };
@@ -20,7 +20,8 @@ namespace NocticOS.ISO.Sources.Classes.Utility
             Console.WriteLine(
                 "\n" + strCmdList[0] + " " + cmdType[0] + "\n" +
                 strCmdList[1] + " " + cmdType[1] + "\n" +
-                strCmdList[2] + " " + cmdType[0] + "\n"
+                strCmdList[2] + " " + cmdType[0] + "\n" +
+                strCmdList[3] + " " + cmdType[0] + "\n"
             );
             IsoMain.IsoMode(false);
         }

@@ -11,13 +11,14 @@ namespace NocticOS.Base.Sources.UtilCommands
         {
             Base_Mode mainBase = new Base_Mode();
             string[] strCmdList = {
-                "-h", "-l", "-input"
+                "-h", "-l", "-input", "-math"
             };
 
             Console.WriteLine(
                 "\n" + strCmdList[0] + "   Displays commands and the information for each command.\n" +
                 strCmdList[1] + "   Displays commands but does not display information for each command.\n" +
-                strCmdList[2] + "   Standard Input for strings, integers, floats and doubles.\n"
+                strCmdList[2] + "   Standard Input for strings, integers, floats and doubles.\n" +
+                strCmdList[3] + "   Used for performing calculations with addition, subtraction, multiplication and division.\n"
             );
             mainBase.BaseMode(false);
         }

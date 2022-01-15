@@ -11,7 +11,7 @@ namespace NocticOS.ISO.Sources.Classes.Utility
         {
             ISO_Mode IsoMain = new ISO_Mode();
             string[] strCmdList = {
-                ".h", ".l", ".input"
+                ".h", ".l", ".input", ".math"
             };
 
             string[] cmdTypeList = { "[Utility]", "[Misc]", "[Creation]" };
@@ -19,7 +19,8 @@ namespace NocticOS.ISO.Sources.Classes.Utility
             Console.WriteLine(
                 "\n" + strCmdList[0] + " " + cmdTypeList[0] + " - Helps display information of all commands.\n" +
                 strCmdList[1] + " " + cmdTypeList[1] + " - Displays all commands without displaying the information.\n" +
-                strCmdList[2] + " <type> " + cmdTypeList[0] + " - Standard Input command that allows you to input a string, integer, float and double.\n"
+                strCmdList[2] + " <type> " + cmdTypeList[0] + " - Standard Input command for strings, integers, floats and doubles.\n" +
+                strCmdList[3] + " <operation> " + cmdTypeList[0] + " - Used for performing simple calculations with additon, subtraction, multiplication and division.\n"
             );
             IsoMain.IsoMode(false);
         }

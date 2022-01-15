@@ -11,16 +11,15 @@ namespace NocticOS.Base.Sources.UtilCommands
         {
             Base_Mode BaseMain = new Base_Mode();
             string[] strCmdList = {
-                "-h", "-l", "-input"
+                "-h", "-l", "-input", "-math"
             };
 
             Console.WriteLine("All valid NocticOS commands:\n");
 
-            Console.WriteLine(
-                "\n" + strCmdList[0] + "\n" +
-                strCmdList[1] + "\n" +
-                strCmdList[2] + "\n"
-            );
+            for (int i = 0; i < 4; i++) {
+                Console.WriteLine(strCmdList[i]);
+            }
+            Console.Write("\n");
             BaseMain.BaseMode(false);
         }
     }

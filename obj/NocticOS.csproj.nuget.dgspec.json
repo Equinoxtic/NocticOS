@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Documents\\GitHub\\NocticOS\\NocticOS.csproj": {}
+    "C:\\Users\\user\\Documents\\Github\\NocticOS\\NocticOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Documents\\GitHub\\NocticOS\\NocticOS.csproj": {
+    "C:\\Users\\user\\Documents\\Github\\NocticOS\\NocticOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\NocticOS\\NocticOS.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\Github\\NocticOS\\NocticOS.csproj",
         "projectName": "NocticOS",
-        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\NocticOS\\NocticOS.csproj",
+        "projectPath": "C:\\Users\\user\\Documents\\Github\\NocticOS\\NocticOS.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\NocticOS\\obj\\",
+        "outputPath": "C:\\Users\\user\\Documents\\Github\\NocticOS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
