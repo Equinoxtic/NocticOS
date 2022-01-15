@@ -7,20 +7,23 @@ namespace NocticOS.Base.Sources.UtilCommands
 {
     public class CmdInputList
     {
-        public void ExecInputList()
+        public void ExecInputList(bool isMissingParams)
         {
             Base_Mode BaseMain = new Base_Mode();
 
             string[] inputListArr = {
+                "-ls  : Shows the list of commands for '-input'",
                 "-str : Standard string input.",
                 "-int : Standard integer input.",
                 "-fl  : Standard float input.",
                 "-dou : Standard double input."
             };
 
-            Console.WriteLine("\nMissing parameters, you can enter the following:");
+            if (isMissingParams) {
+                Console.WriteLine("\nMissing parameters, you can enter the following:");
+            }
 
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 5; i++) {
                 Console.WriteLine("-input " + inputListArr[i]);
             }
             Console.Write("\n");

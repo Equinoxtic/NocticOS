@@ -25,7 +25,8 @@ namespace Main.ISO.Program
             {
                 case ".h" : IsoHelp.IsoHelpCmd(); break;
                 case ".l" : IsoList.ExecCmdList(); break;
-                case ".input" : InputListForIso.InputList(); break;
+                case ".input" : InputListForIso.InputList(true); break;
+                case ".input -ls" : InputListForIso.InputList(false); break;
                 case ".input -str" : inputForISO.InputStr(); break;
                 case ".input -int" : inputForISO.InputInt(); break;
                 case ".input -fl" : inputForISO.InputFloat(); break;
