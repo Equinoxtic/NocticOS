@@ -1,17 +1,17 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using NocticOS.Main.ISO.Program;
+using Main.ISO.Program;
 
-namespace NocticOS.NocticISO.Sources.Classes.Utility
+namespace NocticOS.ISO.Sources.Classes.Utility
 {
     public class ISO_CmdList
     {
         public void ExecCmdList()
         {
-            ISO IsoMain = new ISO();
+            ISO_Mode IsoMain = new ISO_Mode();
             string[] strCmdList = {
-                ".h", ".l"
+                ".h", ".l", ".input"
             };
 
             string[] cmdType = { "[Utility]", "[Misc]", "[Creation]" };
@@ -19,7 +19,8 @@ namespace NocticOS.NocticISO.Sources.Classes.Utility
             Console.WriteLine("\nAll Valid Commands:");
             Console.WriteLine(
                 "\n" + strCmdList[0] + " " + cmdType[0] + "\n" +
-                strCmdList[1] + " " + cmdType[1] + "\n"
+                strCmdList[1] + " " + cmdType[1] + "\n" +
+                strCmdList[2] + " " + cmdType[0] + "\n"
             );
             IsoMain.IsoMode(false);
         }

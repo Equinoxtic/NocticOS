@@ -1,15 +1,15 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using NocticOS.Main.Base.Program;
+using Main.Base.Program;
 
-namespace NocticOS.NocticBase.Sources.UtilityCommands
+namespace NocticOS.Base.Sources.UtilityCommands
 {
     public class CmdHelp
     {
         public void HelpCommand()
         {
-            Base mainBase = new Base();
+            Base_Mode mainBase = new Base_Mode();
             string[] strCmdList = {
                 "-h", "-l"
             };

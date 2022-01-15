@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\NocticOS\\NocticOS.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\NocticOS\\NocticOS.csproj",
       "projectName": "NocticOS",
-      "projectPath": "C:\\Users\\user\\NocticOS\\NocticOS.csproj",
+      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\NocticOS\\NocticOS.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\NocticOS\\obj\\",
+      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\NocticOS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
