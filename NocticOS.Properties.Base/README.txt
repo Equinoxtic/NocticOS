@@ -1,1 +1,0 @@
-For Base mode Properties.
