@@ -14,7 +14,7 @@ namespace NocticOS
 			Base_Mode baseMain = new Base_Mode();
 			var curMode = "";
 
-			Console.WriteLine("\nNocticOS - Version (1.0.2)");
+			Console.WriteLine("\nNocticOS - Version (1.0.23)");
 			Console.Write("Select a Mode:\n[base] Base Mode | [iso] ISO Mode\n> ");
 			curMode = Console.ReadLine();
 
