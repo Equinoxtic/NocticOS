@@ -29,10 +29,10 @@ namespace NocticOS.Base.Sources.UtilCommands
             {
                 Console.WriteLine(
                     "\nSelect an operation:\n" +
-                    "[add] Addition | " +
-                    "[subtract] Subtraction | " +
-                    "[multiply] Multiplication | " +
-                    "[divide] Division | "
+                    "[+] Addition | " +
+                    "[-] Subtraction | " +
+                    "[*] Multiplication | " +
+                    "[/] Division | "
                 );
 
                 curOpr = Console.ReadLine();
@@ -41,19 +41,19 @@ namespace NocticOS.Base.Sources.UtilCommands
 
                 switch (curOpr)
                 {
-                    case "add":
+                    case "+":
                         Console.Write(a + b);
                         break;
 
-                    case "subtract":
+                    case "-":
                         Console.Write(a - b);
                         break;
 
-                    case "multiply":
+                    case "*":
                         Console.Write(a * b);
                         break;
 
-                    case "divide":
+                    case "/":
                         Console.Write(a / b);
                         break;
                 }
