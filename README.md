@@ -67,7 +67,3 @@ If this pops up , that means the program is working:
 ![image](https://user-images.githubusercontent.com/86795271/149383083-9e87f927-d647-4bdd-8e36-fdc44e6e87ac.png)
 
 And you're done!
-
-NocticOS also has it's own website.
-
-**Link:** `Not available yet.`
