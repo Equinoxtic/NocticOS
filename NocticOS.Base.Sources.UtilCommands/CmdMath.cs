@@ -32,7 +32,7 @@ namespace NocticOS.Base.Sources.UtilCommands
                     "[+] Addition | " +
                     "[-] Subtraction | " +
                     "[*] Multiplication | " +
-                    "[/] Division | "
+                    "[/] Division "
                 );
 
                 curOpr = Console.ReadLine();

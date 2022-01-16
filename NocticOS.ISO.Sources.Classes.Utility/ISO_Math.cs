@@ -32,7 +32,7 @@ namespace NocticOS.ISO.Sources.Classes.Utility
                     "[add] Addition | " +
                     "[subtract] Subtraction | " +
                     "[multiply] Multiplication | " +
-                    "[divide] Division | "
+                    "[divide] Division "
                 );
 
                 curOpr = Console.ReadLine();
