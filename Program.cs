@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Main.ISO.Program;
@@ -12,6 +13,8 @@ namespace NocticOS
 		{
 			ISO_Mode IsoMain = new ISO_Mode();
 			Base_Mode baseMain = new Base_Mode();
+			var curDir = @"C:\NocticOS";
+			System.IO.Directory.CreateDirectory(curDir);
 			var curMode = "";
 
 			Console.WriteLine("\nNocticOS - Version (1.0.23)");
