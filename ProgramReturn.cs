@@ -3,30 +3,33 @@ using System.Linq;
 using System.Threading.Tasks;
 using Main.ISO.Program;
 using Main.Base.Program;
+using NocticUtility;
 
 namespace NocticOS
 {
     public class ProgramReturn
     {
-        public void DoReturn()
+        public void DoReturn(bool showInfo)
 		{
 			ISO_Mode IsoMain = new ISO_Mode();
 			Base_Mode baseMain = new Base_Mode();
-			var curMode = "";
+			NocticCmdList Cmdls = new NocticCmdList();
+			var curSelected = "";
 
-			Console.WriteLine("\nNocticOS - Version (1.0.23)");
-			Console.Write("Select a Mode:\n[base] Base Mode | [iso] ISO Mode\n> ");
-			curMode = Console.ReadLine();
+			if (showInfo) {
+				Console.WriteLine("\nNocticOS - Version (1.0.23)");
+				Console.Write("Type in 'help' to get started.");
+			}
 
-			switch (curMode)
+			Console.Write("\n> ");
+			curSelected = Console.ReadLine();
+
+			switch (curSelected)
 			{
-				case "base":
-					baseMain.BaseMode(true);
-					break;
-
-				case "iso":
-					IsoMain.IsoMode(true);
-					break;
+				case "help" : Cmdls.OpenCmdList(); break;
+				case "exit" : Console.WriteLine("Exiting program..."); break;
+				case "iso" : IsoMain.IsoMode(true); break;
+				case "base" : baseMain.BaseMode(true); break;
 			}
 		}
     }
