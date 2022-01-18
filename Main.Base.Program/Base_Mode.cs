@@ -30,7 +30,7 @@ namespace Main.Base.Program
             switch (curCmd)
             {
                 case "-h" : HelpCmd.HelpCommand(); break;
-                case "-l" : ListCmd.ExecCmdList(); break;
+                case "-ls" : ListCmd.ExecCmdList(); break;
                 case "-input" : InputListCmd.ExecInputList(true); break;
                 case "-input -ls" : InputListCmd.ExecInputList(false); break;
                 case "-input -str" : InputCmd.InputStr(true); break;

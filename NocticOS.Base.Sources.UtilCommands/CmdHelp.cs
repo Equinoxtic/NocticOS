@@ -11,7 +11,7 @@ namespace NocticOS.Base.Sources.UtilCommands
         {
             Base_Mode mainBase = new Base_Mode();
             string[] strCmdList = {
-                "-h", "-l", "-input", "-math"
+                "-h", "-ls", "-input", "-math"
             };
 
             Console.WriteLine(
