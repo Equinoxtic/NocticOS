@@ -10,18 +10,29 @@ namespace NocticOS.ISO.Sources.Classes.Utility
         public void IsoHelpCmd()
         {
             ISO_Mode IsoMain = new ISO_Mode();
+            
             string[] strCmdList = {
-                ".h", ".l", ".input", ".math"
+                ".h", 
+                ".ls", 
+                ".input", 
+                ".math",
+                ".create"
             };
 
-            string[] cmdTypeList = { "[Utility]", "[Misc]", "[Creation]" };
+            string[] strCmdDescs = {
+                " - Displays information on all of the commands.",
+                " - Displays the list of commands, but doesn't display the information.",
+                " <type> - Standard Input for strings, integer, floats and doubles.",
+                " <operation> - Simple math with the 4 simplest operations, addition, subtraction, multiplication, and division.",
+                " <type> - Used for creating custom Objects, Functions and Classes."
+            };
+            
+            Console.Write("\n");
+            for (int i = 0; i < 5; i++) {
+                Console.Write(strCmdList[i] + strCmdDescs[i] + "\n");
+            }
+            Console.Write("\n");
 
-            Console.WriteLine(
-                "\n" + strCmdList[0] + " " + cmdTypeList[0] + " - Helps display information of all commands.\n" +
-                strCmdList[1] + " " + cmdTypeList[1] + " - Displays all commands without displaying the information.\n" +
-                strCmdList[2] + " <type> " + cmdTypeList[0] + " - Standard Input command for strings, integers, floats and doubles.\n" +
-                strCmdList[3] + " <operation> " + cmdTypeList[0] + " - Used for performing simple calculations with additon, subtraction, multiplication and division.\n"
-            );
             IsoMain.IsoMode(false);
         }
     }

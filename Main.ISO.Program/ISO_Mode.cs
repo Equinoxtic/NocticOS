@@ -30,7 +30,7 @@ namespace Main.ISO.Program
             switch (curCmd)
             {
                 case ".h" : IsoHelp.IsoHelpCmd(); break;
-                case ".l" : IsoList.ExecCmdList(); break;
+                case ".ls" : IsoList.ExecCmdList(); break;
                 case ".input" : InputListForIso.InputList(true); break;
                 case ".input -ls" : InputListForIso.InputList(false); break;
                 case ".input -str" : inputForISO.InputStr(true); break;
