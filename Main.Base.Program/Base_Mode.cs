@@ -33,9 +33,9 @@ namespace Main.Base.Program
                 case "-l" : ListCmd.ExecCmdList(); break;
                 case "-input" : InputListCmd.ExecInputList(true); break;
                 case "-input -ls" : InputListCmd.ExecInputList(false); break;
-                case "-input -str" : InputCmd.InputStr(); break;
-                case "-input -int" : InputCmd.InputInt(); break;
-                case "-input -fld" :  InputCmd.InputDouble(); break;
+                case "-input -str" : InputCmd.InputStr(true); break;
+                case "-input -int" : InputCmd.InputInt(true); break;
+                case "-input -fld" :  InputCmd.InputDouble(true); break;
                 case "-math" : MathListCmd.ExecMathList(true); break;
                 case "-math -ls" : MathListCmd.ExecMathList(false); break;
                 case "-math -init" : MathCmd.ExecMathCmd("", true); break;
@@ -43,7 +43,8 @@ namespace Main.Base.Program
                 case "-math -subtract" : MathCmd.ExecMathCmd("-math -subtract", false); break;
                 case "-math -multiply" : MathCmd.ExecMathCmd("-math -multiply", false); break;
                 case "-math -divide" : MathCmd.ExecMathCmd("-math -divide", false); break;
-                case "return" : ReturnToProgram.DoReturn(); break;
+                case "return" : ReturnToProgram.DoReturn(true); break;
+                case "exit" : Console.WriteLine("Exiting Program..."); break;
             }
         }
     }

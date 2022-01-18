@@ -23,6 +23,7 @@ namespace Main.ISO.Program
             if (showInfo) {
                 Console.WriteLine("\nNocticOS (ISO) - Version 1.0\nType '.h' for help.");
             }
+
             Console.Write("> ");
             curCmd = Console.ReadLine();
 
@@ -32,9 +33,9 @@ namespace Main.ISO.Program
                 case ".l" : IsoList.ExecCmdList(); break;
                 case ".input" : InputListForIso.InputList(true); break;
                 case ".input -ls" : InputListForIso.InputList(false); break;
-                case ".input -str" : inputForISO.InputStr(); break;
-                case ".input -int" : inputForISO.InputInt(); break;
-                case ".input -fld" : inputForISO.InputDouble(); break;
+                case ".input -str" : inputForISO.InputStr(true); break;
+                case ".input -int" : inputForISO.InputInt(true); break;
+                case ".input -fld" : inputForISO.InputDouble(true); break;
                 case ".math" : MathListForIso.ExecMathList(true); break;
                 case ".math -ls" : MathListForIso.ExecMathList(false); break;
                 case ".math -init" : MathForIso.IsoMath("", true); break;
@@ -42,7 +43,8 @@ namespace Main.ISO.Program
                 case ".math -subtract" : MathForIso.IsoMath(".math -subtract", false); break;
                 case ".math -multiply" : MathForIso.IsoMath(".math -multiply", false); break;
                 case ".math -divide" : MathForIso.IsoMath(".math -divide", false); break;
-                case "return" : ReturnToProgram.DoReturn(); break;
+                case "return" : ReturnToProgram.DoReturn(true); break;
+                case "exit" : Console.WriteLine("Exiting Program..."); break;
             }
         }
     }
