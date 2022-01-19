@@ -3,3 +3,17 @@ bin/Debug/net6.0/NocticOS.dll
 bin/Debug/net6.0/ref/NocticOS.dll
 bin/Debug/net6.0/NocticOS.pdb
 bin/Debug/net6.0/NocticOS.exe
+obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+obj/Debug/net6.0/apphost.exe
+obj/Debug/net6.0/NocticOS.AssemblyInfo.cs
+obj/Debug/net6.0/NocticOS.AssemblyInfoInputs.cache
+obj/Debug/net6.0/NocticOS.assets.cache
+obj/Debug/net6.0/NocticOS.csproj.AssemblyReference.cache
+obj/Debug/net6.0/NocticOS.csproj.CoreCompileInputs.cache
+obj/Debug/net6.0/NocticOS.csproj.FileListAbsolute.txt
+obj/Debug/net6.0/NocticOS.dll
+obj/Debug/net6.0/NocticOS.GeneratedMSBuildEditorConfig.editorconfig
+obj/Debug/net6.0/NocticOS.genruntimeconfig.cache
+obj/Debug/net6.0/NocticOS.GlobalUsings.g.cs
+obj/Debug/net6.0/NocticOS.pdb
+obj/Debug/net6.0/ref/NocticOS.dll
