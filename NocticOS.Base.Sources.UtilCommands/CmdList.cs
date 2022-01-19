@@ -14,8 +14,8 @@ namespace NocticOS.Base.Sources.UtilCommands
                 "-h", "-ls", "-input", "-math"
             };
 
-            Console.WriteLine("All valid NocticOS commands:\n");
-
+            Console.WriteLine("\nAll valid NocticOS commands:\n");
+            
             for (int i = 0; i < 4; i++) {
                 Console.WriteLine(strCmdList[i]);
             }

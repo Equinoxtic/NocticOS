@@ -18,7 +18,7 @@ namespace NocticOS.ISO.Sources.Classes.Utility
                 ".create"
             };
 
-            Console.WriteLine("\nAll Valid Commands:");
+            Console.WriteLine("\nAll Valid Commands:\n");
 
             for (int i = 0; i < 5; i++) {
                 Console.WriteLine(strCmdList[i]);
