@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Main.ISO.Program;
+using Main.ISO;
 
 namespace NocticOS.ISO.Sources.Classes.Creation
 {
@@ -14,8 +14,10 @@ namespace NocticOS.ISO.Sources.Classes.Creation
             string[] createList = {
                 "-ls",
                 "-obj",
-                "-func",
-                "-class"
+                "-func (WIP)",
+                "-class (WIP)",
+                "-makefile",
+                "-makedir"
             };
 
             string[] createDescs = {

@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using System.IO;
-using Main.ISO.Program;
+using Main.ISO;
 using NocticOS.ISO.Sources.Classes.Utility;
 
 namespace NocticOS.ISO.Sources.Classes.Creation
@@ -11,40 +11,49 @@ namespace NocticOS.ISO.Sources.Classes.Creation
         public void ObjectCreator()
         {
             ISO_Mode IsoMain = new ISO_Mode();
-            ISO_Input IsoIn = new ISO_Input();
 
             var objName = "";
             var objType = "";
             var strObjType = "";
-            var options = "";
             var curString = "";
             var curInt = 0;
             var curDou = 0.0;
-            var nocticObjDir = @"C:\NocticOS\Objects";
-            var curObjDir = @"C:\NocticOS\Objects\" + objName + ".txt";
-
-            StreamReader SR = new StreamReader(curObjDir);
-
             Console.Write("\nInput a name for your new object: ");
             objName = Console.ReadLine();
+
+            string[] typesOfObj = {
+                "[str] String | ",
+                "[int] Integer | ",
+                "[fld] Double"
+            };
+
+            Console.Write("\nChoose a type for your new object:\n");
+
+            for (int i = 0; i < 3; i++) {
+                Console.Write(typesOfObj[i]);
+            }
+
+            Console.Write("\n");
+
+            objType = Console.ReadLine();
 
             switch (objType)
             {
                 case "str":
                     Console.Write("Input some text for your string: ");
-                    curString = SR.ReadLine();
+                    curString = Console.ReadLine();
                     strObjType = "string";
                     break;
 
                 case "int":
                     Console.Write("Input some numbers: for your integer: ");
-                    curInt = Convert.ToInt32(SR.ReadLine());
+                    curInt = Convert.ToInt32(Console.ReadLine());
                     strObjType = "integer";
-                    break;
+                    break;      
 
                 case "fld":
                     Console.Write("Input some numbers for your double: ");
-                    curDou = Convert.ToDouble(SR.ReadLine());
+                    curDou = Convert.ToDouble(Console.ReadLine());
                     strObjType = "double";
                     break;
             }
@@ -53,34 +62,9 @@ namespace NocticOS.ISO.Sources.Classes.Creation
 
             switch (strObjType)
             {
-                case "string" : Console.Write("\nString: " + curString); break;
-                case "integer" : Console.Write("\nInteger: " + curInt); break;
-                case "double" : Console.Write("\nDouble: " + curDou); break;
-            }
-
-            Console.WriteLine("Save Object? [y/n]: ");
-            options = Console.ReadLine();
-
-            void DoWrite()
-            {
-                if (System.IO.Directory.Exists(nocticObjDir)) {
-                    System.IO.File.Create(curObjDir);
-                    File.WriteAllText(curObjDir, "Name: " + objName + "\nType: " + strObjType);
-                    switch (strObjType)  {
-                        case "string" : File.WriteAllText(curObjDir, "\nString: " + curString); break;
-                        case "integer" : File.WriteAllText(curObjDir, "\nInteger: " + curInt); break;
-                        case "double" : File.WriteAllText(curObjDir, "\nDouble: " + curDou); break;
-                    }
-                }
-                Console.Write("Successfully Saved Object: " + objName);
-            }
-
-            if (options == "y") {
-                DoWrite();
-            } else if (options == "n") {
-                Console.WriteLine("Operation Cancelled.");
-            } else {
-                Console.WriteLine("Unknown Character.\n");
+                case "string" : Console.Write("String: " + curString); break;
+                case "integer" : Console.Write("Integer: " + curInt); break;
+                case "double" : Console.Write("Double: " + curDou); break;
             }
             IsoMain.IsoMode(false);
         }
