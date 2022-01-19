@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using NocticOS;
 using NocticOS.ISO.Sources.Classes.Utility;
+using NocticOS.ISO.Sources.Classes.Creation;
 
 namespace Main.ISO.Program
 {
@@ -17,6 +18,8 @@ namespace Main.ISO.Program
             ISO_Math MathForIso = new ISO_Math();
             ISO_MathList MathListForIso = new ISO_MathList();
             ProgramReturn ReturnToProgram = new ProgramReturn();
+            ISO_ObjectCreation IsoObjCreate = new ISO_ObjectCreation();
+            ISO_CreateList IsoCreateList = new ISO_CreateList();
 
             var curCmd = "";
 
@@ -43,6 +46,9 @@ namespace Main.ISO.Program
                 case ".math -subtract" : MathForIso.IsoMath(".math -subtract", false); break;
                 case ".math -multiply" : MathForIso.IsoMath(".math -multiply", false); break;
                 case ".math -divide" : MathForIso.IsoMath(".math -divide", false); break;
+                case ".create" : IsoCreateList.ExecCreateList(true); break;
+                case ".create -ls" : IsoCreateList.ExecCreateList(false); break;
+                case ".create -obj" : IsoObjCreate.ObjectCreator(); break;
                 case "return" : ReturnToProgram.DoReturn(true); break;
                 case "exit" : Console.WriteLine("Exiting Program..."); break;
             }
