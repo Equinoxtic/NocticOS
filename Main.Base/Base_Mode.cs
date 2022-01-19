@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using NocticOS;
 using NocticOS.Base.Sources.UtilCommands;
 
-namespace Main.Base.Program
+namespace Main.Base
 {
     public class Base_Mode
     {
