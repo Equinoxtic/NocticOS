@@ -5,7 +5,7 @@ using NocticOS;
 using NocticOS.ISO.Sources.Classes.Utility;
 using NocticOS.ISO.Sources.Classes.Creation;
 
-namespace Main.ISO.Program
+namespace Main.ISO
 {
     public class ISO_Mode
     {
