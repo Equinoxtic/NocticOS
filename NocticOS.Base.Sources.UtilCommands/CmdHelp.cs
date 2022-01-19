@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Main.Base.Program;
+using Main.Base;
 
 namespace NocticOS.Base.Sources.UtilCommands
 {
