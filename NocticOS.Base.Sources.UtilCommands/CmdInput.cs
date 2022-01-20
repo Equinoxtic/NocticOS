@@ -8,6 +8,7 @@ namespace NocticOS.Base.Sources.UtilCommands
     public class CmdInput
     {
         Base_Mode BaseMain = new Base_Mode();
+        ProgramReturn ReturnToProgram = new ProgramReturn();
         public void InputStr(bool showOutput)
         {
             var curStr = "";
@@ -39,6 +40,45 @@ namespace NocticOS.Base.Sources.UtilCommands
                 Console.WriteLine("\nDouble: " + curDouble + "\n");
             }
             BaseMain.BaseMode(false);
+        }
+
+        public void InputLs(bool IsHelp, bool isList, bool IsMissingParams, bool ModeReturn) 
+        {
+            string[] inputListArr = {
+                "-ls",
+                "-str",
+                "-int",
+                "-fld"
+            };
+
+            string[] inputListDescs = {
+                " : Shows the list of commands for '-input'",
+                " : Standard string input.",
+                " : Standard integer input.",
+                " : Standard double input."
+            };
+
+            if (IsMissingParams) {
+                Console.WriteLine("\nMissing parameters, you can enter the following:\n");
+            } else {
+                Console.Write("\nCommands for '-input':\n\n");
+            }
+
+            for (int i = 0; i < 4; i++) {
+                if (IsMissingParams) {
+                    Console.Write("-input " + inputListArr[i] + inputListDescs[i] + "\n");
+                } if (IsHelp) {
+                    Console.Write(inputListArr[i] + inputListDescs[i] + "\n");
+                } if (isList) {
+                    Console.Write(inputListArr[i] + "\n");
+                }
+            }
+
+            if (ModeReturn) {
+                BaseMain.BaseMode(false);
+            } else {
+                ReturnToProgram.DoReturn(false);
+            }
         }
     }
 }

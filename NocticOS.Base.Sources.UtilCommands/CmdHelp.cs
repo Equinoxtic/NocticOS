@@ -35,7 +35,7 @@ namespace NocticOS.Base.Sources.UtilCommands
                 if (isHelp) {
                     Console.Write(strCmdList[i] + strCmdDescs[i] + "\n");
                 } else {
-                    Console.Write(strCmdList[i]);
+                    Console.Write(strCmdList[i] + "\n");
                 }
             }
             Console.Write("\n");

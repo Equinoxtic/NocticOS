@@ -83,5 +83,49 @@ namespace NocticOS.Base.Sources.UtilCommands
             Console.WriteLine("\n");
             BaseMain.BaseMode(false);
         }
+
+        public void MathLs(bool isHelp, bool isList, bool MissingParams, bool ModeReturn)
+        {
+            Base_Mode BaseMain = new Base_Mode();
+            ProgramReturn ReturnToProgram = new ProgramReturn();
+
+            string[] mathList = {
+                "-ls",
+                "-init",
+                "-add",
+                "-subtract",
+                "-multiply",
+                "-divide"
+            };
+
+            string[] mathDescs = {
+                "       : Displays all the commands for '-math'",
+                "     : Initialize the values of two numbers, and then choose an operation for them.",
+                "      : Adds two numbers.",
+                " : Subtracts two numbers.",
+                " : Multiplies two numbers.",
+                "   : Divides two numbers."
+            };
+
+            if (MissingParams) {
+                Console.WriteLine("\nMissing Parameters, you can enter the following:\n");
+            } else {
+                Console.WriteLine("\nCommands for '-math':\n");
+            }
+
+            for (int i = 0; i < 6; i++) {
+                if (isHelp) {
+                    Console.Write("-math " + mathList[i] + mathDescs[i] + "\n");
+                } if (isList || MissingParams) {
+                    Console.Write(mathList[i] + mathDescs[i] + "\n");
+                }
+            }
+
+            if (ModeReturn) {
+                BaseMain.BaseMode(false);
+            } else {
+                ReturnToProgram.DoReturn(false);
+            }
+        }
     }
 }
