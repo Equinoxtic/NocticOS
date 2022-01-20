@@ -52,6 +52,11 @@ If you wanna get an older version of NocticOS, please visit the releases page.
 * **C# Extension:** https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
 * **C# IDE Extensions:** https://marketplace.visualstudio.com/items?itemName=jchannon.csharpextensions
 
+**ADDITIONAL NOTES WHEN INSTALLING .NET**
+
+* For x64 users install the x86 binaries.
+* For x32 users install the x64 binaries.
+
 Once you have followed those steps. open up your desired Terminal (Command Prompt, PowerShell or Windows Terminal)
 
 Now type in, `cd NocticOS`, and then `code .`
