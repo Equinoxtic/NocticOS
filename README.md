@@ -41,13 +41,13 @@ If you wanna get an older version of NocticOS, please visit the releases page.
 
 ## Compiling - Installing .NET and VS-Code
 
-* Install the .NET 6.0 Framework.
+* Install the .NET Framework 6.0.
 * Install Visual Studio Code.
 * Install Extensions for C# support in VS-Code
 
 **Links:**
 
-* **.NET (6.0):** https://dotnet.microsoft.com/en-us/
+* **.NET Framework (6.0):** https://dotnet.microsoft.com/en-us/
 * **Visual Studio Code:** https://code.visualstudio.com
 * **C# Extension:** https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
 * **C# IDE Extensions:** https://marketplace.visualstudio.com/items?itemName=jchannon.csharpextensions
