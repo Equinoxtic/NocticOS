@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NocticUtility
+namespace NocticOS.NocticUtility
 {
     public class NocticCmdList
     {
@@ -16,7 +16,7 @@ namespace NocticUtility
                 "iso",
                 "base",
                 "exit",
-                "help",
+                "help <flag> <command>",
                 "props"
             };
 
@@ -24,7 +24,7 @@ namespace NocticUtility
                 " - Open NocticOS's ISO mode.",
                 " - Open NocticOS's Base mode.",
                 " - Exits the program.",
-                " <command> - Displays information about certain commands.",
+                " - Displays information about certain commands.",
                 " - Modify NocticOS's properties. (WIP)"
             };
 
