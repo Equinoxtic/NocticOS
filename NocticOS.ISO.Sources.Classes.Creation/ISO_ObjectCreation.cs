@@ -68,5 +68,42 @@ namespace NocticOS.ISO.Sources.Classes.Creation
             }
             IsoMain.IsoMode(false);
         }
+
+        public void CreationList(bool ParamsMissing)
+        {
+            ISO_Mode IsoMain = new ISO_Mode();
+
+            string[] createList = {
+                "-ls",
+                "-obj",
+                "-func (WIP)",
+                "-class (WIP)",
+                "-makefile",
+                "-makedir"
+            };
+
+            string[] createDescs = {
+                " - Shows the list of parameters for, '.create'",
+                " - Create a Custom Object.",
+                " - Create a Custom Function.",
+                " - Create a Custom Class."
+            };
+
+            if (ParamsMissing) {
+                Console.WriteLine("Missing parameters, you can enter the following.");
+            }
+
+            Console.Write("\n");
+            for (int i = 0; i < 4; i++) {
+                if (ParamsMissing) {
+                    Console.Write(".create " + createList[i] + createDescs[i] + "\n");
+                } else {
+                    Console.Write(createList[i] + createDescs[i] + "\n");
+                }
+            }
+            Console.Write("\n");
+
+            IsoMain.IsoMode(false);
+        }
     }
 }
