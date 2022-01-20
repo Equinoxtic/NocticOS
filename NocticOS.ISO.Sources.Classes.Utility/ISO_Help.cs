@@ -28,7 +28,7 @@ namespace NocticOS.ISO.Sources.Classes.Utility
             };
 
             if (!isHelp) {
-                Console.WriteLine("\nAll Available commands for NocticOS (ISO):\n");
+                Console.WriteLine("\nAll Available commands for NocticOS (ISO):");
             }
             
             Console.Write("\n");
@@ -36,7 +36,7 @@ namespace NocticOS.ISO.Sources.Classes.Utility
                 if (isHelp) {
                     Console.Write(strCmdList[i] + strCmdDescs[i] + "\n");
                 } else {
-                    Console.Write(strCmdList[i]);
+                    Console.Write(strCmdList[i] + "\n");
                 }
             }
             Console.Write("\n");
