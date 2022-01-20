@@ -13,9 +13,9 @@ namespace NocticOS.ISO.Sources.Classes.Utility
             string[] strCmdList = {
                 ".h", 
                 ".ls", 
-                ".input", 
-                ".math",
-                ".create"
+                ".input <type>", 
+                ".math <operation>",
+                ".create <type>"
             };
 
             Console.WriteLine("\nAll Valid Commands:\n");

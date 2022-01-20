@@ -22,6 +22,7 @@ namespace Main.Base
 
             if (showInfo) {
                 Console.WriteLine("\nNocticOS (Base) - Version 1.0\nType, '-h' for help.");
+                Console.WriteLine("\nNocticOS (Base) - Version 1.1.4\nType, '-h' for help.");
             }
 
             Console.Write("> ");

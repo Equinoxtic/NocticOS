@@ -7,19 +7,38 @@ namespace NocticOS.Base.Sources.UtilCommands
 {
     public class CmdHelp
     {
-        public void HelpCommand()
+        public void HelpCommand(bool isHelp)
         {
             Base_Mode mainBase = new Base_Mode();
+
             string[] strCmdList = {
-                "-h", "-ls", "-input", "-math"
+                "-h", 
+                "-ls", 
+                "-input <type>", 
+                "-math <operation>",
+                "-create <type>"
             };
 
-            Console.WriteLine(
-                "\n" + strCmdList[0] + "   Displays commands and the information for each command.\n" +
-                strCmdList[1] + "   Displays commands but does not display information for each command.\n" +
-                strCmdList[2] + "   Standard Input for strings, integers, floats and doubles.\n" +
-                strCmdList[3] + "   Used for performing calculations with addition, subtraction, multiplication and division.\n"
-            );
+            string[] strCmdDescs = {
+                " - Displays commands and the information for each command.",
+                " - Displays commands but does not display information for each command.",
+                " - Standard Input for strings, integers, floats and doubles.",
+                " - Used for performing calculations with addition, subtraction, multiplication and division."
+            };
+
+            if (!isHelp) {
+                Console.WriteLine("\nAvailable commands for NocticOS (Base):");
+            }
+
+            Console.Write("\n");
+            for (int i = 0; i < 5; i++) {
+                if (isHelp) {
+                    Console.Write(strCmdList[i] + strCmdDescs[i] + "\n");
+                } else {
+                    Console.Write(strCmdList[i]);
+                }
+            }
+            Console.Write("\n");
             mainBase.BaseMode(false);
         }
     }

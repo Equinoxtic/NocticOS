@@ -15,13 +15,18 @@ namespace NocticOS
 			ISO_Mode IsoMain = new ISO_Mode();
 			Base_Mode baseMain = new Base_Mode();
 			NocticCmdList Cmdls = new NocticCmdList();
+
 			var curDir = @"C:\NocticOS";
+
 			string[] createDirs = {
 				@"C:\NocticOS\Objects",
 				@"C:\NocticOS\Functions",
 				@"C:\NocticOS\Classes",
+				@"C:\NocticOS\Data"
 			};
+
 			System.IO.Directory.CreateDirectory(curDir);
+			
 			if (System.IO.Directory.Exists(curDir)) {
 				for (int i = 0; i < 3; i++) {
 					System.IO.Directory.CreateDirectory(createDirs[i]);

@@ -10,8 +10,13 @@ namespace NocticOS.Base.Sources.UtilCommands
         public void ExecCmdList()
         {
             Base_Mode BaseMain = new Base_Mode();
+
             string[] strCmdList = {
-                "-h", "-ls", "-input", "-math"
+                "-h", 
+                "-ls", 
+                "-input <type>", 
+                "-math <operation>",
+                "-create <type>"
             };
 
             Console.WriteLine("\nAll valid NocticOS commands:\n");
