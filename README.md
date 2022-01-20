@@ -2,6 +2,8 @@
 
 NocticOS, The Operating System that isn't an Operation System. (It's more like a Self-made Terminal.)
 
+This project was programmed in **C#** alongside with the **.NET Framework**.
+
 ## Extra Details
 
 This project is also **Open-Source** which means any user can edit it to their likeness, but make sure when uploading your own **rewrite** or **remade** version of the project, make it open source and credit The Orignal Developer (AKA me), and the Project Itself.
