@@ -7,12 +7,13 @@ namespace NocticOS.NocticUtility
 {
     public class HelpFlags
     {
+        ProgramReturn ReturnToProgram = new ProgramReturn();
         public void DisplayFlags()
         {
             string[] flags = {
-                "-m <command>",
-                "-i <command>",
-                "-b <command>"
+                "-m",
+                "-i",
+                "-b"
             };
 
             string[] descs = {
@@ -20,6 +21,13 @@ namespace NocticOS.NocticUtility
                 " : ISO Mode flag.",
                 " : Base Mode flag."
             };
+
+            Console.Write("\nCurrent Flags:\n\n");
+
+            for (int i = 0; i < 3; i++) {
+                Console.Write(flags[i] + descs[i] + "\n");
+            }
+            ReturnToProgram.DoReturn(false);
         }
     }
 }
