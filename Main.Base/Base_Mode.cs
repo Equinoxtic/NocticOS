@@ -21,7 +21,6 @@ namespace Main.Base
             var curCmd = "";
 
             if (showInfo) {
-                Console.WriteLine("\nNocticOS (Base) - Version 1.0\nType, '-h' for help.");
                 Console.WriteLine("\nNocticOS (Base) - Version 1.1.4\nType, '-h' for help.");
             }
 
@@ -30,13 +29,18 @@ namespace Main.Base
 
             switch (curCmd)
             {
-                case "-h" : HelpCmd.HelpCommand(); break;
-                case "-ls" : ListCmd.ExecCmdList(); break;
-                case "-input" : InputListCmd.ExecInputList(true); break;
-                case "-input -ls" : InputListCmd.ExecInputList(false); break;
+                // Base Commands
+                case "-h" : HelpCmd.HelpCommand(true); break;
+                case "-ls" : HelpCmd.HelpCommand(false); break;
+
+                // Input Commands
+                case "-input" : InputCmd.InputLs(false, false, true, true); break;
+                case "-input -ls" : InputCmd.InputLs(false, true, false, true); break;
                 case "-input -str" : InputCmd.InputStr(true); break;
                 case "-input -int" : InputCmd.InputInt(true); break;
                 case "-input -fld" :  InputCmd.InputDouble(true); break;
+
+                // Math Commands
                 case "-math" : MathListCmd.ExecMathList(true); break;
                 case "-math -ls" : MathListCmd.ExecMathList(false); break;
                 case "-math -init" : MathCmd.ExecMathCmd("", true); break;
@@ -44,6 +48,8 @@ namespace Main.Base
                 case "-math -subtract" : MathCmd.ExecMathCmd("-math -subtract", false); break;
                 case "-math -multiply" : MathCmd.ExecMathCmd("-math -multiply", false); break;
                 case "-math -divide" : MathCmd.ExecMathCmd("-math -divide", false); break;
+
+                // Return / Exit
                 case "return" : ReturnToProgram.DoReturn(true); break;
                 case "exit" : Console.WriteLine("Exiting Program..."); break;
             }

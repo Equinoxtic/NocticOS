@@ -24,7 +24,6 @@ namespace Main.ISO
             var curCmd = "";
 
             if (showInfo) {
-                Console.WriteLine("\nNocticOS (ISO) - Version 1.0\nType '.h' for help.");
                 Console.WriteLine("\nNocticOS (ISO) - Version 1.1.4\nType '.h' for help.");
             }
 
@@ -33,13 +32,18 @@ namespace Main.ISO
 
             switch (curCmd)
             {
-                case ".h" : IsoHelp.IsoHelpCmd(); break;
-                case ".ls" : IsoList.ExecCmdList(); break;
+                // ISO Commands
+                case ".h" : IsoHelp.IsoHelpCmd(true); break;
+                case ".ls" : IsoHelp.IsoHelpCmd(false); break;
+
+                // Input Commands
                 case ".input" : InputListForIso.InputList(true); break;
                 case ".input -ls" : InputListForIso.InputList(false); break;
                 case ".input -str" : inputForISO.InputStr(true); break;
                 case ".input -int" : inputForISO.InputInt(true); break;
                 case ".input -fld" : inputForISO.InputDouble(true); break;
+
+                // Math Commands
                 case ".math" : MathListForIso.ExecMathList(true); break;
                 case ".math -ls" : MathListForIso.ExecMathList(false); break;
                 case ".math -init" : MathForIso.IsoMath("", true); break;
@@ -47,9 +51,13 @@ namespace Main.ISO
                 case ".math -subtract" : MathForIso.IsoMath(".math -subtract", false); break;
                 case ".math -multiply" : MathForIso.IsoMath(".math -multiply", false); break;
                 case ".math -divide" : MathForIso.IsoMath(".math -divide", false); break;
+
+                // Creation Commands
                 case ".create" : IsoCreateList.ExecCreateList(true); break;
                 case ".create -ls" : IsoCreateList.ExecCreateList(false); break;
                 case ".create -obj" : IsoObjCreate.ObjectCreator(); break;
+
+                // Return / Exit
                 case "return" : ReturnToProgram.DoReturn(true); break;
                 case "exit" : Console.WriteLine("Exiting Program..."); break;
             }
