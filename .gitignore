@@ -19,3 +19,8 @@ bin/Debug/net6.0/NocticOS.exe
 bin/Debug/net6.0/NocticOS.dll
 bin/Debug/net6.0/NocticOS.runtimeconfig.json
 bin/Debug/net6.0/NocticOS.deps.json
+obj/NocticOS.csproj.nuget.dgspec.json
+obj/NocticOS.csproj.nuget.g.props
+obj/NocticOS.csproj.nuget.g.targets
+obj/project.assets.json
+obj/project.nuget.cache
