@@ -65,7 +65,7 @@ namespace NocticOS
 				// Main Commands
 				case "iso" : IsoMain.IsoMode(true); break;
 				case "base" : baseMain.BaseMode(true); break;
-				case "exit" : Console.WriteLine("Exiting program..."); Thread.Sleep(5000); break;
+				case "exit" : Console.WriteLine("Exiting program..."); Thread.Sleep(3000); break;
 			}
 		}
 	}
