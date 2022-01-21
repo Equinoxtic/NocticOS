@@ -17,3 +17,7 @@ obj/Debug/net6.0/NocticOS.genruntimeconfig.cache
 obj/Debug/net6.0/NocticOS.GlobalUsings.g.cs
 obj/Debug/net6.0/NocticOS.pdb
 obj/Debug/net6.0/ref/NocticOS.dll
+obj/NocticOS.csproj.nuget.dgspec.json
+obj/NocticOS.csproj.nuget.g.props
+obj/project.assets.json
+obj/project.nuget.cache
