@@ -21,3 +21,7 @@ obj/NocticOS.csproj.nuget.dgspec.json
 obj/NocticOS.csproj.nuget.g.props
 obj/project.assets.json
 obj/project.nuget.cache
+obj/project.nuget.cache
+obj/project.assets.json
+obj/NocticOS.csproj.nuget.g.props
+obj/NocticOS.csproj.nuget.dgspec.json
