@@ -6,4 +6,4 @@ GOTO BUILDNOCTIC
 ECHO Building NocticOS...
 ECHO:
 dotnet build
-PAUSE
+EXIT
