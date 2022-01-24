@@ -68,6 +68,7 @@ After running `code .` it should open up VS-Code and the project.
 * Open up your desired Terminal.
 * Type in `cd NocticOS`, and then `dotnet build` to build the program.
 * Another way to build NocticOS is to open up the `BuildNocticOS.bat` file.
+* If the build has successfully finished, you can proceed to running NocticOS.
 
 ## Running NocticOS
 
