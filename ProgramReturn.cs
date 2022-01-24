@@ -3,8 +3,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Main.ISO;
 using Main.Base;
-using NocticOS.ISO.Sources.Classes.Utility;
-using NocticOS.ISO.Sources.Classes.Creation;
+using NocticOS.ISO.Sources.Utility;
+using NocticOS.ISO.Sources.Creation;
 using NocticOS.Base.Sources.UtilCommands;
 using NocticOS.Base.Sources.CreationCommands;
 using NocticOS.NocticUtility;
@@ -43,13 +43,14 @@ namespace NocticOS
 				// Help Commands
 				case "help" : Cmdls.OpenCmdList(); break;
 				case "help -flags" : FlagsForHelp.DisplayFlags(); break;
+				case "help iso" : break;
 
-				// Help ISO
+				// ISO Commands
 				case "help -i input" : InputForIso.InputLs(true, false, false, false); break;
 				case "help -i math" : MathForIso.MathLs(true, false, false, false); break;
 				case "help -i create" : ISOObjCreation.CreationList(true, false, false, false); break;
 				
-				// Help Base
+				// Base Commands
 				case "help -b input" : BaseInput.InputLs(true, false, false, false); break;
 				case "help -b math" : BaseMath.MathLs(true, false, false, false); break;
 				case "help -b create" : BaseObjCreation.CreationList(true, false, false, false); break;

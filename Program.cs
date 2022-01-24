@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Main.ISO;
 using Main.Base;
 using NocticOS.NocticUtility;
-using NocticOS.ISO.Sources.Classes.Utility;
-using NocticOS.ISO.Sources.Classes.Creation;
+using NocticOS.ISO.Sources.Utility;
+using NocticOS.ISO.Sources.Creation;
 using NocticOS.Base.Sources.UtilCommands;
 using NocticOS.Base.Sources.CreationCommands;
 
@@ -57,6 +57,7 @@ namespace NocticOS
 				// Help Commands
 				case "help" : Cmdls.OpenCmdList(); break;
 				case "help -flags" : FlagsForHelp.DisplayFlags(); break;
+				case "help iso" : break;
 
 				// Help ISO
 				case "help -i input" : InputForIso.InputLs(true, false, false, false); break;

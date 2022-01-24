@@ -2,8 +2,8 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using NocticOS;
-using NocticOS.ISO.Sources.Classes.Utility;
-using NocticOS.ISO.Sources.Classes.Creation;
+using NocticOS.ISO.Sources.Utility;
+using NocticOS.ISO.Sources.Creation;
 
 namespace Main.ISO
 {
