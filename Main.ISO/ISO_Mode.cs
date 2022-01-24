@@ -59,7 +59,7 @@ namespace Main.ISO
 
                 // Return / Exit
                 case "return" : ReturnToProgram.DoReturn(true); break;
-                case "exit" : Console.WriteLine("Exiting Program..."); break;
+                case "exit" : Console.WriteLine("Exiting Program..."); Thread.Sleep(3000); break;
             }
         }
     }
