@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Main.ISO;
 
-namespace NocticOS.ISO.Sources.Classes.Utility
+namespace NocticOS.ISO.Sources.Utility
 {
     public class ISO_CmdList
     {
