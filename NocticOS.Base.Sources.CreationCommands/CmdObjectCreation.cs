@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Main.ISO;
+using Main.Base;
 
 namespace NocticOS.Base.Sources.CreationCommands
 {
@@ -9,7 +9,7 @@ namespace NocticOS.Base.Sources.CreationCommands
     {
         public void ObjectCreator()
         {
-            ISO_Mode IsoMain = new ISO_Mode();
+            Base_Mode BaseMain = new Base_Mode();
 
             var objName = "";
             var objType = "";
@@ -65,7 +65,54 @@ namespace NocticOS.Base.Sources.CreationCommands
                 case "integer" : Console.Write("\nInteger: " + curInt); break;
                 case "double" : Console.Write("\nDouble: " + curDou); break;
             }
-            IsoMain.IsoMode(false);
+            BaseMain.BaseMode(false);
+        }
+
+        public void CreationList(bool isHelp, bool isList, bool isMissingParams, bool ModeReturn)
+        {
+            Base_Mode BaseMain = new Base_Mode();
+            ProgramReturn ReturnToProgram = new ProgramReturn();
+
+            string[] createList = {
+                "-ls",
+                "-obj",
+                "-func (WIP)",
+                "-class (WIP)",
+                "-makefile",
+                "-makedir"
+            };
+
+            string[] createDescs = {
+                " - Shows the list of parameters/commands for '-create'",
+                " - Create a Custom Object.",
+                " - Create a Custom Function.",
+                " - Create a Custom Class.",
+                " - Create a Custom File in a specific directory.",
+                " - Create a Directory."
+            };
+
+            if (isMissingParams) {
+                Console.WriteLine("Missing Parameters. Please enter the following.");
+            } else {
+                Console.WriteLine("\nCommands for '-create':");
+            }
+
+            Console.Write("\n");
+            
+            for (int i = 0; i < 6; i++) {
+                if (isMissingParams) {
+                    Console.Write("-create " + createList[i] + createDescs[i] + "\n");
+                }
+                if (isHelp || isList) {
+                    Console.Write(createList[i] + createDescs[i] + "\n");
+                }
+            }
+
+            if (ModeReturn) {
+                BaseMain.BaseMode(false);
+            } else {
+                ReturnToProgram.DoReturn(false);
+            }
         }
     }
 }
