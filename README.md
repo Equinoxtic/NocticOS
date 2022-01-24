@@ -26,7 +26,7 @@ Here are a two methods of installing NocticOS.
 
 Make sure you have **Git** installed for this.
 
-**Git:** https://git-scm.com
+**Git:** <https://git-scm.com>
 
 * Open up your desired Terminal (Command Prompt, PowerShell or Windows Terminal).
 * Copy and paste: `git clone https://github.com/Equinoxtic/NocticOS`
@@ -35,9 +35,9 @@ Make sure you have **Git** installed for this.
 
 ### Additional Note
 
-If you wanna get an older version of NocticOS, please visit the releases page. 
+If you wanna get an older version of NocticOS, please visit the releases page.
 
-**Link:** https://github.com/Equinoxtic/NocticOS/releases
+**Link:** <https://github.com/Equinoxtic/NocticOS/releases>
 
 ## Compiling - Installing .NET and VS-Code
 
@@ -47,12 +47,12 @@ If you wanna get an older version of NocticOS, please visit the releases page.
 
 **Links:**
 
-* **.NET Framework (6.0):** https://dotnet.microsoft.com/en-us/
-* **Visual Studio Code:** https://code.visualstudio.com
-* **C# Extension:** https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
-* **C# IDE Extensions:** https://marketplace.visualstudio.com/items?itemName=jchannon.csharpextensions
+* **.NET Framework (6.0):** <https://dotnet.microsoft.com/en-us/>
+* **Visual Studio Code:** <https://code.visualstudio.com>
+* **C# Extension:** <https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp>
+* **C# IDE Extensions:** <https://marketplace.visualstudio.com/items?itemName=jchannon.csharpextensions>
 
-**ADDITIONAL NOTES WHEN INSTALLING .NET**
+### ADDITIONAL NOTES WHEN INSTALLING .NET
 
 * For x64 users install the x86 binaries.
 * For x32 users install the x64 binaries.
@@ -63,11 +63,17 @@ Now type in, `cd NocticOS`, and then `code .`
 
 After running `code .` it should open up VS-Code and the project.
 
-## Running The Program
+## Building NocticOS
 
 * Open up your desired Terminal.
-* Type in, `cd NocticOS`, and then `dotnet build` to build the .exe, .dll and .pdb files for the program, and then type in `dotnet run` and it should run the program.
-* It's gonna take a few seconds before it leads you up to the NocticOS prompt.
+* Type in `cd NocticOS`, and then `dotnet build` to build the program.
+* Another way to build NocticOS is to open up the `BuildNocticOS.bat` file.
+
+## Running NocticOS
+
+* Open up your desired Terminal again.
+* Type in `cd NocticOS`, and then `dotnet run` to run the program.
+* It's gonna take a few seconds before NocticOS starts.
 
 If this pops up , that means the program is working:
 
