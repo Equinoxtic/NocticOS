@@ -69,9 +69,10 @@ namespace NocticOS.ISO.Sources.Classes.Creation
             IsoMain.IsoMode(false);
         }
 
-        public void CreationList(bool ParamsMissing)
+        public void CreationList(bool isHelp, bool ParamsMissing, bool isList, bool ModeReturn)
         {
             ISO_Mode IsoMain = new ISO_Mode();
+            ProgramReturn ReturnToProgram = new ProgramReturn();
 
             string[] createList = {
                 "-ls",
@@ -83,27 +84,36 @@ namespace NocticOS.ISO.Sources.Classes.Creation
             };
 
             string[] createDescs = {
-                " - Shows the list of parameters for, '.create'",
+                " - Shows the list of parameters/commands for, '.create'",
                 " - Create a Custom Object.",
                 " - Create a Custom Function.",
-                " - Create a Custom Class."
+                " - Create a Custom Class.",
+                " - Creates a File in a specific directory.",
+                " - Create a Directory."
             };
 
             if (ParamsMissing) {
                 Console.WriteLine("Missing parameters, you can enter the following.");
+            } else {
+                Console.WriteLine("\nCommands for '.create':");
             }
 
             Console.Write("\n");
-            for (int i = 0; i < 4; i++) {
+
+            for (int i = 0; i < 6; i++) {
                 if (ParamsMissing) {
                     Console.Write(".create " + createList[i] + createDescs[i] + "\n");
-                } else {
+                } 
+                if (isHelp || isList) {
                     Console.Write(createList[i] + createDescs[i] + "\n");
                 }
             }
-            Console.Write("\n");
 
-            IsoMain.IsoMode(false);
+            if (ModeReturn) {
+                IsoMain.IsoMode(false);
+            } else {
+                ReturnToProgram.DoReturn(false);
+            }
         }
     }
 }
