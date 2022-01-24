@@ -2,9 +2,9 @@ using System;
 using System.Linq;
 using System.IO;
 using Main.ISO;
-using NocticOS.ISO.Sources.Classes.Utility;
+using NocticOS.ISO.Sources.Utility;
 
-namespace NocticOS.ISO.Sources.Classes.Creation
+namespace NocticOS.ISO.Sources.Creation
 {
     public class ISO_ObjectCreation
     {
