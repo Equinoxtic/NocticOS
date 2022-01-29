@@ -38,6 +38,10 @@ namespace NocticOS.Source
                     case "str":
                         DaInput.InputStr();
                         break;
+
+                    case "int":
+                        DaInput.InputInt();
+                        break;
                 }
             }
 
@@ -47,6 +51,10 @@ namespace NocticOS.Source
                 {
                     case "str_case":
                         DaInput.InputStr();
+                        break;
+                    
+                    case "int_case":
+                        DaInput.InputInt();
                         break;
                 }
             }

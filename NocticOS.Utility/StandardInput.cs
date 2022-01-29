@@ -19,5 +19,18 @@ namespace NocticOS.Utility
                 Console.WriteLine("String: " + curString);
             }
         }
+
+        public void InputInt()
+        {
+            int curInteger = 0;
+
+            Console.Write("Input some numbers for your integer: ");
+            curInteger = Convert.ToInt32(Console.ReadLine());
+
+            if (ShowOutput)
+            {
+                Console.WriteLine("Integer: " + curInteger);
+            }
+        }
     }
 }
