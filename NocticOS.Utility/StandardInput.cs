@@ -6,12 +6,11 @@ namespace NocticOS.Utility
 {
     public class StandardInput
     {
-        public bool ShowOutput = false;
-        public void InputStr()
+        public void InputStr(bool ShowOutput)
         {
             var curString = "";
 
-            Console.Write("Input some text for your string: ");
+            Console.Write("\nInput some text for your string: ");
             curString = Console.ReadLine();
 
             if (ShowOutput)
@@ -20,16 +19,29 @@ namespace NocticOS.Utility
             }
         }
 
-        public void InputInt()
+        public void InputInt(bool ShowOutput)
         {
             int curInteger = 0;
 
-            Console.Write("Input some numbers for your integer: ");
+            Console.Write("\nInput some numbers for your integer: ");
             curInteger = Convert.ToInt32(Console.ReadLine());
 
             if (ShowOutput)
             {
                 Console.WriteLine("Integer: " + curInteger);
+            }
+        }
+
+        public void InputDouble(bool ShowOutput)
+        {
+            double curDouble = 0.0;
+
+            Console.Write("\nInput some numbers for your double: ");
+            curDouble = Convert.ToDouble(Console.ReadLine());
+
+            if (ShowOutput)
+            {
+                Console.WriteLine("Double: " + curDouble);
             }
         }
     }
