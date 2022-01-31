@@ -6,6 +6,7 @@ namespace NocticOS.Utility
 {
     public class StandardInput
     {
+        ProgramReturn Program = new ProgramReturn();
         public void InputStr(bool ShowOutput)
         {
             var curString = "";
@@ -17,6 +18,8 @@ namespace NocticOS.Utility
             {
                 Console.WriteLine("String: " + curString);
             }
+
+            Program.DoReturn(false);
         }
 
         public void InputInt(bool ShowOutput)
@@ -30,6 +33,8 @@ namespace NocticOS.Utility
             {
                 Console.WriteLine("Integer: " + curInteger);
             }
+
+            Program.DoReturn(false);
         }
 
         public void InputDouble(bool ShowOutput)
@@ -43,6 +48,8 @@ namespace NocticOS.Utility
             {
                 Console.WriteLine("Double: " + curDouble);
             }
+
+            Program.DoReturn(false);
         }
     }
 }
