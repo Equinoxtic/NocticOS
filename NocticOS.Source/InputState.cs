@@ -7,11 +7,12 @@ namespace NocticOS.Source
 {
     public class InputState
     {
-        public string InputType = "";
         StandardInput DaInput = new StandardInput();
         public void InputSelect()
         {
-            var DaInputType = this.InputType;
+            var DaInputType = "";
+            var options = "";
+            var ShowDaOutput = false;
 
             string[] InputTypeList = {
                 "[str] String | ",
@@ -19,44 +20,31 @@ namespace NocticOS.Source
                 "[dbl] Double"
             };
 
-            Console.Write("Select a type for input:\n");
-            DaInputType = Console.ReadLine();
+            Console.Write("\nSelect a type for input:\n");
 
             for (int i = 0; i < 3; i++) {
                 Console.Write(InputTypeList[i]);
             }
 
-            InputSwitch("switch_type_one");
-        }
+            Console.Write("\n~ ");
+            DaInputType = Console.ReadLine();
 
-        public void InputSwitch(string SwitchType)
-        {
-            if (SwitchType == "switch_type_one")
-            {
-                switch(InputType)
-                {
-                    case "str":
-                        DaInput.InputStr();
-                        break;
+            Console.Write("Show Output? [Y/N]: ");
+            options = Console.ReadLine();
 
-                    case "int":
-                        DaInput.InputInt();
-                        break;
-                }
+            if (options == "y" || options == "Y") {
+                ShowDaOutput = true;
+            } else if (options == "n" || options == "N") {
+                ShowDaOutput = false;
+            } else {
+                Console.WriteLine("Operation cancelled.");
             }
 
-            if (SwitchType == "switch_type_two")
+            switch(DaInputType)
             {
-                switch(InputType)
-                {
-                    case "str_case":
-                        DaInput.InputStr();
-                        break;
-                    
-                    case "int_case":
-                        DaInput.InputInt();
-                        break;
-                }
+                case "str" : DaInput.InputStr(ShowDaOutput); break;
+                case "int" : DaInput.InputInt(ShowDaOutput); break;
+                case "dbl" : DaInput.InputDouble(ShowDaOutput); break; 
             }
         }
     }
