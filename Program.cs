@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using NocticOS.Main;
 using NocticOS.Source;
+using NocticOS.HelpUtil;
 
 namespace NocticOS
 {
@@ -12,6 +13,7 @@ namespace NocticOS
 		public static void Main(String[] args)
 		{
 			DirectoryBuilder DirBuilder = new DirectoryBuilder();
+			HelpState helpState = new HelpState();
 			InputState StandardInput = new InputState();
 
 			var curSelected = "";
@@ -23,6 +25,7 @@ namespace NocticOS
 
 			switch (curSelected)
 			{
+				case "help" : helpState.OpenState(); break;
 				case "input" : StandardInput.InputSelect(); break;
 				case "build-dirs" : DirBuilder.DirBuild(); break;
 				case "exit" : Console.WriteLine("Exiting program...\n"); Thread.Sleep(3000); break;
