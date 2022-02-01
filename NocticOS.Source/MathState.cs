@@ -8,7 +8,16 @@ namespace NocticOS.Source
     {
         public void OpenState()
         {
-            // No code yet.
+            ProgramReturn Program = new ProgramReturn();
+
+            string[] OperList = {
+                "[add] Addition |",
+                "[subtract] Subtraction |",
+                "[multiply] Multiplication |",
+                "[divide] Division\n"
+            };
+
+            Program.DoReturn(false);
         }
     }
 }
