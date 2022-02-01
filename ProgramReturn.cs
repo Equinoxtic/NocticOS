@@ -40,7 +40,7 @@ namespace NocticOS
 
 				case "input" :  StandardInput.InputSelect(); break;
 
-				case "math" : mathState.OpenState(); break;
+				case "math -start" : mathState.OpenState(); break;
 				case "math -add" : standardMath.NocticMath("add", true); break;
 				case "math -subtract" : standardMath.NocticMath("subtract", true); break;
 				case "math -multiply" : standardMath.NocticMath("multiply", true); break;
@@ -52,4 +52,4 @@ namespace NocticOS
 			}
 		}
     }
-}	
+}
