@@ -48,7 +48,7 @@ namespace NocticOS
 
 				case "build-dirs": DirBuilder.DirBuild(); break;
 
-				case "exit" : Console.WriteLine("Exiting program...\n"); Thread.Sleep(3000); break;
+				case "exit" : Console.WriteLine("\nExiting program...\n"); Thread.Sleep(3000); break;
 			}
 		}
     }
