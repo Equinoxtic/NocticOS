@@ -12,7 +12,7 @@ namespace NocticOS.HelpUtil
 
             string[] MathCmdLs = {
                 "-help",
-                "-start",
+                "-new",
                 "-add",
                 "-subtract",
                 "-multiply",
