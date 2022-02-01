@@ -14,6 +14,7 @@ namespace NocticOS
 			DirectoryBuilder DirBuilder = new DirectoryBuilder();
 			HelpState helpState = new HelpState();
 			InputState StandardInput = new InputState();
+			MathState StandardMath = new MathState();
 
 			var curSelected = "";
 
@@ -29,6 +30,7 @@ namespace NocticOS
 			{
 				case "help" : helpState.OpenState(); break;
 				case "input" :  StandardInput.InputSelect(); break;
+				case "math" : StandardMath.OpenState(); break;
 				case "build-dirs": DirBuilder.DirBuild(); break;
 				case "exit" : Console.WriteLine("Exiting program..."); Thread.Sleep(3000); break;
 			}
