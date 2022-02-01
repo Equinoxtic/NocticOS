@@ -6,7 +6,7 @@ namespace NocticOS.HelpUtil
 {
     public class MathHelp
     {
-        public void OpenHelp()
+        public void OpenHelp(bool isMissingParams)
         {
             // No code yet.
         }
