@@ -29,9 +29,11 @@ namespace NocticOS.HelpUtil
             };
 
             if (isMissingParams) {
-                Console.Write("\nMissing parameters, please enter the following:\n");
+                Console.Write("\nMissing parameters, please enter the following:\n\n");
             }
 
+            Console.Write("\n");
+            
             for (int i = 0; i < 6; i++) {
                 Console.Write("math " + MathCmdLs[i] + MathDescs[i] + "\n");
             }
