@@ -7,12 +7,14 @@ namespace NocticOS.HelpUtil
     public class HelpState
     {
         ProgramReturn Program = new ProgramReturn();
+        InputHelp inputHelp = new InputHelp();
+        MathHelp mathHelp = new MathHelp();
 
         string[] CmdLs = {
-                "help",
-                "input",
-                "math"
-            };
+            "help",
+            "input",
+            "math"
+        };
 
         string[] CmdRequires = {
             " <command>",
@@ -48,6 +50,7 @@ namespace NocticOS.HelpUtil
                         CmdRequires[1] + 
                         CmdDescs[1]
                     );
+                    inputHelp.OpenHelp(false);
                     break;
 
                 case "math":
@@ -56,6 +59,7 @@ namespace NocticOS.HelpUtil
                         CmdRequires[2] + 
                         CmdDescs[2]
                     );
+                    mathHelp.OpenHelp(false);
                     break;
             }
 
