@@ -16,6 +16,7 @@ namespace NocticOS
 
 			// Help Utils
 			HelpState helpState = new HelpState();
+			MathHelp mathHelp = new MathHelp();
 
 			// Utils
 			StandardMath standardMath = new StandardMath();
@@ -40,6 +41,8 @@ namespace NocticOS
 
 				case "input" :  StandardInput.InputSelect(); break;
 
+				case "math" : mathHelp.OpenHelp(true); break;
+				case "math -help" : mathHelp.OpenHelp(false); break;
 				case "math -start" : mathState.OpenState(); break;
 				case "math -add" : standardMath.NocticMath("add", true); break;
 				case "math -subtract" : standardMath.NocticMath("subtract", true); break;
