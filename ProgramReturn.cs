@@ -17,6 +17,7 @@ namespace NocticOS
 			// Help Utils
 			HelpState helpState = new HelpState();
 			MathHelp mathHelp = new MathHelp();
+			InputHelp inputHelp = new InputHelp();
 
 			// Utils
 			StandardMath standardMath = new StandardMath();
@@ -39,7 +40,11 @@ namespace NocticOS
 			{
 				case "help" : helpState.OpenState(); break;
 
-				case "input" :  StandardInput.InputSelect(); break;
+				case "input" : inputHelp.OpenHelp(true); break;
+				case "input -help" : inputHelp.OpenHelp(false); break;
+				case "input -str" : StandardInput.InputSwitch("str"); break;
+				case "input -int" : StandardInput.InputSwitch("int"); break;
+				case "input -dbl" : StandardInput.InputSwitch("dbl"); break;
 
 				case "math" : mathHelp.OpenHelp(true); break;
 				case "math -help" : mathHelp.OpenHelp(false); break;
