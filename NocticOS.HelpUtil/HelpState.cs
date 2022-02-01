@@ -11,7 +11,7 @@ namespace NocticOS.HelpUtil
             ProgramReturn Program = new ProgramReturn();
 
             string[] CmdLs = {
-                ".input"
+                "input"
             };
 
             string[] CmdRequires = {
