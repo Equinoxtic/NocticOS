@@ -16,16 +16,16 @@ namespace NocticOS
 
 			var curSelected = "";
 			
-			Console.WriteLine("\nNocticOS - Version (1.1.6)");
+			Console.WriteLine("\nNocticOS - Version (1.1.4)");
 			Console.Write("Type in 'help' to get started.");
 			Console.Write("\n> ");
 			curSelected = Console.ReadLine();
 
 			switch (curSelected)
 			{
-				case "input" :  StandardInput.InputSelect(); break;
-				case "build-dirs": DirBuilder.DirBuild(); break;
-				case "exit" : Console.WriteLine("Exiting program..."); Thread.Sleep(3000); break;
+				case "input" : StandardInput.InputSelect(); break;
+				case "build-dirs" : DirBuilder.DirBuild(); break;
+				case "exit" : Console.WriteLine("Exiting program...\n"); Thread.Sleep(3000); break;
 			}
 		}
 	}
