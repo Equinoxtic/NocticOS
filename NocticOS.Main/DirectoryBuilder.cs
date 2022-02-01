@@ -26,6 +26,8 @@ namespace NocticOS.Main
 				}
 			}
 
+			Console.WriteLine("\nSuccessfully Built NocticOS directories.");
+
             ReturnToProgram.DoReturn(false);
         }
     }
