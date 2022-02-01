@@ -6,6 +6,15 @@ namespace NocticOS.Utility
 {
     public class StandardMath
     {
-        // No code yet.
+        public void NocticMath(string oper, int a, int b)
+        {   
+            switch(oper)
+            {
+                case "add": Console.WriteLine(a+b); break;
+                case "subtract": Console.WriteLine(a-b); break;
+                case "multiply": Console.WriteLine(a*b); break;
+                case "divide" : Console.WriteLine(a/b); break;
+            }
+        }
     }
 }
