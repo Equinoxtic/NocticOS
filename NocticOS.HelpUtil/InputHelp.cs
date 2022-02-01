@@ -31,7 +31,7 @@ namespace NocticOS.HelpUtil
             Console.Write("\n");
 
             for (int i = 0; i < 4; i++) {
-                Console.Write(InputCmdLs[i] + InputCmdDescs[i] + "\n");
+                Console.Write("input " + InputCmdLs[i] + InputCmdDescs[i] + "\n");
             }
 
             Program.DoReturn(false);
