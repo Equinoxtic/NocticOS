@@ -47,5 +47,15 @@ namespace NocticOS.Source
                 case "dbl" : DaInput.InputDouble(ShowDaOutput); break; 
             }
         }
+
+        public void InputSwitch(string CurType)
+        {
+            switch(CurType)
+            {
+                case "str": DaInput.InputStr(true); break;
+                case "int": DaInput.InputInt(true); break;
+                case "dbl": DaInput.InputDouble(true); break;
+            }
+        }
     }
 }
