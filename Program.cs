@@ -47,7 +47,7 @@ namespace NocticOS
 
 				case "math" : mathHelp.OpenHelp(true); break;
 				case "math -help" : mathHelp.OpenHelp(false); break;
-				case "math -start" : mathState.OpenState(); break;
+				case "math -new" : mathState.OpenState(); break;
 				case "math -add" : standardMath.NocticMath("add", true); break;
 				case "math -subtract" : standardMath.NocticMath("subtract", true); break;
 				case "math -multiply" : standardMath.NocticMath("multiply", true); break;
