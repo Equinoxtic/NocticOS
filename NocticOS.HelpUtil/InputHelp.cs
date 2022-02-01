@@ -10,7 +10,12 @@ namespace NocticOS.HelpUtil
         {
             ProgramReturn Program = new ProgramReturn();
 
-            string[] InputCmdLs = {};
+            string[] InputCmdLs = {
+                "-help",
+                "-str",
+                "-int",
+                "-dbl"
+            };
 
             string[] InputCmdDescs = {};
 
