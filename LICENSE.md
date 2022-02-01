@@ -2,8 +2,6 @@
 
 NocticOS - Equinoxtic
 
-``Your Distro/Remake`` - ``Your-User``
-
 This is the License for NocticOS.
 
 If you're planning to make a rewrite / remake of NocticOS, follow the regulations here:
