@@ -8,6 +8,8 @@ namespace NocticOS.HelpUtil
     {
         public void InputHelpState(bool isMissingParams)
         {
+            ProgramReturn Program = new ProgramReturn();
+
             string[] InputCmdLs = {};
 
             string[] InputCmdDescs = {};
@@ -17,8 +19,10 @@ namespace NocticOS.HelpUtil
             }
 
             for (int i = 0; i < null; i++) {
-                
+
             }
+
+            Program.DoReturn(false);
         }
     }
 }
