@@ -1,1 +1,0 @@
-# Storing JS scripts here :]

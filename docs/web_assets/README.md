@@ -1,1 +1,0 @@
-# We storin' assets hereee
