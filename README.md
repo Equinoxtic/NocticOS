@@ -1,14 +1,4 @@
-# NocticOS
-
-NocticOS, The Operating System that isn't an Operation System. (It's more like a Self-made Terminal.)
-
-This project was programmed in **C#** alongside with the **.NET Framework**.
-
-## Extra Details
-
-This project is also **Open-Source** which means any user can edit it to their likeness, but make sure when uploading your own **rewrite** or **remade** version of the project, make it open source and credit The Orignal Developer (AKA me), and the Project Itself.
-
-## Compiling - Installing NocticOS
+## Installing NocticOS
 
 Here are a two methods of installing NocticOS.
 
@@ -39,7 +29,7 @@ If you wanna get an older version of NocticOS, please visit the releases page.
 
 **Link:** <https://github.com/Equinoxtic/NocticOS/releases>
 
-## Compiling - Installing .NET and VS-Code
+## Installing .NET and VS-Code
 
 * Install the .NET Framework 6.0.
 * Install Visual Studio Code.
@@ -75,9 +65,5 @@ After running `code .` it should open up VS-Code and the project.
 * Open up your desired Terminal again.
 * Type in `cd NocticOS`, and then `dotnet run` to run the program.
 * It's gonna take a few seconds before NocticOS starts.
-
-If this pops up , that means the program is working:
-
-![image](https://user-images.githubusercontent.com/86795271/149383083-9e87f927-d647-4bdd-8e36-fdc44e6e87ac.png)
 
 And you're done!
