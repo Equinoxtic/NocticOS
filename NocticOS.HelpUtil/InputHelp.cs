@@ -6,7 +6,7 @@ namespace NocticOS.HelpUtil
 {
     public class InputHelp
     {
-        public void InputHelpState(bool isMissingParams)
+        public void OpenHelp(bool isMissingParams)
         {
             ProgramReturn Program = new ProgramReturn();
 
@@ -17,14 +17,21 @@ namespace NocticOS.HelpUtil
                 "-dbl"
             };
 
-            string[] InputCmdDescs = {};
+            string[] InputCmdDescs = {
+                " - Shows help and information for the 'input' command.",
+                " - Standard string input.",
+                " - Standard integer input.",
+                " - Standard double input."
+            };
 
             if (isMissingParams) {
                 Console.Write("\nMissing parameters, please enter the following:\n");
             }
 
-            for (int i = 0; i < null; i++) {
+            Console.Write("\n");
 
+            for (int i = 0; i < 4; i++) {
+                Console.Write(InputCmdLs[i] + InputCmdDescs[i] + "\n");
             }
 
             Program.DoReturn(false);
