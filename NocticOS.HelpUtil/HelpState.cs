@@ -12,7 +12,7 @@ namespace NocticOS.HelpUtil
 
         string[] CmdLs = {
             "help",
-            "build-dirs",
+            "build",
             "input",
             "math"
         };
@@ -47,14 +47,14 @@ namespace NocticOS.HelpUtil
 
             switch(curCmd)
             {
-                case "build-dirs":
+                case "build":
                     Console.Write(
                         CmdLs[1] +
                         CmdRequires[1] +
                         CmdDescs[1]
                     );
                     break;
-                    
+
                 case "input":
                     Console.Write(
                         CmdLs[2] + 
