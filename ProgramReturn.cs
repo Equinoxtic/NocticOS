@@ -13,12 +13,15 @@ namespace NocticOS
         public void DoReturn(bool showInfo)
 		{
 			// Help Utils
+			BuildHelp buildHelp = new BuildHelp();
 			HelpState helpState = new HelpState();
 			MathHelp mathHelp = new MathHelp();
 			InputHelp inputHelp = new InputHelp();
 
 			// Utils
 			DirectoryBuilder DirBuilder = new DirectoryBuilder();
+			OSBuilder oSBuilder = new OSBuilder();
+			DesktopEnviromentBuilder deBuilder = new DesktopEnviromentBuilder();
 			StandardMath standardMath = new StandardMath();
 
 			// States /  Classes
@@ -55,7 +58,11 @@ namespace NocticOS
 				case "math -multiply" : standardMath.NocticMath("multiply", true); break;
 				case "math -divide" : standardMath.NocticMath("divide", true); break;
 
-				case "build" : DirBuilder.DirBuild(); break;
+				case "build" : buildHelp.OpenHelp(true); break;
+				case "build -help" : buildHelp.OpenHelp(false); break;
+				case "build -dirs" : DirBuilder.DirBuild(); break;
+				case "build -os" : oSBuilder.BuildOS(); break;
+				case "build -de" : deBuilder.DEBuild(); break;
 
 				case "exit" : Console.WriteLine("\nExiting program...\n"); Thread.Sleep(3000); break;
 			}
