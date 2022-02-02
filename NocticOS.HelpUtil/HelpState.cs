@@ -12,18 +12,21 @@ namespace NocticOS.HelpUtil
 
         string[] CmdLs = {
             "help",
+            "build-dirs",
             "input",
             "math"
         };
 
         string[] CmdRequires = {
             " <command>",
+            " <flag>",
             " <type>",
             " <operation>"
         };
 
         string[] CmdDescs = {
             " - Shows information and help on a command.",
+            " - Builds the NocticOS files and directories.",
             " - Standard Input for strings, integers and doubles.",
             " - Math for NocticOS. Does simple operations such as Addition, Subtraction, Multiplication and Division."
         };
@@ -43,21 +46,29 @@ namespace NocticOS.HelpUtil
             Console.Write("\n");
 
             switch(curCmd)
-            {       
+            {
+                case "build-dirs":
+                    Console.Write(
+                        CmdLs[1] +
+                        CmdRequires[1] +
+                        CmdDescs[1]
+                    );
+                    break;
+                    
                 case "input":
                     Console.Write(
-                        CmdLs[1] + 
-                        CmdRequires[1] + 
-                        CmdDescs[1]
+                        CmdLs[2] + 
+                        CmdRequires[2] + 
+                        CmdDescs[2]
                     );
                     inputHelp.OpenHelp(false);
                     break;
 
                 case "math":
                     Console.Write(
-                        CmdLs[2] + 
-                        CmdRequires[2] + 
-                        CmdDescs[2]
+                        CmdLs[3] + 
+                        CmdRequires[3] + 
+                        CmdDescs[3]
                     );
                     mathHelp.OpenHelp(false);
                     break;
