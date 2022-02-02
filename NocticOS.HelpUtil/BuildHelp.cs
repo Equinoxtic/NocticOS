@@ -22,8 +22,8 @@ namespace NocticOS.HelpUtil
                 " - (WIP) Builds NocticOS' Desktop Enviroment (Desktop UI)."
             };
 
-            for (int i = 0; i < null; i++) {
-                Console.Write("build ");
+            for (int i = 0; i < 3; i++) {
+                Console.Write("build " + BuildFlags[i] + BuildDescs[i] + "\n");
             }
 
             Program.DoReturn(false);
