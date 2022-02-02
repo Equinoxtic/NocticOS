@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace NocticOS.HelpUtil
 {
-    public class DirectoryBuilderHelp
+    public class BuildHelp
     {
         public void OpenHelp(bool isMissingParams)
         {
