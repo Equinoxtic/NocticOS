@@ -20,6 +20,7 @@ namespace NocticOS
 
 			// Utils
 			DirectoryBuilder DirBuilder = new DirectoryBuilder();
+			OSBuilder oSBuilder = new OSBuilder();
 			StandardMath standardMath = new StandardMath();
 
 			// States /  Classes
@@ -57,6 +58,7 @@ namespace NocticOS
 				case "build" : buildHelp.OpenHelp(true); break;
 				case "build -help" : buildHelp.OpenHelp(false); break;
 				case "build -dirs" : DirBuilder.DirBuild(); break;
+				case "build -os" : oSBuilder.BuildOS(); break;
 
 				case "exit" : Console.WriteLine("\nExiting program...\n"); Thread.Sleep(3000); break;
 			}
