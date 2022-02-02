@@ -56,7 +56,7 @@ namespace NocticOS
 				case "math -multiply" : standardMath.NocticMath("multiply", true); break;
 				case "math -divide" : standardMath.NocticMath("divide", true); break;
 
-				case "build-dirs": DirBuilder.DirBuild(); break;
+				case "build" : DirBuilder.DirBuild(); break;
 
 				case "exit" : Console.WriteLine("\nExiting program...\n"); Thread.Sleep(3000); break;
 			}
