@@ -10,7 +10,11 @@ namespace NocticOS.HelpUtil
         {
             ProgramReturn Program = new ProgramReturn();
 
-            string[] BuildFlags = {};
+            string[] BuildFlags = {
+                "-dirs",
+                "-os",
+                "-de"
+            };
 
             string[] BuildDescs = {};
 
