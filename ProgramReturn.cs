@@ -12,14 +12,13 @@ namespace NocticOS
     {
         public void DoReturn(bool showInfo)
 		{
-			DirectoryBuilder DirBuilder = new DirectoryBuilder();
-
 			// Help Utils
 			HelpState helpState = new HelpState();
 			MathHelp mathHelp = new MathHelp();
 			InputHelp inputHelp = new InputHelp();
 
 			// Utils
+			DirectoryBuilder DirBuilder = new DirectoryBuilder();
 			StandardMath standardMath = new StandardMath();
 
 			// States /  Classes

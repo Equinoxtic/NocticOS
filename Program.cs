@@ -11,15 +11,15 @@ namespace NocticOS
 	class Program
 	{
 		public static void Main(String[] args)
-		{
-			DirectoryBuilder DirBuilder = new DirectoryBuilder();
-			
+		{	
 			// Help Utils
+			DirectoryBuilderHelp DirBuildHelp = new DirectoryBuilderHelp();
 			HelpState helpState = new HelpState();
 			MathHelp mathHelp = new MathHelp();
 			InputHelp inputHelp = new InputHelp();
 
 			// Utils
+			DirectoryBuilder DirBuilder = new DirectoryBuilder();
 			StandardMath standardMath = new StandardMath();
 
 			// States /  Classes
