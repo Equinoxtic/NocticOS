@@ -16,7 +16,11 @@ namespace NocticOS.HelpUtil
                 "-de"
             };
 
-            string[] BuildDescs = {};
+            string[] BuildDescs = {
+                " - Builds the standard NocticOS directories.",
+                " - (WIP) Builds NocticOS' system files (package managers and etc).",
+                " - (WIP) Builds NocticOS' Desktop Enviroment (Desktop UI)."
+            };
 
             for (int i = 0; i < null; i++) {
                 Console.Write("build ");
