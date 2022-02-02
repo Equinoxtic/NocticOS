@@ -8,7 +8,17 @@ namespace NocticOS.HelpUtil
     {
         public void OpenHelp(bool isMissingParams)
         {
-            // No code yet.
+            ProgramReturn Program = new ProgramReturn();
+
+            string[] BuildFlags = {};
+
+            string[] BuildDescs = {};
+
+            for (int i = 0; i < null; i++) {
+                Console.Write("build ");
+            }
+
+            Program.DoReturn(false);
         }
     }
 }
