@@ -13,7 +13,7 @@ namespace NocticOS
 		public static void Main(String[] args)
 		{	
 			// Help Utils
-			DirectoryBuilderHelp DirBuildHelp = new DirectoryBuilderHelp();
+			BuildHelp buildHelp = new BuildHelp();
 			HelpState helpState = new HelpState();
 			MathHelp mathHelp = new MathHelp();
 			InputHelp inputHelp = new InputHelp();
@@ -38,6 +38,7 @@ namespace NocticOS
 				case "help" : helpState.OpenState(); break;
 				case "help input" : helpState.HelpSwitch("input"); break;
 				case "help math" : helpState.HelpSwitch("math"); break;
+				case "help build" : helpState.HelpSwitch("build"); break;
 
 				case "input" : inputHelp.OpenHelp(true); break;
 				case "input -help" : inputHelp.OpenHelp(false); break;
@@ -53,7 +54,9 @@ namespace NocticOS
 				case "math -multiply" : standardMath.NocticMath("multiply", true); break;
 				case "math -divide" : standardMath.NocticMath("divide", true); break;
 
-				case "build" : DirBuilder.DirBuild(); break;
+				case "build" : buildHelp.OpenHelp(true); break;
+				case "build -help" : buildHelp.OpenHelp(false); break;
+				case "build -dirs" : DirBuilder.DirBuild(); break;
 
 				case "exit" : Console.WriteLine("\nExiting program...\n"); Thread.Sleep(3000); break;
 			}
