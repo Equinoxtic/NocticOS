@@ -13,6 +13,10 @@ namespace NocticOS.HelpUtil
             string[] creationFlags = {};
 
             string[] creationDescs = {};
+
+            for (int i = 0; i < null; i++) {
+                Console.Write("create ");
+            }
         
             Program.DoReturn(false);
         }
