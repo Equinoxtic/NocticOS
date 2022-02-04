@@ -8,17 +8,29 @@ namespace NocticOS.Utility
     {
         public void ObjectCreation()
         {
-            // No code yet.
+            ProgramReturn Program = new ProgramReturn();
+
+            Console.Write("\nThis feature is still in WIP.\n");
+
+            Program.DoReturn(false);
         }
 
         public void FunctionCreation()
         {
-            // No code yet.
+            ProgramReturn Program = new ProgramReturn();
+
+            Console.Write("\nThis feature is still in WIP.\n");
+
+            Program.DoReturn(false);
         }
 
         public void ClassCreation()
         {
-            // No code yet.
+            ProgramReturn Program = new ProgramReturn();
+
+            Console.Write("\nThis feature is still in WIP.\n");
+
+            Program.DoReturn(false);
         }
     }
 }
