@@ -40,6 +40,8 @@ namespace NocticOS.Source
             switch(customType)
             {
                 case "obj": customCreation.ObjectCreation(); break;
+                case "func" : customCreation.FunctionCreation(); break;
+                case "class" : customCreation.ClassCreation(); break;
             }
         }
 
@@ -50,6 +52,8 @@ namespace NocticOS.Source
             switch (createType)
             {
                 case "obj" : customCreation.ObjectCreation(); break;
+                case "func" : customCreation.FunctionCreation(); break;
+                case "class" : customCreation.ClassCreation(); break;
             }
         }
     }
