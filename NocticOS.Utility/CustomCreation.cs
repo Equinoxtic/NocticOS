@@ -1,3 +1,11 @@
+/*
+Every creation command is still in BETA
+The creation commands will be different once fully released.
+The current creation command that is available for use right now is "ObjectCreation".
+Please enjoy the OS whilst I work on making changes on the creation commands.
+--- Equinoxtic
+*/
+
 using System;
 using System.Linq;
 using System.Threading.Tasks;
