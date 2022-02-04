@@ -17,6 +17,7 @@ namespace NocticOS
 			HelpState helpState = new HelpState();
 			MathHelp mathHelp = new MathHelp();
 			InputHelp inputHelp = new InputHelp();
+			CreationHelp creationHelp = new CreationHelp();
 
 			// Utils
 			DirectoryBuilder DirBuilder = new DirectoryBuilder();
@@ -54,6 +55,8 @@ namespace NocticOS
 				case "math -multiply" : standardMath.NocticMath("multiply", true); break;
 				case "math -divide" : standardMath.NocticMath("divide", true); break;
 
+				case "create" : creationHelp.OpenHelp(true); break;
+				case "create -help" : creationHelp.OpenHelp(false); break;
 				case "create -sel" : creationState.OpenState(); break;
 
 				case "build" : buildHelp.OpenHelp(true); break;
