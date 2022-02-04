@@ -32,6 +32,8 @@ namespace NocticOS.Utility
                 Console.Write(objTypes[i] + "\n");
             }
 
+            Console.Write("~ ");
+
             OBJECT_TYPE = Console.ReadLine();
 
             switch(OBJECT_TYPE) 
