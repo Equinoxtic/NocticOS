@@ -7,10 +7,10 @@ namespace NocticOS.Source
 {
     public class CreationState
     {
-        ProgramReturn Program = new ProgramReturn();
-        CustomCreation customCreation = new CustomCreation();
         public void OpenState()
         {
+            CustomCreation customCreation = new CustomCreation();
+
             string[] customTypeTags = {
                 "[obj] - ",
                 "[func] - ",
@@ -41,18 +41,16 @@ namespace NocticOS.Source
             {
                 case "obj": customCreation.ObjectCreation(); break;
             }
-
-            Program.DoReturn(false);
         }
 
         public void CreationSwitch(string createType)
         {
+            CustomCreation customCreation = new CustomCreation();
+            
             switch (createType)
             {
                 case "obj" : customCreation.ObjectCreation(); break;
             }
-
-            Program.DoReturn(false);
         }
     }
 }
