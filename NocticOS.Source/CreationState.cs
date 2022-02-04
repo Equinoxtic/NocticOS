@@ -30,5 +30,10 @@ namespace NocticOS.Source
 
             switch(customType){}
         }
+
+        public void CreationSwitch(string createType)
+        {
+            // No code yet.
+        }
     }
 }
