@@ -61,6 +61,9 @@ namespace NocticOS
 				case "create" : creationHelp.OpenHelp(true); break;
 				case "create -help" : creationHelp.OpenHelp(false); break;
 				case "create -sel" : creationState.OpenState(); break;
+				case "create -obj" : creationState.CreationSwitch("obj"); break;
+				case "create -func" : creationState.CreationSwitch("func"); break;
+				case "create -class" : creationState.CreationSwitch("class"); break;
 
 				case "build" : buildHelp.OpenHelp(true); break;
 				case "build -help" : buildHelp.OpenHelp(false); break;
