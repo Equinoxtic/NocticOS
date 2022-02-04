@@ -38,7 +38,10 @@ namespace NocticOS.Source
             
             customType = Console.ReadLine();
 
-            switch(customType){}
+            switch(customType)
+            {
+                case "obj": customCreation.ObjectCreation(); break;
+            }
         }
 
         public void CreationSwitch(string createType)
