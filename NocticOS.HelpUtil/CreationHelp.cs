@@ -9,6 +9,10 @@ namespace NocticOS.HelpUtil
         public void OpenHelp(bool isMissingParams)
         {
             ProgramReturn Program = new ProgramReturn();
+
+            string[] creationFlags = {};
+
+            string[] creationDescs = {};
         
             Program.DoReturn(false);
         }
