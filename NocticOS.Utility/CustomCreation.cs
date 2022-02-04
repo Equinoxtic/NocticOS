@@ -54,7 +54,7 @@ namespace NocticOS.Utility
                     break;
             }
 
-            Console.Write("\nName: " + OBJECT_NAME + "\nType: " + STR_OBJECT_TYPE);
+            Console.Write("Name: " + OBJECT_NAME + "\nType: " + STR_OBJECT_TYPE + "\n");
 
             Program.DoReturn(false);
         }
