@@ -20,6 +20,7 @@ namespace NocticOS.Utility
 
             var OBJECT_NAME = "";
             var OBJECT_TYPE = "";
+            var STR_OBJECT_TYPE = "";
 
             Console.Write("\nInput a name for your object: ");
             OBJECT_NAME = Console.ReadLine();
@@ -34,9 +35,20 @@ namespace NocticOS.Utility
 
             switch(OBJECT_TYPE) 
             {
-                case "str" : standardInput.InputStr(true); break;
-                case "int" : standardInput.InputInt(true); break;
-                case "dbl" : standardInput.InputDouble(true); break;
+                case "str": 
+                    STR_OBJECT_TYPE = "String";
+                    standardInput.InputStr(true); 
+                    break;
+
+                case "int": 
+                    STR_OBJECT_TYPE = "Integer";
+                    standardInput.InputInt(true); 
+                    break;
+
+                case "dbl": 
+                    STR_OBJECT_TYPE = "Double";
+                    standardInput.InputDouble(true); 
+                    break;
             }
 
             Program.DoReturn(false);
