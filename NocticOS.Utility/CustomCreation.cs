@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 
 namespace NocticOS.Utility
 {
-    public class CustomObjectCreation
+    public class CustomCreation
     {
-        public void ObjCreation()
+        public void ObjectCreation()
         {
             // No code yet.
         }
