@@ -40,43 +40,5 @@ namespace NocticOS.HelpUtil
 
             Program.DoReturn(false);
         }
-
-        public void HelpSwitch(string curCmd)
-        {
-            Console.Write("\n");
-
-            switch(curCmd)
-            {
-                case "build":
-                    Console.Write(
-                        CmdLs[1] +
-                        CmdRequires[1] +
-                        CmdDescs[1]
-                    );
-                    break;
-
-                case "input":
-                    Console.Write(
-                        CmdLs[2] + 
-                        CmdRequires[2] + 
-                        CmdDescs[2]
-                    );
-                    inputHelp.OpenHelp(false);
-                    break;
-
-                case "math":
-                    Console.Write(
-                        CmdLs[3] + 
-                        CmdRequires[3] + 
-                        CmdDescs[3]
-                    );
-                    mathHelp.OpenHelp(false);
-                    break;
-            }
-
-            Console.Write("\n");
-
-            Program.DoReturn(false);
-        }
     }
 }
