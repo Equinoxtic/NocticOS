@@ -11,6 +11,8 @@ namespace NocticOS.Source
             string[] customTypeNames = {};
 
             var customType = "";
+
+            switch(customType) {}
         }
     }
 }
