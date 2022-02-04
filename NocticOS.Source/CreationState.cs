@@ -12,7 +12,11 @@ namespace NocticOS.Source
                 "[class] - "
             };
 
-            string[] customTypeNames = {};
+            string[] customTypeNames = {
+                "Create a Custom Object.",
+                "Create a Custom Function.",
+                "Create a Custom Class."
+            };
 
             var customType = "";
 
