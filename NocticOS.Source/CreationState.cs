@@ -12,7 +12,6 @@ namespace NocticOS.Source
                 "[class] - "
             };
 
-            string[] customTypeNames = {
             string[] customTypeDescs = {
                 "Create a Custom Object.",
                 "Create a Custom Function.",
