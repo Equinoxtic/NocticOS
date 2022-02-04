@@ -34,7 +34,7 @@ namespace NocticOS.HelpUtil
         {
             Console.Write("\n");
 
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 4; i++) {
                 Console.Write(CmdLs[i]+CmdRequires[i]+CmdDescs[i]+"\n");
             }
 
