@@ -42,9 +42,6 @@ namespace NocticOS
 			switch (curSelected)
 			{
 				case "help" : helpState.OpenState(); break;
-				case "help input" : helpState.HelpSwitch("input"); break;
-				case "help math" : helpState.HelpSwitch("math"); break;
-				case "help build" : helpState.HelpSwitch("build"); break;
 
 				case "input" : inputHelp.OpenHelp(true); break;
 				case "input -help" : inputHelp.OpenHelp(false); break;
