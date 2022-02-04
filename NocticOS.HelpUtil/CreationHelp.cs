@@ -11,7 +11,7 @@ namespace NocticOS.HelpUtil
             ProgramReturn Program = new ProgramReturn();
 
             string[] creationFlags = {
-                "-help"
+                "-help",
                 "-sel",
                 "-obj",
                 "-func",
