@@ -23,6 +23,7 @@ namespace NocticOS.Utility
             var STR_OBJECT_TYPE = "";
 
             Console.Write("\nInput a name for your object: ");
+
             OBJECT_NAME = Console.ReadLine();
 
             Console.Write("\nSelect an Object Type:\n");
@@ -50,6 +51,8 @@ namespace NocticOS.Utility
                     standardInput.InputDouble(true); 
                     break;
             }
+
+            Console.Write("\nName: " + OBJECT_NAME + "\nType: " + STR_OBJECT_TYPE);
 
             Program.DoReturn(false);
         }
