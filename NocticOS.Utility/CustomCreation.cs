@@ -32,7 +32,12 @@ namespace NocticOS.Utility
 
             OBJECT_TYPE = Console.ReadLine();
 
-            switch(OBJECT_TYPE) {}
+            switch(OBJECT_TYPE) 
+            {
+                case "str" : standardInput.InputStr(true); break;
+                case "int" : standardInput.InputInt(true); break;
+                case "dbl" : standardInput.InputDouble(true); break;
+            }
 
             Program.DoReturn(false);
         }
