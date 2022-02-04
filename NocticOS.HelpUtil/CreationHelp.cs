@@ -10,7 +10,12 @@ namespace NocticOS.HelpUtil
         {
             ProgramReturn Program = new ProgramReturn();
 
-            string[] creationFlags = {};
+            string[] creationFlags = {
+                "-sel",
+                "-obj",
+                "-func",
+                "-class"
+            };
 
             string[] creationDescs = {};
 
