@@ -47,7 +47,10 @@ namespace NocticOS.Source
 
         public void CreationSwitch(string createType)
         {
-            switch (createType){}
+            switch (createType)
+            {
+                case "obj" : customCreation.ObjectCreation(); break;
+            }
 
             Program.DoReturn(false);
         }
