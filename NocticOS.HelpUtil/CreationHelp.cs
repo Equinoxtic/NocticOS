@@ -29,7 +29,11 @@ namespace NocticOS.HelpUtil
             }
 
             for (int i = 0; i < 4; i++) {
-                Console.Write("create " + creationFlags[i] + creationDescs[i] + "\n");
+                if (isMissingParams) {
+                    Console.Write("create " + creationFlags[i] + "\n");
+                } else {
+                    Console.Write("create " + creationFlags[i] + creationDescs[i] + "\n");
+                }
             }
         
             Program.DoReturn(false);
