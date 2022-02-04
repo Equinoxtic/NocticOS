@@ -11,6 +11,7 @@ namespace NocticOS.HelpUtil
             ProgramReturn Program = new ProgramReturn();
 
             string[] creationFlags = {
+                "-help"
                 "-sel",
                 "-obj",
                 "-func",
@@ -18,6 +19,7 @@ namespace NocticOS.HelpUtil
             };
 
             string[] creationDescs = {
+                " - Shows information about the 'create' command.",
                 " - Standard Creation selection, gives you the options for creating a custom object, function and class.",
                 " - Create a Custom Object, input it's own name and type.",
                 " - Create a Custom Function, input it's own name and allows you to select a code preset to run.",
@@ -30,7 +32,7 @@ namespace NocticOS.HelpUtil
 
             Console.Write("\n");
 
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 5; i++) {
                 if (isMissingParams) {
                     Console.Write("create " + creationFlags[i] + "\n");
                 } else {
