@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using NocticOS.Utility;
 
 namespace NocticOS.Utility
 {
@@ -9,6 +10,7 @@ namespace NocticOS.Utility
         public void ObjectCreation()
         {
             ProgramReturn Program = new ProgramReturn();
+            StandardInput standardInput = new StandardInput();
 
             string[] objTypes = {
                 "[str] String",
