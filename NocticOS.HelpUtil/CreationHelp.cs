@@ -24,6 +24,10 @@ namespace NocticOS.HelpUtil
                 " - Create a Custom Class, input it's own name and it also allows you to store objects within it.",
             };
 
+            if (isMissingParams) {
+                Console.Write("\nMissing parameters, please enter the following:\n");
+            }
+
             for (int i = 0; i < 4; i++) {
                 Console.Write("create " + creationFlags[i] + creationDescs[i] + "\n");
             }
