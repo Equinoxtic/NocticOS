@@ -40,17 +40,17 @@ namespace NocticOS.Utility
             {
                 case "str": 
                     STR_OBJECT_TYPE = "String";
-                    standardInput.InputStr(true); 
+                    standardInput.InputStr(true, false); 
                     break;
 
                 case "int": 
                     STR_OBJECT_TYPE = "Integer";
-                    standardInput.InputInt(true); 
+                    standardInput.InputInt(true, false); 
                     break;
 
                 case "dbl": 
                     STR_OBJECT_TYPE = "Double";
-                    standardInput.InputDouble(true); 
+                    standardInput.InputDouble(true, false); 
                     break;
             }
 

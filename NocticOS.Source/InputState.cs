@@ -42,9 +42,9 @@ namespace NocticOS.Source
 
             switch(DaInputType)
             {
-                case "str" : DaInput.InputStr(ShowDaOutput); break;
-                case "int" : DaInput.InputInt(ShowDaOutput); break;
-                case "dbl" : DaInput.InputDouble(ShowDaOutput); break; 
+                case "str" : DaInput.InputStr(ShowDaOutput, true); break;
+                case "int" : DaInput.InputInt(ShowDaOutput, true); break;
+                case "dbl" : DaInput.InputDouble(ShowDaOutput, true); break; 
             }
         }
 
@@ -52,9 +52,9 @@ namespace NocticOS.Source
         {
             switch(CurType)
             {
-                case "str": DaInput.InputStr(true); break;
-                case "int": DaInput.InputInt(true); break;
-                case "dbl": DaInput.InputDouble(true); break;
+                case "str": DaInput.InputStr(true, true); break;
+                case "int": DaInput.InputInt(true, true); break;
+                case "dbl": DaInput.InputDouble(true, true); break;
             }
         }
     }
