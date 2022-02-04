@@ -28,6 +28,8 @@ namespace NocticOS.HelpUtil
                 Console.Write("\nMissing parameters, please enter the following:\n");
             }
 
+            Console.Write("\n");
+
             for (int i = 0; i < 4; i++) {
                 if (isMissingParams) {
                     Console.Write("create " + creationFlags[i] + "\n");
