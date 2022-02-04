@@ -7,7 +7,7 @@ namespace NocticOS.Utility
     public class StandardInput
     {
         ProgramReturn Program = new ProgramReturn();
-        public void InputStr(bool ShowOutput)
+        public void InputStr(bool ShowOutput, bool ReturnToProgram)
         {
             var curString = "";
 
@@ -19,10 +19,13 @@ namespace NocticOS.Utility
                 Console.WriteLine("String: " + curString);
             }
 
-            Program.DoReturn(false);
+            if (ReturnToProgram)
+            {
+                Program.DoReturn(false);
+            }
         }
 
-        public void InputInt(bool ShowOutput)
+        public void InputInt(bool ShowOutput, bool ReturnToProgram)
         {
             int curInteger = 0;
 
@@ -34,10 +37,13 @@ namespace NocticOS.Utility
                 Console.WriteLine("Integer: " + curInteger);
             }
 
-            Program.DoReturn(false);
+            if (ReturnToProgram)
+            {
+                Program.DoReturn(false);
+            }
         }
 
-        public void InputDouble(bool ShowOutput)
+        public void InputDouble(bool ShowOutput, bool ReturnToProgram)
         {
             double curDouble = 0.0;
 
@@ -49,7 +55,10 @@ namespace NocticOS.Utility
                 Console.WriteLine("Double: " + curDouble);
             }
 
-            Program.DoReturn(false);
+            if (ReturnToProgram)
+            {
+                Program.DoReturn(false);
+            }
         }
     }
 }
