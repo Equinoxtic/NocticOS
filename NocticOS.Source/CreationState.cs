@@ -20,7 +20,7 @@ namespace NocticOS.Source
 
             var customType = "";
 
-            Console.Write("\nThis is still a BETA feature.\n");
+            Console.Write("\nThis is a BETA feature.\n");
 
             Console.Write("\nSelect an action:\n");
 
