@@ -21,6 +21,10 @@ namespace NocticOS.Source
             var customType = "";
 
             switch(customType) {}
+            Console.Write("\nThis is still a BETA feature.\n");
+
+            Console.Write("\nSelect an action:\n");
+
             for (int i = 0; i < 3; i++) {
                 Console.Write(customTypeTags[i] + customTypeDescs[i] + "\n");
             }
