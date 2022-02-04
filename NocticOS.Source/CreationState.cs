@@ -6,7 +6,11 @@ namespace NocticOS.Source
     {
         public void OpenState()
         {
-            // No code yet.
+            string[] customTypeTags = {};
+
+            string[] customTypeNames = {};
+
+            var customType = "";
         }
     }
 }
