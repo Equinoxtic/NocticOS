@@ -6,7 +6,11 @@ namespace NocticOS.Source
     {
         public void OpenState()
         {
-            string[] customTypeTags = {};
+            string[] customTypeTags = {
+                "[obj] - ",
+                "[func] - ",
+                "[class] - "
+            };
 
             string[] customTypeNames = {};
 
