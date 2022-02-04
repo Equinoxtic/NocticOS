@@ -48,6 +48,8 @@ namespace NocticOS.Source
         public void CreationSwitch(string createType)
         {
             switch (createType){}
+
+            Program.DoReturn(false);
         }
     }
 }
