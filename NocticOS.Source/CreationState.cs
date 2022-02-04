@@ -7,11 +7,10 @@ namespace NocticOS.Source
 {
     public class CreationState
     {
+        ProgramReturn Program = new ProgramReturn();
+        CustomCreation customCreation = new CustomCreation();
         public void OpenState()
         {
-            ProgramReturn Program = new ProgramReturn();
-            CustomCreation customCreation = new CustomCreation();
-
             string[] customTypeTags = {
                 "[obj] - ",
                 "[func] - ",
