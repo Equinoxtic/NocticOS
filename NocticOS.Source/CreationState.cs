@@ -33,7 +33,7 @@ namespace NocticOS.Source
 
         public void CreationSwitch(string createType)
         {
-            // No code yet.
+            switch (createType){}
         }
     }
 }
