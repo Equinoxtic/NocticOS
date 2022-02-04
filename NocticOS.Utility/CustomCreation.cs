@@ -10,5 +10,10 @@ namespace NocticOS.Utility
         {
             // No code yet.
         }
+
+        public void FunctionCreation()
+        {
+            // No code yet.
+        }
     }
 }
