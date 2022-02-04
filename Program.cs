@@ -27,6 +27,7 @@ namespace NocticOS
 			// States /  Classes
 			InputState StandardInput = new InputState();
 			MathState mathState = new MathState();
+			CreationState creationState = new CreationState();
 
 			var curSelected = "";
 			
@@ -55,6 +56,8 @@ namespace NocticOS
 				case "math -subtract" : standardMath.NocticMath("subtract", true); break;
 				case "math -multiply" : standardMath.NocticMath("multiply", true); break;
 				case "math -divide" : standardMath.NocticMath("divide", true); break;
+
+				case "create -sel" : creationState.OpenState(); break;
 
 				case "build" : buildHelp.OpenHelp(true); break;
 				case "build -help" : buildHelp.OpenHelp(false); break;
