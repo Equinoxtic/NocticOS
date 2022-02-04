@@ -10,7 +10,11 @@ namespace NocticOS.Utility
         {
             ProgramReturn Program = new ProgramReturn();
 
-            string[] objTypes = {};
+            string[] objTypes = {
+                "[str] String",
+                "[int] Integer",
+                "[dbl] Double"
+            };
 
             var OBJECT_NAME = "";
             var OBJECT_TYPE = "";
