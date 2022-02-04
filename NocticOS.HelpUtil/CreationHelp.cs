@@ -1,4 +1,6 @@
 using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace NocticOS.HelpUtil
 {
@@ -6,7 +8,9 @@ namespace NocticOS.HelpUtil
     {
         public void OpenHelp(bool isMissingParams)
         {
-            // No code yet.
+            ProgramReturn Program = new ProgramReturn();
+        
+            Program.DoReturn(false);
         }
     }
 }
