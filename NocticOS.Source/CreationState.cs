@@ -28,6 +28,10 @@ namespace NocticOS.Source
                 Console.Write(customTypeTags[i] + customTypeDescs[i] + "\n");
             }
 
+            Console.Write("~ ");
+            
+            customType = Console.ReadLine();
+
             switch(customType){}
         }
 
