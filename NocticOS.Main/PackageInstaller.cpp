@@ -19,7 +19,6 @@ void UninstallPackage(int cur_package = 0)
 
 int main()
 {
-	cout << "Hello World!";
-	InstallPackage();
+	string options;
 	return 0;
 }
