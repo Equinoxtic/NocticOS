@@ -7,6 +7,7 @@ Read, "COMPILING.md" to learn how to compile this (C++) file
 
 using namespace std;
 
+void PackageSelection();
 void InstallPackage(int cur_package = 0);
 void UninstallPackage(int cur_package = 0);
 
@@ -27,9 +28,15 @@ int main()
 	switch(options)
 	{
 		case 1:
+			PackageSelection();
+			break;
+
+		case 2:
+			InstallPackage();
 			break;
 		
-		case 2:
+		case 3:
+			UninstallPackage();
 			break;
 	}
 
