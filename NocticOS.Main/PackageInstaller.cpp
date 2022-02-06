@@ -20,8 +20,11 @@ void UninstallPackage(int cur_package = 0)
 int main()
 {
 	string options;
+	int currentPackage;
 
-	string the_options[1] = {};
+	string the_options[1] = {
+		"Newtonsoft.Json"
+	};
 
 	cout << "Select a package to install:\n";
 
@@ -30,6 +33,13 @@ int main()
 	}
 
 	cin >> options;
+
+	switch(options)
+	{
+		case 1:
+			currentPackage = 1;
+			break;
+	}
 
 	return 0;
 }
