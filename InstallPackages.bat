@@ -6,13 +6,11 @@
 :: Install Prompt
 :INSTALLNEWTONPROMPT
 
-SET /P OPTS=Install Packages for NocticOS? [y/n]:
+SET /P OPTS=Install Packages for NocticOS? [y/n]: 
 
 IF %OPTS%=="y" GOTO INSTALLNEWTON
 
 IF %OPTS%=="n" ECHO	 Operation Cancelled.
-
-EXIT
 
 
 :: Installation
