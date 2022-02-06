@@ -15,7 +15,11 @@ void InstallPackage(int cur_package = 0)
 
 void InstallPackagePrompt(int curPackage = 0, string PackageName)
 {
-	/* No code yet. */
+	var options;
+
+	cout << "\nWould you like to install " + PackageName + "? [y/n]: ";
+
+	cin >> options;
 }
 
 
@@ -27,7 +31,11 @@ void UninstallPackage(int cur_package = 0)
 
 void UninstallPackagePrompt(int curPackage = 0, string PackageName)
 {
-	/* No code yet. */
+	var options;
+
+	cout << "\nWould you like to install " + PackageName + "? [y/n]: ";
+
+	cin >> options;
 }
 
 
