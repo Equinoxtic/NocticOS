@@ -7,16 +7,31 @@ Read, "COMPILING.md" to learn how to compile this (C++) file
 
 using namespace std;
 
+// Install Functions
 void InstallPackage(int cur_package = 0)
 {
 	/* No code yet. */
 }
 
+void InstallPackagePrompt(int curPacakge = 0)
+{
+	/* No code yet. */
+}
+
+
+// Uninstall Functions
 void UninstallPackage(int cur_package = 0)
 {
 	/* No code yet. */
-}	
+}
 
+void UninstallPackagePrompt(int curPacakge = 0)
+{
+	/* No code yet. */
+}
+
+
+// Main
 int main()
 {
 	string options;
