@@ -15,6 +15,10 @@ int main()
 	string options;
 
 	string daOptions[3] = {};
-	
+
+	for (int i = 0; i < 3; i++) {
+		cout << daOptions[i];
+	}
+
 	return 0;
 }
