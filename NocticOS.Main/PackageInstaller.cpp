@@ -7,10 +7,19 @@ Read, "COMPILING.md" to learn how to compile this (C++) file
 
 using namespace std;
 
-void InstallPackage(int cur_package = 0);
-void UninstallPackage(int cur_package = 0);
+void InstallPackage(int cur_package = 0)
+{
+	/* No code yet. */
+}
+
+void UninstallPackage(int cur_package = 0)
+{
+	/* No code yet. */
+}	
 
 int main()
 {
+	cout << "Hello World!";
+	InstallPackage();
 	return 0;
 }
