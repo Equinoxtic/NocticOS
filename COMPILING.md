@@ -55,6 +55,22 @@ Now type in, `cd NocticOS`, and then `code .`
 
 After running `code .` it should open up VS-Code and the project.
 
+## Installing Newtonsoft.Json
+
+Make sure to have .NET installed for this next step.
+
+### FIRST OPTION
+
+* Open up the NocticOS folder in Visual Studio Code.
+* Open up the Terminal.
+* Type in, `dotnet add package Newtonsoft.Json`
+
+### SECOND OPTION
+
+* Open up the `NocticOS.BatchFiles` directory.
+* Double-click on `InstallNewtonsoft(.bat)`.
+* After the prompt pops up, enter "y" to install `Newtonsoft.Json`.
+
 ## Building NocticOS
 
 * Open up your desired Terminal.
