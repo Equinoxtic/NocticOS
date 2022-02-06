@@ -42,12 +42,12 @@ void UninstallPackagePrompt(int curPackage = 0, string PackageName)
 {
 	var options;
 
-	cout << "\nWould you like to install " + PackageName + "? [y/n]: ";
+	cout << "\nWould you like to uninstall " + PackageName + "? [y/n]: ";
 
 	cin >> options;
 
 	if (options == "y" || options == "Y") {
-		InstallPackage(curPackage);
+		UninstallPackage(curPackage);
 	} else if (options == "n" || options == "N") {
 		cout << "Operation Cancelled.";
 	} else {
