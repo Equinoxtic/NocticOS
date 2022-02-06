@@ -22,5 +22,10 @@ int main()
 	string options;
 
 	string the_options[3] = {};
+
+	for (int i = 0; i < 3; i++) {
+		cout << the_options[i];
+	}
+	
 	return 0;
 }
