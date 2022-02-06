@@ -13,3 +13,15 @@ IF %OPTS%=="y" GOTO INSTALLNEWTON
 IF %OPTS%=="n" ECHO	 Operation Cancelled.
 
 EXIT
+
+
+:: Installation
+:INSTALLNEWTON
+
+ECHO Adding Newtonsoft.Json... 
+
+ECHO: 
+
+dotnet add package Newtonsoft.Json
+
+EXIT
