@@ -13,7 +13,7 @@ void InstallPackage(int cur_package = 0)
 	/* No code yet. */
 }
 
-void InstallPackagePrompt(int curPackage = 0)
+void InstallPackagePrompt(int curPackage = 0, string PackageName)
 {
 	/* No code yet. */
 }
@@ -25,7 +25,7 @@ void UninstallPackage(int cur_package = 0)
 	/* No code yet. */
 }
 
-void UninstallPackagePrompt(int curPackage = 0)
+void UninstallPackagePrompt(int curPackage = 0, string PackageName)
 {
 	/* No code yet. */
 }
