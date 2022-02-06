@@ -16,9 +16,13 @@ int main()
 
 	string daOptions[3] = {};
 
+	cout << "Select an Option:\n";
+
 	for (int i = 0; i < 3; i++) {
 		cout << daOptions[i];
 	}
+
+	cin >> options;
 
 	return 0;
 }
