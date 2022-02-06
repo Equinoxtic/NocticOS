@@ -4,6 +4,7 @@ Read, "COMPILING.md" to learn how to compile this (C++) file
 */
 
 #include <iostream>
+#include <stdlib.h>
 
 using namespace std;
 
