@@ -24,4 +24,6 @@ ECHO:
 
 dotnet remove package Newtonsoft.Json
 
+ECHO:
+
 PAUSE
