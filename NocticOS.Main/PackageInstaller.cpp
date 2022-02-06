@@ -20,5 +20,7 @@ void UninstallPackage(int cur_package = 0)
 int main()
 {
 	string options;
+
+	string the_options[3] = {};
 	return 0;
 }
