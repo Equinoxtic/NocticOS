@@ -1,4 +1,4 @@
-:: Batch Script for installing pacakges for NocticOS
+:: Batch Script for installing Newtonsoft for NocticOS
 
 @ECHO OFF
 
@@ -16,10 +16,12 @@ IF %OPTS%=="n" ECHO	 Operation Cancelled.
 :: Installation
 :INSTALLNEWTON
 
+ECHO:
+
 ECHO Adding Newtonsoft.Json... 
 
 ECHO: 
 
 dotnet add package Newtonsoft.Json
 
-EXIT
+PAUSE
