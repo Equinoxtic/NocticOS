@@ -21,11 +21,15 @@ int main()
 {
 	string options;
 
-	string the_options[3] = {};
+	string the_options[1] = {};
 
-	for (int i = 0; i < 3; i++) {
+	cout << "Select a package to install:\n";
+
+	for (int i = 0; i < 1; i++) {
 		cout << the_options[i];
 	}
-	
+
+	cin >> options;
+
 	return 0;
 }
