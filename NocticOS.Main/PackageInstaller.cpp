@@ -20,6 +20,14 @@ void InstallPackagePrompt(int curPackage = 0, string PackageName)
 	cout << "\nWould you like to install " + PackageName + "? [y/n]: ";
 
 	cin >> options;
+
+	if (options == "y" || options == "Y") {
+		InstallPackage(curPackage);
+	} else if (options == "n" || options == "N") {
+		cout << "Operation Cancelled.";
+	} else {
+		cout << "Unknown Character.";
+	}
 }
 
 
@@ -36,6 +44,14 @@ void UninstallPackagePrompt(int curPackage = 0, string PackageName)
 	cout << "\nWould you like to install " + PackageName + "? [y/n]: ";
 
 	cin >> options;
+
+	if (options == "y" || options == "Y") {
+		InstallPackage(curPackage);
+	} else if (options == "n" || options == "N") {
+		cout << "Operation Cancelled.";
+	} else {
+		cout << "Unknown Character.";
+	}
 }
 
 
