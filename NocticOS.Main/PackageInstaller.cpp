@@ -12,5 +12,9 @@ void UninstallPackage(int cur_package = 0);
 
 int main()
 {
+	string options;
+
+	string daOptions[3] = {};
+	
 	return 0;
 }
