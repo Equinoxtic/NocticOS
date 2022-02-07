@@ -4,5 +4,12 @@ using namespace std;
 
 int main()
 {
-	retunr 0;
+	int action;
+
+	cin >> action;
+
+	switch(action)
+	{}
+
+	return 0;
 }
