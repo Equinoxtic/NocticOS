@@ -15,7 +15,7 @@ void InstallPackage(int cur_package = 0, string PackageToBeInstalled)
 
 	cout << msg;
 
-	system("NocticOS.BatchFiles\InstallNewtonsoft.bat");
+	system("NocticOS.BatchFiles/InstallNewtonsoft.bat");
 }
 
 void InstallPackagePrompt(int curPackage = 0, string PackageName)
