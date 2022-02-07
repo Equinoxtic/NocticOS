@@ -43,6 +43,20 @@ namespace NocticOS.Utility
             }
         }
 
+        public void InputFloat(bool ShowOutput, bool ReturnToProgram)
+        {
+            float curFloat = 0;
+
+            Console.Write("\nInput some numbers for your float: ");
+            curFloat = float.Parse(Console.ReadLine());
+
+            if (ShowOutput)
+            {}
+
+            if (ReturnToProgram)
+            {}
+        }
+
         public void InputDouble(bool ShowOutput, bool ReturnToProgram)
         {
             double curDouble = 0.0;
