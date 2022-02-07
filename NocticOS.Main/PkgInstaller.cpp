@@ -2,6 +2,9 @@
 
 using namespace std;
 
+void InstallPackages();
+void UninstallPackages();
+
 int main()
 {
 	int action;
@@ -23,4 +26,28 @@ int main()
 	{}
 
 	return 0;
+}
+
+void InstallPackages()
+{
+	string packagels[2] = {
+		"dotnet add .\\NocticOS.csproj Newtonsoft.Json",
+		"dotnet add .\\NocticOS.csproj NodaTime"
+	};
+
+	for (int i = 0; i < 2; i++) {
+		system(packagels[i]);
+	}
+}
+
+void UninstallPackages()
+{
+	string packagels[2] = {
+		"dotnet remove .\\NocticOS.csproj Newtonsoft.Json",
+		"dotnet remove .\\NocticOS.csproj NodaTime"
+	};
+
+	for (int i = 0; i < 2; i++) {
+		system(packagels[i]);
+	}
 }
