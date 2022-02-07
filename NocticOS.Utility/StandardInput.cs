@@ -51,10 +51,14 @@ namespace NocticOS.Utility
             curFloat = float.Parse(Console.ReadLine());
 
             if (ShowOutput)
-            {}
+            {
+                Console.Write("Float: " + curFloat);
+            }
 
             if (ReturnToProgram)
-            {}
+            {
+                Program.DoReturn(false);
+            }
         }
 
         public void InputDouble(bool ShowOutput, bool ReturnToProgram)
