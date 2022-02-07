@@ -9,7 +9,7 @@ Read, "COMPILING.md" to learn how to compile this (C++) file
 using namespace std;
 
 // Install Functions
-void InstallPackage(int cur_package = 0, string PackageToBeInstalled)
+void InstallPackage(int cur_package = 0, string PackageToBeInstalled = "")
 {
 	string msg = "Installing " + PackageToBeInstalled + "...\n";
 
@@ -18,9 +18,9 @@ void InstallPackage(int cur_package = 0, string PackageToBeInstalled)
 	system("NocticOS.BatchFiles/InstallNewtonsoft.bat");
 }
 
-void InstallPackagePrompt(int curPackage = 0, string PackageName)
+void InstallPackagePrompt(int curPackage = 0, string PackageName = "")
 {
-	var options;
+	string options;
 
 	cout << "\nWould you like to install " + PackageName + "? [y/n]: ";
 
@@ -42,9 +42,9 @@ void UninstallPackage(int cur_package = 0)
 	/* No code yet. */
 }
 
-void UninstallPackagePrompt(int curPackage = 0, string PackageName)
+void UninstallPackagePrompt(int curPackage = 0, string PackageName = "")
 {
-	var options;
+	string options;
 
 	cout << "\nWould you like to uninstall " + PackageName + "? [y/n]: ";
 
@@ -63,11 +63,12 @@ void UninstallPackagePrompt(int curPackage = 0, string PackageName)
 // Main
 int main()
 {
-	string options;
+	int options;
+
 	int currentPackage;
 
 	string the_options[1] = {
-		"Newtonsoft.Json"
+		"[1] Newtonsoft.Json"
 	};
 
 	cout << "Select a package to install:\n";
