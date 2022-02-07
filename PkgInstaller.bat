@@ -22,15 +22,13 @@ IF %OPTS%==2 (
 
 SET /P OPTS=Install Packages? [y/n]: 
 
-IF %OPTS%=="y" (
+IF %OPTS%==y (
 	ECHO:
 	dotnet add package Newtonsoft.Json
 	ECHO:
-	PAUSE
-) ELSE (
-	ECHO:
-	ECHO Installation Cancelled.
 )
+
+PAUSE
 
 :: Uninstall
 :UNINSTALLPACKAGES
@@ -42,7 +40,4 @@ IF %OPTS%=="y" (
 	dotnet remove package Newtonsoft.Json
 	ECHO:
 	PAUSE
-) ELSE (
-	ECHO:
-	ECHO Installation Cancelled.
 )
