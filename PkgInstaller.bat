@@ -7,6 +7,7 @@
 
 ECHO [1] INSTALL
 ECHO [2] UNINSTALL
+ECHO:
 SET /P OPTS=Select an action: 
 
 IF %OPTS%==1 (
