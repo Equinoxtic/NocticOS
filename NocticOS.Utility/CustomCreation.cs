@@ -23,6 +23,7 @@ namespace NocticOS.Utility
             string[] objTypes = {
                 "[str] String",
                 "[int] Integer",
+                "[flt] Float",
                 "[dbl] Double"
             };
 
@@ -36,7 +37,7 @@ namespace NocticOS.Utility
 
             Console.Write("\nSelect an Object Type:\n");
 
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 4; i++) {
                 Console.Write(objTypes[i] + "\n");
             }
 
@@ -49,6 +50,11 @@ namespace NocticOS.Utility
                 case "str": 
                     STR_OBJECT_TYPE = "String";
                     standardInput.InputStr(true, false); 
+                    break;
+
+                case "flt":
+                    STR_OBJECT_TYPE = "Float";
+                    standardInput.InputFloat(true, false);
                     break;
 
                 case "int": 
