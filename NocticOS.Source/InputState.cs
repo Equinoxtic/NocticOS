@@ -17,12 +17,13 @@ namespace NocticOS.Source
             string[] InputTypeList = {
                 "[str] String | ",
                 "[int] Integer | ",
+                "[flt] Float |",
                 "[dbl] Double"
             };
 
             Console.Write("\nSelect a type for input:\n");
 
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 4; i++) {
                 Console.Write(InputTypeList[i]);
             }
 
@@ -43,6 +44,7 @@ namespace NocticOS.Source
             switch(DaInputType)
             {
                 case "str" : DaInput.InputStr(ShowDaOutput, true); break;
+                case "flt" : DaInput.InputStr(ShowDaOutput, true); break;
                 case "int" : DaInput.InputInt(ShowDaOutput, true); break;
                 case "dbl" : DaInput.InputDouble(ShowDaOutput, true); break;
             }
@@ -54,6 +56,7 @@ namespace NocticOS.Source
             {
                 case "str": DaInput.InputStr(true, true); break;
                 case "int": DaInput.InputInt(true, true); break;
+                case "flt": DaInput.InputFloat(true, true); break;
                 case "dbl": DaInput.InputDouble(true, true); break;
             }
         }
