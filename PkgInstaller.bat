@@ -5,7 +5,9 @@
 :: Options Prompt
 :OPTIONSPROMPT
 
+ECHO:
 ECHO [1] INSTALL
+ECHO:
 ECHO [2] UNINSTALL
 ECHO:
 SET /P OPTS=Select an action: 
