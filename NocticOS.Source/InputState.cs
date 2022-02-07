@@ -44,7 +44,7 @@ namespace NocticOS.Source
             {
                 case "str" : DaInput.InputStr(ShowDaOutput, true); break;
                 case "int" : DaInput.InputInt(ShowDaOutput, true); break;
-                case "dbl" : DaInput.InputDouble(ShowDaOutput, true); break; 
+                case "dbl" : DaInput.InputDouble(ShowDaOutput, true); break;
             }
         }
 
