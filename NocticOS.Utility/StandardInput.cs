@@ -52,7 +52,7 @@ namespace NocticOS.Utility
 
             if (ShowOutput)
             {
-                Console.Write("Float: " + curFloat);
+                Console.WriteLine("Float: " + curFloat);
             }
 
             if (ReturnToProgram)
