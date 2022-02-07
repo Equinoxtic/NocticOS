@@ -24,3 +24,4 @@ obj/NocticOS.csproj.nuget.g.props
 obj/NocticOS.csproj.nuget.g.targets
 obj/project.assets.json
 obj/project.nuget.cache
+NocticOS.csproj
