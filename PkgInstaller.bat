@@ -25,10 +25,13 @@ SET /P OPTS=Install Packages? [y/n]:
 IF %OPTS%==y (
 	ECHO:
 	dotnet add package Newtonsoft.Json
+	dotnet add package NodaTime
 	ECHO:
 )
 
 PAUSE
+
+GOTO OPTIONSPROMPT
 
 :: Uninstall
 :UNINSTALLPACKAGES
@@ -38,6 +41,7 @@ SET /P OPTS=Uninstall Packages? [y/n]:
 IF %OPTS%=="y" (
 	ECHO:
 	dotnet remove package Newtonsoft.Json
+	dotnet remove package NodaTime
 	ECHO:
 	PAUSE
 )
