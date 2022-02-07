@@ -4,10 +4,8 @@ Read, "COMPILING.md" to learn how to compile this (C++) file
 */
 
 #include <iostream>
+#include <fstream>
 #include <stdlib.h>
-#include <shlobj.h>
-#include <shlwapi.h>
-#include <objbase.h>
 
 using namespace std;
 
@@ -17,7 +15,6 @@ void InstallPackage(int cur_package = 0, string thePackage = "")
 	switch (cur_package)
 	{
 		case 1:
-			ShellExecute("C:\\NocticOS\\");
 			break;
 	}
 }
