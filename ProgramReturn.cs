@@ -46,6 +46,7 @@ namespace NocticOS
 
 				case "input" : inputHelp.OpenHelp(true); break;
 				case "input -help" : inputHelp.OpenHelp(false); break;
+				case "input -sel" : StandardInput.InputSelect(); break;
 				case "input -str" : StandardInput.InputSwitch("str"); break;
 				case "input -flt" : StandardInput.InputSwitch("flt"); break;
 				case "input -int" : StandardInput.InputSwitch("int"); break;
