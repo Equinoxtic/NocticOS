@@ -40,7 +40,7 @@ namespace NocticOS.HelpUtil
         {
             Console.Write("\n");
 
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < 6; i++) {
                 Console.Write(CmdLs[i]+CmdRequires[i]+CmdDescs[i]+"\n");
             }
 
