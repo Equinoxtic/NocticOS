@@ -33,7 +33,7 @@ namespace NocticOS
 
 			var curSelected = "";
 			
-			Console.WriteLine("\nNocticOS - Version (1.1.4)");
+			Console.WriteLine("\nNocticOS - Version (1.1.5)");
 			Console.Write("Type in 'help' to get started.");
 			Console.Write("\n> ");
 			curSelected = Console.ReadLine();
