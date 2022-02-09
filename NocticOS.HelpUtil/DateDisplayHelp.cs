@@ -1,11 +1,13 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using NocticOS.Utility;
 
 namespace NocticOS.HelpUtil
 {
     public class DateDisplayHelp
     {
+        ThrowError throwError = new ThrowError();
         public void OpenHelp(bool isMissingParams)
         {
             ProgramReturn Program = new ProgramReturn();
@@ -25,7 +27,7 @@ namespace NocticOS.HelpUtil
             };
 
             if (isMissingParams) {
-                Console.Write("\nMissing Parameters, please enter the following:\n");
+                throwError.MissingParamsThrow(true);   
             }
 
             for (int i = 0; i < 4; i++) {
