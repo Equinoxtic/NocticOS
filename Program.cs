@@ -11,7 +11,7 @@ namespace NocticOS
 	class Program
 	{
 		public static void Main(String[] args)
-		{	
+		{
 			// Help Utils
 			BuildHelp buildHelp = new BuildHelp();
 			HelpState helpState = new HelpState();
@@ -23,6 +23,7 @@ namespace NocticOS
 			DirectoryBuilder DirBuilder = new DirectoryBuilder();
 			OSBuilder oSBuilder = new OSBuilder();
 			DesktopEnviromentBuilder deBuilder = new DesktopEnviromentBuilder();
+			DateDisplay DateDisplayer = new DateDisplay();
 			StandardMath standardMath = new StandardMath();
 
 			// States /  Classes
@@ -40,6 +41,8 @@ namespace NocticOS
 			switch (curSelected)
 			{
 				case "help" : helpState.OpenState(); break;
+
+				case "time" : DateDisplayer.DisplayTime();
 
 				case "input" : inputHelp.OpenHelp(true); break;
 				case "input -help" : inputHelp.OpenHelp(false); break;
