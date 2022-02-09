@@ -10,6 +10,10 @@ namespace NocticOS.HelpUtil
         {
             ProgramReturn Program = new ProgramReturn();
 
+            string[] dateDisplayLs = {};
+
+            string[] dateDisplayDescs = {};
+
             Program.DoReturn(false);
         }
     }
