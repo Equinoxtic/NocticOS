@@ -22,7 +22,9 @@ namespace NocticOS.HelpUtil
                 " - Displays the current month, date and time."
             };
 
-            for (int i = 0; i < null; i++) {}
+            for (int i = 0; i < 3; i++) {
+                Console.Write(dateDisplayLs[i] + dateDisplayDescs[i] + "\n");
+            }
 
             Program.DoReturn(false);
         }
