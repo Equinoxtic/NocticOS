@@ -11,26 +11,28 @@ namespace NocticOS.Utility
         * oc - Operation Cancelled
         * mp - Missing Parameters
         */
-        public void DoThrow(string currentType)
+        public void ThrowSwitch(string currentType, bool shouldNewLine)
         {
             switch(currentType)
             {
                 // Empty Value
                 case "ev":
-                    EmptyValThrow();
+                    EmptyValThrow(shouldNewLine);
                     break;
                 
                 // Operation Cancelled
                 case "oc":
+                    OperationCancelledThrow(shouldNewLine);
                     break;
 
                 // Missing Parameters
                 case "mp":
+                    MissingParamsThrow(shouldNewLine);
                     break;
             }
         }
 
-        static void EmptyValThrow(bool insertNewLine)
+        public void EmptyValThrow(bool insertNewLine)
         {
             if (insertNewLine) {
                 Console.Write("\n");
@@ -38,7 +40,7 @@ namespace NocticOS.Utility
             Console.Write("Empty Value, please try again.\n");
         }
 
-        static void OperationCancelledThrow(bool insertNewLine)
+        public void OperationCancelledThrow(bool insertNewLine)
         {
             if (insertNewLine) {
                 Console.Write("\n");
@@ -46,7 +48,7 @@ namespace NocticOS.Utility
             Console.Write("Operation Cancelled.\n");
         }
 
-        static void MissingParamsThrow(bool insertNewLine)
+        public void MissingParamsThrow(bool insertNewLine)
         {
             if (insertNewLine) {
                 Console.Write("\n");
