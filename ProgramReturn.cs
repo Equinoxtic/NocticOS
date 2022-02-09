@@ -23,6 +23,7 @@ namespace NocticOS
 			DirectoryBuilder DirBuilder = new DirectoryBuilder();
 			OSBuilder oSBuilder = new OSBuilder();
 			DesktopEnviromentBuilder deBuilder = new DesktopEnviromentBuilder();
+			DateDisplay DateDisplayer = new DateDisplay();
 			StandardMath standardMath = new StandardMath();
 
 			// States /  Classes
@@ -43,6 +44,10 @@ namespace NocticOS
 			switch (curSelected)
 			{
 				case "help" : helpState.OpenState(); break;
+
+				case "time" : DateDisplayer.DisplayTime(); break;
+				case "date" : DateDisplayer.DisplayDate(); break;
+				case "time-and-date" : DateDisplayer.DisplayTimeAndDate(); break;
 
 				case "input" : inputHelp.OpenHelp(true); break;
 				case "input -help" : inputHelp.OpenHelp(false); break;
