@@ -44,7 +44,7 @@ namespace NocticOS
 
 				case "time" : DateDisplayer.DisplayTime(); break;
 				case "date" : DateDisplayer.DisplayDate(); break;
-				case "time-and-date" : DateDisplayer.DisplayTimeAndDate(); break;
+				case "day" : DateDisplayer.DisplayTimeAndDate(); break;
 
 				case "input" : inputHelp.OpenHelp(true); break;
 				case "input -help" : inputHelp.OpenHelp(false); break;
