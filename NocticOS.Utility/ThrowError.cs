@@ -11,5 +11,22 @@ namespace NocticOS.Utility
         * oc - Operation Cancelled
         * mp - Missing Parameters
         */
+        public void DoThrow(string currentType)
+        {
+            switch(currentType)
+            {
+                // Empty Value
+                case "ev":
+                    break;
+                
+                // Operation Cancelled
+                case "oc":
+                    break;
+
+                // Missing Parameters
+                case "mp":
+                    break;
+            }
+        }
     }
 }
