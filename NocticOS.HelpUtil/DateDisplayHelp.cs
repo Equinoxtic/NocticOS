@@ -14,6 +14,8 @@ namespace NocticOS.HelpUtil
 
             string[] dateDisplayDescs = {};
 
+            for (int i = 0; i < null; i++) {}
+
             Program.DoReturn(false);
         }
     }
