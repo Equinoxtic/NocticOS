@@ -7,6 +7,7 @@ namespace NocticOS.Source
 {
     public class InputState
     {
+        ThrowError throwError = new ThrowError();
         StandardInput DaInput = new StandardInput();
         public void InputSelect()
         {
@@ -38,7 +39,7 @@ namespace NocticOS.Source
             } else if (options == "n" || options == "N") {
                 ShowDaOutput = false;
             } else {
-                Console.WriteLine("Operation cancelled.");
+                throwError.OperationCancelledThrow(false);
             }
 
             switch(DaInputType)
