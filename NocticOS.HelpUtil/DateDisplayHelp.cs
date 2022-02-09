@@ -10,9 +10,17 @@ namespace NocticOS.HelpUtil
         {
             ProgramReturn Program = new ProgramReturn();
 
-            string[] dateDisplayLs = {};
+            string[] dateDisplayLs = {
+                "-t",
+                "-d",
+                "-cur"
+            };
 
-            string[] dateDisplayDescs = {};
+            string[] dateDisplayDescs = {
+                " - Displays the current time.",
+                " - Displays the current date.",
+                " - Displays the current month, date and time."
+            };
 
             for (int i = 0; i < null; i++) {}
 
