@@ -14,6 +14,7 @@ namespace NocticOS.HelpUtil
                 "-help",
                 "-str",
                 "-int",
+                "-flt",
                 "-dbl"
             };
 
@@ -21,6 +22,7 @@ namespace NocticOS.HelpUtil
                 " - Shows help and information for the 'input' command.",
                 " - Standard string input.",
                 " - Standard integer input.",
+                " - Standard float input.",
                 " - Standard double input."
             };
 
