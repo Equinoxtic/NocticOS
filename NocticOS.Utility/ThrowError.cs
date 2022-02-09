@@ -17,6 +17,7 @@ namespace NocticOS.Utility
             {
                 // Empty Value
                 case "ev":
+                    EmptyValThrow();
                     break;
                 
                 // Operation Cancelled
@@ -27,6 +28,11 @@ namespace NocticOS.Utility
                 case "mp":
                     break;
             }
+        }
+
+        static void EmptyValThrow()
+        {
+            Console.WriteLine("\nEmpty Value, please try again.");
         }
     }
 }
