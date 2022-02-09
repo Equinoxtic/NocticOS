@@ -36,7 +36,7 @@ namespace NocticOS.Utility
             curInteger = Convert.ToInt32(Console.ReadLine());
 
             if (ShowOutput) {
-                    Console.WriteLine("Integer: " + curInteger);
+                Console.WriteLine("Integer: " + curInteger);
             }
 
             if (ReturnToProgram) {
