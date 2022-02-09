@@ -44,6 +44,7 @@ SET /P OPTS=Uninstall Packages? [y/n]:
 
 IF %OPTS%=="y" (
 	ECHO:
+	cd..
 	dotnet remove package Newtonsoft.Json
 	dotnet remove package NodaTime
 	ECHO:
