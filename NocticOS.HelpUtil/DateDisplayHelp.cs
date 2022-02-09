@@ -6,7 +6,7 @@ namespace NocticOS.HelpUtil
 {
     public class DateDisplayHelp
     {
-        public void OpenHelp()
+        public void OpenHelp(bool isMissingParams)
         {
             ProgramReturn Program = new ProgramReturn();
 
