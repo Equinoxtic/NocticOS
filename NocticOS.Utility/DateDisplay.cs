@@ -16,6 +16,14 @@ namespace NocticOS.Utility
             Program.DoReturn(false);
         }
 
+        public void DisplayDate()
+        {
+            Console.Write("\n");
+
+            Console.WriteLine("Date: " + DateTime.Now.ToShortDateString());
+
+            Program.DoReturn(false);
+        }
             Program.DoReturn(false);
         }
     }
