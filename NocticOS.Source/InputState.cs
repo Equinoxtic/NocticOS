@@ -7,6 +7,7 @@ namespace NocticOS.Source
 {
     public class InputState
     {
+        ProgramReturn Program = new ProgramReturn();
         ThrowError throwError = new ThrowError();
         StandardInput DaInput = new StandardInput();
         public void InputSelect()
@@ -36,18 +37,18 @@ namespace NocticOS.Source
 
             if (options == "y" || options == "Y") {
                 ShowDaOutput = true;
+                switch(DaInputType)
+                {
+                    case "str" : DaInput.InputStr(ShowDaOutput, true); break;
+                    case "flt" : DaInput.InputFloat(ShowDaOutput, true); break;
+                    case "int" : DaInput.InputInt(ShowDaOutput, true); break;
+                    case "dbl" : DaInput.InputDouble(ShowDaOutput, true); break;
+                }
             } else if (options == "n" || options == "N") {
-                ShowDaOutput = false;
+                throwError.OperationCancelledThrow(true);
             } else {
-                throwError.OperationCancelledThrow(false);
-            }
-
-            switch(DaInputType)
-            {
-                case "str" : DaInput.InputStr(ShowDaOutput, true); break;
-                case "flt" : DaInput.InputFloat(ShowDaOutput, true); break;
-                case "int" : DaInput.InputInt(ShowDaOutput, true); break;
-                case "dbl" : DaInput.InputDouble(ShowDaOutput, true); break;
+                throwError.UnknownCharThrow(true);
+                Program.DoReturn(false);
             }
         }
 
