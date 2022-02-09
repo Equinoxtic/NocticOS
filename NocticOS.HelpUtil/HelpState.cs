@@ -12,6 +12,7 @@ namespace NocticOS.HelpUtil
 
         string[] CmdLs = {
             "help",
+            "day",
             "build",
             "input",
             "math",
@@ -21,6 +22,7 @@ namespace NocticOS.HelpUtil
         string[] CmdRequires = {
             " <command>",
             " <flag>",
+            " <flag>",
             " <type>",
             " <operation>",
             " <type>"
@@ -28,6 +30,7 @@ namespace NocticOS.HelpUtil
 
         string[] CmdDescs = {
             " - Shows information and help on a command.",
+            " - Displays the current time and date.",
             " - Builds the NocticOS files and directories.",
             " - Standard Input for strings, integers and doubles.",
             " - Math for NocticOS. Does simple operations such as Addition, Subtraction, Multiplication and Division.",
