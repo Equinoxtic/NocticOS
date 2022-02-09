@@ -24,6 +24,13 @@ namespace NocticOS.Utility
 
             Program.DoReturn(false);
         }
+
+        public void DisplayTimeAndDate()
+        {
+            Console.Write("\n");
+
+            Console.WriteLine(DateTime.Now.ToString("dddd , MMM dd yyyy,hh:mm:ss"));
+
             Program.DoReturn(false);
         }
     }
