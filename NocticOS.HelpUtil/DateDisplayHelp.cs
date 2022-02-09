@@ -6,6 +6,11 @@ namespace NocticOS.HelpUtil
 {
     public class DateDisplayHelp
     {
-        // No code yet.
+        public void OpenHelp()
+        {
+            ProgramReturn Program = new ProgramReturn();
+
+            Program.DoReturn(false);
+        }
     }
 }
