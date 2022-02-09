@@ -37,7 +37,11 @@ namespace NocticOS.HelpUtil
             Console.Write("\n");
 
             for (int i = 0; i < 6; i++) {
-                Console.Write("math " + MathCmdLs[i] + MathDescs[i] + "\n");
+                if (isMissingParams) {
+                    Console.Write("math " + MathCmdLs[i] + MathDescs[i] + "\n");
+                } else { 
+                    Console.Write(MathCmdLs[i] + MathDescs[i] + "\n");
+                }
             }
 
             Program.DoReturn(false);
