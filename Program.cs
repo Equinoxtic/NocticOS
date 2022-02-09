@@ -43,6 +43,8 @@ namespace NocticOS
 				case "help" : helpState.OpenState(); break;
 
 				case "time" : DateDisplayer.DisplayTime(); break;
+				case "date" : DateDisplayer.DisplayDate(); break;
+				case "time-and-date" : DateDisplayer.DisplayTimeAndDate(); break;
 
 				case "input" : inputHelp.OpenHelp(true); break;
 				case "input -help" : inputHelp.OpenHelp(false); break;
