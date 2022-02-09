@@ -11,7 +11,10 @@ namespace NocticOS.Utility
         {
             Console.Write("\n");
 
-            System.DateTime.Now.ToString("HH:mm:ss");
+            Console.WriteLine(DateTime.Now.ToString("HH:mm:ss"));
+
+            Program.DoReturn(false);
+        }
 
             Program.DoReturn(false);
         }
