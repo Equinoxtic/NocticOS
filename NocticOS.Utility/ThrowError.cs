@@ -43,7 +43,15 @@ namespace NocticOS.Utility
             if (insertNewLine) {
                 Console.Write("\n");
             }
-            Console.Write("Operation Cancelled.");
+            Console.Write("Operation Cancelled.\n");
+        }
+
+        static void MissingParamsThrow(bool insertNewLine)
+        {
+            if (insertNewLine) {
+                Console.Write("\n");
+            }
+            Console.Write("Missing Parameters, please enter the following:\n");
         }
     }
 }
