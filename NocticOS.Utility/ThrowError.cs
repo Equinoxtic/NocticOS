@@ -9,6 +9,7 @@ namespace NocticOS.Utility
         /*
         * ev - Empty Value
         * oc - Operation Cancelled
+        * uc - Unknown Character
         * mp - Missing Parameters
         */
         public void ThrowSwitch(string currentType, bool shouldNewLine)
@@ -23,6 +24,10 @@ namespace NocticOS.Utility
                 // Operation Cancelled
                 case "oc":
                     OperationCancelledThrow(shouldNewLine);
+                    break;
+
+                case "uc":
+                    UnknownCharThrow(shouldNewLine);
                     break;
 
                 // Missing Parameters
@@ -46,6 +51,14 @@ namespace NocticOS.Utility
                 Console.Write("\n");
             }
             Console.Write("Operation Cancelled.\n");
+        }
+
+        public void UnknownCharThrow(bool insertNewLine)
+        {
+            if (insertNewLine) {
+                Console.Write("\n");
+            }
+            Console.Write("Unknown Character.\n");
         }
 
         public void MissingParamsThrow(bool insertNewLine)
