@@ -18,6 +18,7 @@ namespace NocticOS
 			MathHelp mathHelp = new MathHelp();
 			InputHelp inputHelp = new InputHelp();
 			CreationHelp creationHelp = new CreationHelp();
+			DateDisplayHelp dateDisplayHelp = new DateDisplayHelp();
 
 			// Utils
 			DirectoryBuilder DirBuilder = new DirectoryBuilder();
@@ -45,7 +46,8 @@ namespace NocticOS
 			{
 				case "help" : helpState.OpenState(); break;
 
-				case "day" :
+				case "day" : dateDisplayHelp.OpenHelp(true); break;
+				case "day -help" : dateDisplayHelp.OpenHelp(false); break;
 				case "day -t" : DateDisplayer.DisplayTime(); break;
 				case "day -d" : DateDisplayer.DisplayDate(); break;
 				case "day -cur" : DateDisplayer.DisplayTimeAndDate(); break;
