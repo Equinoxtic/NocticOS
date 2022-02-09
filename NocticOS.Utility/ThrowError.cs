@@ -30,9 +30,20 @@ namespace NocticOS.Utility
             }
         }
 
-        static void EmptyValThrow()
+        static void EmptyValThrow(bool insertNewLine)
         {
-            Console.WriteLine("\nEmpty Value, please try again.");
+            if (insertNewLine) {
+                Console.Write("\n");
+            }
+            Console.Write("Empty Value, please try again.\n");
+        }
+
+        static void OperationCancelledThrow(bool insertNewLine)
+        {
+            if (insertNewLine) {
+                Console.Write("\n");
+            }
+            Console.Write("Operation Cancelled.");
         }
     }
 }
