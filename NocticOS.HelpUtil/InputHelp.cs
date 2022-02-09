@@ -14,6 +14,7 @@ namespace NocticOS.HelpUtil
 
             string[] InputCmdLs = {
                 "-help",
+                "-sel",
                 "-str",
                 "-int",
                 "-flt",
@@ -22,6 +23,7 @@ namespace NocticOS.HelpUtil
 
             string[] InputCmdDescs = {
                 " - Shows help and information for the 'input' command.",
+                " - Select what type you should input.",
                 " - Standard string input.",
                 " - Standard integer input.",
                 " - Standard float input.",
@@ -34,7 +36,7 @@ namespace NocticOS.HelpUtil
 
             Console.Write("\n");
 
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < 6; i++) {
                 Console.Write("input " + InputCmdLs[i] + InputCmdDescs[i] + "\n");
             }
 
