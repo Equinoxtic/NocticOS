@@ -11,7 +11,7 @@ namespace NocticOS.Utility
         {
             Console.Write("\n");
 
-            Console.WriteLine("Current Time is: " + DateTime.Now.ToString("HH:mm:ss"));
+            Console.WriteLine("Time: " + DateTime.Now.ToString("HH:mm:ss"));
 
             Program.DoReturn(false);
         }
