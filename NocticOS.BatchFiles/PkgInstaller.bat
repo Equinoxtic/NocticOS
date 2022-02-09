@@ -27,6 +27,7 @@ SET /P OPTS=Install Packages? [y/n]:
 
 IF %OPTS%==y (
 	ECHO:
+	cd..
 	dotnet add package Newtonsoft.Json
 	dotnet add package NodaTime
 	ECHO:
