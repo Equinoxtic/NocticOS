@@ -1,11 +1,13 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using NocticOS.Utility;
 
 namespace NocticOS.HelpUtil
 {
     public class MathHelp
     {
+        ThrowError throwError = new ThrowError();
         public void OpenHelp(bool isMissingParams)
         {
             ProgramReturn Program = new ProgramReturn();
@@ -29,7 +31,7 @@ namespace NocticOS.HelpUtil
             };
 
             if (isMissingParams) {
-                Console.Write("\nMissing parameters, please enter the following:\n");
+                throwError.MissingParamsThrow(true);
             }
 
             Console.Write("\n");
