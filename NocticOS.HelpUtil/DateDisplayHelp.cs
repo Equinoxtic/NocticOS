@@ -30,6 +30,8 @@ namespace NocticOS.HelpUtil
                 throwError.MissingParamsThrow(true);   
             }
 
+            Console.Write("\n");
+
             for (int i = 0; i < 4; i++) {
                 if (isMissingParams) {
                     Console.Write("day " + dateDisplayLs[i] + dateDisplayDescs[i] + "\n");
