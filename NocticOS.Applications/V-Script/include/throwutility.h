@@ -4,6 +4,11 @@
 
 using namespace std;
 
+void EmptyValueThrow() {
+	cout << "\nEntered Empty Value.\n";
+	system("pause");
+}
+
 void ThrowPause()
 {
 	cout << "\n";
