@@ -1,6 +1,6 @@
 // PkgInstaller.c
 
-#include <stdio.h>
+#include <iostream>
 #include "pkginst.h"
 
 void main()
