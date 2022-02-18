@@ -14,7 +14,20 @@ void main()
 	};
 
 	for (int i = 0; i < 2; i++) {
-		cout << options[i];
+		cout << options[i] + "\n";
+	}
+
+	cin >> option;
+
+	switch(option)
+	{
+		case 1:
+			StartInstall();
+			break;
+
+		case 2:
+			StartUninstall();
+			break;
 	}
 
 }
