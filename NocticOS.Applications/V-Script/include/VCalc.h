@@ -31,7 +31,7 @@ void StartCalculator()
 		cout << operls[i] + "\n";
 	}
 
-	cin << curOper;
+	cin >> curOper;
 
 	switch (curOper)
 	{
