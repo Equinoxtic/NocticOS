@@ -1,6 +1,8 @@
 // loopbuild.cpp
 
+#include "throwutility.h"
 #include "loop_build_headers/whilebuild.h"
+#include "loop_build_headers/forbuild.h"
 #include<iostream>
 
 using namespace std;
@@ -27,8 +29,12 @@ void LoopBuilder()
 	switch(curOpt)
 	{
 		case 1:
+			CinFor();
+			break;
 		case 2:
 			CinWhile();
 			break;
 	}
+
+	ThrowPause();
 }
