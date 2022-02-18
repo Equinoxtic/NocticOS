@@ -21,5 +21,6 @@ void OperSwitch(string operation, int a, int b)
 	if (operation == "divide") {
 		cout << a / b;
 	}
+	cout << "\n";
 	system("pause");
 }
