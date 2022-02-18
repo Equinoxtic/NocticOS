@@ -14,5 +14,4 @@ void InstallPackage()
 	str = str + "clone " + curRepo;
 	const char* command = str.c_str();
 	system(command);
-	return 0;
 }
