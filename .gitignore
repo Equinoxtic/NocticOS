@@ -1,4 +1,9 @@
 
+# IDEs
+.vs/
+.vscode/
+.idea/
+
 # C# stuff
 *.csproj
 x64/
