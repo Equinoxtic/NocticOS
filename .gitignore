@@ -1,7 +1,14 @@
 
+# C# stuff
 *.csproj
 x64/
 [Dd]ebug/
 [Rr]elease/
 [Bb]in/
 [Oo]bj/
+
+# C and C++ stuff
+[Nn]octicOS.Apps/
+*.exe
+*.obj
+*.dll
