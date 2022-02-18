@@ -1,5 +1,7 @@
 // Main.cpp
 
+#include "include/VCalc.h"
+#include "include/VMath.h"
 #include<iostream>
 
 using namespace std;
