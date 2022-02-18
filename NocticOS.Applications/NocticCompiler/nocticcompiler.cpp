@@ -6,5 +6,6 @@ using namespace std;
 
 int main()
 {
+	// No code yet.
 	return 0;
 }
