@@ -1,6 +1,5 @@
 // forbuild.h
 
-#include<throwutility.h>
 #include<iostream>
 
 using namespace std;
@@ -10,7 +9,9 @@ void ForInit(int ivar, int a, string outputStr)
 	for (int i = ivar; i < a; i++) {
 		cout << outputStr;
 	}
-	ThrowPause();
+
+	cout << "\n";
+	system("pause");
 }
 
 void CinFor()
@@ -25,14 +26,11 @@ void CinFor()
 	cin >> a;
 	cout << "cout << ";
 	cin >> outputStr;
-	
-	if (ivar == NULL || a == NULL || outputStr == NULL) {
-		EmptyValueThrow();
-	}
 
 	for (int i = ivar; i < a; i++) {
 		cout << outputStr;
 	}
-
-	ThrowPause();
+	
+	cout << "\n";
+	system("pause");
 }
