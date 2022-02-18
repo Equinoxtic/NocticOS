@@ -2,11 +2,11 @@
 
 #include <iostream>
 
-#include "pkginst.h"
+#include "include/pkginst.h"
 
-void main()
+int main()
 {
-	string option = "";
+	int option = 0;
 
 	string options[2] = {
 		"[1] Install",
@@ -22,23 +22,11 @@ void main()
 	switch(option)
 	{
 		case 1:
-			StartInstall();
+			InstallPackage();
 			break;
 
 		case 2:
-			StartUninstall();
+			cout << "do nothin";
 			break;
 	}
-
 }
-
-void StartInstall()
-{
-	string repoLink = "";
-	cout << "Enter a repository link to install: ";
-	cin >> repoLink;
-	InstallPackage(repoLink);
-}
-
-void StartUninstall()
-{}
