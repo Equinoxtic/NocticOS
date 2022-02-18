@@ -27,3 +27,5 @@ class VMath
 			return a / b;
 		}
 };
+
+VMath Math;
