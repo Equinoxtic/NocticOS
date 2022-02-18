@@ -1,4 +1,4 @@
-// VMath.h
+// vmath.h
 
 #include<iostream>
 

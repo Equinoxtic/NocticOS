@@ -1,6 +1,6 @@
 // Main.cpp
 
-#include "include/VCalc.h"
+#include "include/vmath.h"
 #include<iostream>
 
 using namespace std;
