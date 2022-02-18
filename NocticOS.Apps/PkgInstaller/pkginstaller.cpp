@@ -1,13 +1,19 @@
 // PkgInstaller.c
 
 #include <iostream>
+#include <bits/stdc++.h>
 
-#include "include/pkginst.h"
+using namespace std;
+
+int InstallPackage();
 
 int main()
 {
 	int option = 0;
 
+	cout << "=== NocticOS package manager ===";
+
+	cout << "\nSelect an action:\n";
 	string options[2] = {
 		"[1] Install",
 		"[2] Uninstall"
@@ -29,4 +35,17 @@ int main()
 			cout << "do nothin";
 			break;
 	}
+	return 0;
+}
+
+int InstallPackage()
+{
+	string curRepo = "";
+	cout << "Enter a Repository link to install: ";
+	cin >> curRepo;
+	string str = "git ";
+	str = str + "clone " + curRepo;
+	const char* command = str.c_str();
+	system(command);
+	return 0;
 }
