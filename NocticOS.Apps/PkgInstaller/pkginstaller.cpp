@@ -1,11 +1,10 @@
-// PkgInstaller.c
+// PkgInstaller.cpp
 
+#include "include/pkginst.h"
 #include <iostream>
 #include <bits/stdc++.h>
 
 using namespace std;
-
-int InstallPackage();
 
 int main()
 {
@@ -35,17 +34,5 @@ int main()
 			cout << "do nothin";
 			break;
 	}
-	return 0;
-}
-
-int InstallPackage()
-{
-	string curRepo = "";
-	cout << "Enter a Repository link to install: ";
-	cin >> curRepo;
-	string str = "git ";
-	str = str + "clone " + curRepo;
-	const char* command = str.c_str();
-	system(command);
 	return 0;
 }
