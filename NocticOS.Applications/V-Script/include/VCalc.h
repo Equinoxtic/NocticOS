@@ -14,9 +14,9 @@ void StartCalculator()
 	cout << "=== V-Script Calculator ===\n";
 
 	cout << "Input your first number: ";
-	cin << fnum;
+	cin >> fnum;
 	cout << "Input your second number: ";
-	cin << snum;
+	cin >> snum;
 
 	cout << "Select an operation:\n";
 
