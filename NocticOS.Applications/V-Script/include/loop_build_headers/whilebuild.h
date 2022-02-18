@@ -1,5 +1,6 @@
 // whilebuild.h
 
+#include "throwutility.h"
 #include<iostream>
 
 using namespace std;
@@ -12,6 +13,7 @@ void WhileInit(int ivar, int a, int b)
 			break;
 		}
 	}
+	ThrowPause();
 }
 
 void CinWhile()
@@ -38,4 +40,5 @@ void CinWhile()
 			break;
 		}
 	}
+	ThrowPause();
 }
