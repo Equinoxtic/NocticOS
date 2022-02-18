@@ -4,28 +4,21 @@
 
 using namespace std;
 
-class VMath
+void OperSwitch(string operation, int a, int b)
 {
-	public:
-		// Addition
-		void add(int a, int b) {
-			return a + b;
-		}
+	if (operation == "add") {
+		cout << a + b;
+	}
 
-		// Subtraction
-		void sub(int a, int b) {
-			return a - b;
-		}
+	if (operation == "subtract") {
+		cout << a - b;
+	}
 
-		// Multiplication
-		void mul(int a, int b) {
-			return a * b;
-		}
+	if (operation == "multiply") {
+		cout << a * b;
+	}
 
-		// Division
-		void div(int a, int b) {
-			return a / b;
-		}
-};
-
-VMath Math;
+	if (operation == "divide") {
+		cout << a / b;
+	}
+}
