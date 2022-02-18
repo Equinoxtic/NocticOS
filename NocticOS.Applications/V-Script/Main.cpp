@@ -1,10 +1,10 @@
 // Main.cpp
 
 #include<iostream>
-#include<ofstream>
-#include<ifstream>
 
-int Main()
+using namespace std;
+
+int main()
 {
 	// No code
 	return 0;
