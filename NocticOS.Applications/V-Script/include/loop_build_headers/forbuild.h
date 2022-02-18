@@ -1,6 +1,6 @@
 // forbuild.h
 
-#include "throwutility.h"
+#include<loopthrows.h>
 #include<iostream>
 
 using namespace std;
@@ -25,6 +25,10 @@ void CinFor()
 	cin >> a;
 	cout << "cout << ";
 	cin >> outputStr;
+	
+	if (ivar == NULL || a == NULL || outputStr == NULL) {
+		EmptyValueThrow();
+	}
 
 	for (int i = ivar; i < a; i++) {
 		cout << outputStr;
