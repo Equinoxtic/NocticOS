@@ -1,8 +1,7 @@
 // loopbuild.cpp
 
-#include "throwutility.h"
-#include "loop_build_headers/whilebuild.h"
-#include "loop_build_headers/forbuild.h"
+#include "whilebuild.h"
+#include "forbuild.h"
 #include<iostream>
 
 using namespace std;
@@ -16,7 +15,7 @@ void LoopBuilder()
 		"[2] While"
 	};
 	
-	cout << "=== V-Script Loop Builder ===\n"
+	cout << "=== V-Script Loop Builder ===\n";
 
 	cout << "Select an action:\n";
 
@@ -36,5 +35,6 @@ void LoopBuilder()
 			break;
 	}
 
-	ThrowPause();
+	cout << "\n";
+	system("pause");
 }
