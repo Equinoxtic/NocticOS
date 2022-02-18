@@ -1,19 +1,21 @@
-// pkginst.h
+// include/pkginst.h
 
 #include<iostream>
 
 using namespace std;
 
-void InstallPackage(string curRepoLink)
+void InstallPackage()
 {
-	/*
-	Check if repo link is null
-	*/
-	if (curRepoLink != NULL) {
-		system("git clone " + curRepoLink);
-		return 0;
-	} else {
-		cout << "Failed to install, please try again.";
-		return 1;
-	}
+	// Input and Output
+	char curRepoLink[100];
+	cout << "Enter a repository link to install: ";
+	cin.getline(curRepoLink, 100);
+
+	// Cloning
+	string str = "git clone ";
+	str = str + curRepoLink;
+	const char *command = str.c_str();
+
+	// Run command
+	system(command);
 }
