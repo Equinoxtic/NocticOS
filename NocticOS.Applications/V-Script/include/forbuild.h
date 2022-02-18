@@ -1,6 +1,6 @@
 // forbuild.h
 
-#include<loopthrows.h>
+#include<throwutility.h>
 #include<iostream>
 
 using namespace std;

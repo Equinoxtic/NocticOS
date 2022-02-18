@@ -1,6 +1,6 @@
 // whilebuild.h
 
-#include<loopthrows.h>
+#include<loop_build_headers/loopthrows.h>
 #include<iostream>
 
 using namespace std;
@@ -31,7 +31,7 @@ void CinWhile()
 	cin >> b;
 	cout << "cout << ";
 	cin >> outputStr;
-	
+
 	if (ivar == NULL || a == NULL || b == NULL || outputStr == NULL) {
 		EmptyValueThrow();
 	}
