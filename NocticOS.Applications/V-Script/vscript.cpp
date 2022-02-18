@@ -1,7 +1,6 @@
 // Main.cpp
 
 #include "include/VCalc.h"
-#include "include/VMath.h"
 #include<iostream>
 
 using namespace std;
@@ -24,7 +23,9 @@ int main()
 
 	switch(curOption)
 	{
-		
+		case 1:
+			StartCalculator();
+			break;
 	}
 
 	return 0;
