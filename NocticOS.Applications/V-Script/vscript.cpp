@@ -1,6 +1,5 @@
 // vscript.cpp
 
-#include "include/throwutility.h"
 #include "include/vcalc.h"
 #include "include/loopbuild.h"
 #include<iostream>
@@ -11,9 +10,9 @@ int main()
 {
 	int curOption;
 
-	string options[1] = {
+	string options[2] = {
 		"[1] Calculator",
-		"[2] Loop builder",
+		"[2] Loop builder"
 	};
 
 	cout << "=== V-Script ===\nSelect an action:\n";
@@ -34,7 +33,8 @@ int main()
 			break;
 	}
 
-	ThrowPause();
+	cout << "\n";
+	system("pause");
 
 	return 0;
 }
