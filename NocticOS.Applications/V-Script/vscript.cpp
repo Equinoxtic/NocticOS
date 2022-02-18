@@ -1,4 +1,4 @@
-// Main.cpp
+// vscript.cpp
 
 #include "include/vcalc.h"
 #include<iostream>
