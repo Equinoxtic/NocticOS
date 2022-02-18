@@ -12,3 +12,23 @@ void ForInit(int ivar, int a, string outputStr)
 	}
 	ThrowPause();
 }
+
+void CinFor()
+{
+	int ivar;
+	int a;
+	string outputStr;
+
+	cout << "int i = ";
+	cin >> ivar;
+	cout << "i < ";
+	cin >> a;
+	cout << "cout << ";
+	cin >> outputStr;
+
+	for (int i = ivar; i < a; i++) {
+		cout << outputStr;
+	}
+
+	ThrowPause();
+}
