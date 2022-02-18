@@ -1,6 +1,5 @@
 // whilebuild.h
 
-#include<throwutility.h>
 #include<iostream>
 
 using namespace std;
@@ -13,7 +12,9 @@ void WhileInit(int ivar, int a, int b)
 			break;
 		}
 	}
-	PauseThrow();
+
+	cout << "\n";
+	system("pause");
 }
 
 void CinWhile()
@@ -32,10 +33,6 @@ void CinWhile()
 	cout << "cout << ";
 	cin >> outputStr;
 
-	if (ivar == NULL || a == NULL || b == NULL || outputStr == NULL) {
-		EmptyValueThrow();
-	}
-
 	int i = ivar;
 
 	while (i > a) {
@@ -44,5 +41,7 @@ void CinWhile()
 			break;
 		}
 	}
-	PauseThrow();
+
+	cout << "\n";
+	system("pause");
 }
