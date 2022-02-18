@@ -15,13 +15,14 @@ namespace NocticOS.Main
 				@"C:\NocticOS\Objects",
 				@"C:\NocticOS\Functions",
 				@"C:\NocticOS\Classes",
-				@"C:\NocticOS\Data"
+				@"C:\NocticOS\Data",
+				@"C:\NocticOS\Packages"
 			};
 
             System.IO.Directory.CreateDirectory(curDir);
 			
 		    if (System.IO.Directory.Exists(curDir)) {
-				for (int i = 0; i < 3; i++) {
+				for (int i = 0; i < 5; i++) {
 					System.IO.Directory.CreateDirectory(createDirs[i]);
 				}
 			}
