@@ -6,5 +6,4 @@
 
 void InstallPkg()
 {
-	// No code
 }
