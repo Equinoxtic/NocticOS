@@ -8,7 +8,6 @@ x64/
 [Oo]bj/
 
 # C and C++ stuff
-[Nn]octicOS.Apps/
 *.exe
 *.obj
 *.dll
