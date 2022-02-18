@@ -1,55 +1,51 @@
 // VCalc.h
 
-#include "VCalc.h"
+#include "VMath.h"
 #include<iostream>
 
 using namespace std;
 
-class VCalc
+void StartCalculator()
 {
-	public:
-		void OpenCalc()
-		{
-			int fnum;
-			int snum;
-			int curOper;
+	int fnum;
+	int snum;
+	int curOper;
 
-			cout << "=== V-Script Calculator ===\n\nSelect an Operation";
-			
-			string operls[4] = {
-				"[1] Add",
-				"[2] Subtract",
-				"[3] Multiply",
-				"[4] Divide"
-			};
+	cout << "=== V-Script Calculator ===\n";
 
-			for (int i = 0; i < 4; i++) {
-				cout << operls[i] + "\n";
-			}
+	cout << "Input your first number: ";
+	cin << fnum;
+	cout << "Input your second number: ";
+	cin << snum;
 
-			cin >> curOper;
+	cout << "Select an operation:\n";
 
-			cout << "\nInput your first number: ";
-			cin >> fnum;
-			cout << "\nInput your second number: ";
-			cin >> snum;
+	string operls[4] = {
+		"[1] Addition",
+		"[2] Subtraction",
+		"[3] Multiplication",
+		"[4] Division"
+	};
 
-			switch(curOper)
-			{
-				case 1:
-					Math::add(fnum, snum);
-					break;
-				case 2:
-					Math::sub(fnum, snum);
-					break;
-				case 3:
-					Math::mul(fnum, snum);
-					break;
-				case 4:
-					Math::div(fnum, snum);
-					break;
-			}
-		}
-};
+	for (int i = 0; i < 4; i++) {
+		cout << operls[i] + "\n";
+	}
 
-VCalc Calculator;
+	cin << curOper;
+
+	switch (curOper)
+	{
+		case 1:
+			OperSwitch("add", fnum, snum);
+			break;
+		case 2:
+			OperSwitch("subtract", fnum, snum);
+			break;
+		case 3:
+			OperSwitch("multiply", fnum, snum);
+			break;
+		case 4:
+			OperSwitch("divide", fnum, snum);
+			break;
+	}
+}
