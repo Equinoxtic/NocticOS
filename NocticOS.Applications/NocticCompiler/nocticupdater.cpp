@@ -13,13 +13,12 @@ int main()
 	cin >> curOption;
 
 	if (curOption == "y" || curOption == "Y") {
-
+		UpdateProject();
 	} else if (curOption == "n" || curOption == "N") {
-
+		cout << "Operation Cancelled.";
 	} else {
 		cout << "Unknown Character.\n";
 		system("pause");
 	}
-
 	return 0;
 }
