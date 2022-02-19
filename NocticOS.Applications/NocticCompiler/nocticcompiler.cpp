@@ -16,7 +16,7 @@ int main()
 
 	cout << "=== NocticOS Compiler ===\nSelect an action:\n";
 
-	string compileOptions[2] = {
+	string compileOptions[3] = {
 		"[1] Compile NocticOS",
 		"[2] Compile C++ files",
 		"[3] Run NocticOS Updater"
