@@ -31,8 +31,14 @@ int main()
 	switch(curOption)
 	{
 		case 1:
+			CompileProject();
+			break;
 		case 2:
+			CompileCPPFiles();
+			break;
 		case 3:
+			system("start nocticupdater.exe");
+			break;
 	}
 
 	cout << "\n";
