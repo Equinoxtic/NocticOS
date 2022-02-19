@@ -8,5 +8,8 @@ void CompileProject()
 {
 	system("cd..");
 	system("cd..");
-	system("dotnet build");
+	string str = "dotnet ";
+	str = str + "build";
+	const char* command = str.c_str();
+	system(command);
 }
