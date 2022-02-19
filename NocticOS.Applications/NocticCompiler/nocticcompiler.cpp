@@ -4,6 +4,8 @@ New way of compiling NocticOS.
 
 // nocticcompiler.cpp
 
+#include "include/compilecppfiles.h"
+#include "include/compileproj.h"
 #include<iostream>
 
 using namespace std;
@@ -11,6 +13,8 @@ using namespace std;
 int main()
 {
 	int curOption;
+
+	cout << "=== NocticOS Compiler ===\nSelect an action:\n";
 
 	string compileOptions[2] = {
 		"[1] Compile NocticOS",
