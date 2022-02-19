@@ -23,7 +23,7 @@ int main()
 	};
 
 	for (int i = 0; i < 3; i++) {
-		cout << compileOptions;
+		cout << compileOptions[i] + "\n";
 	}
 
 	cin >> curOption;
