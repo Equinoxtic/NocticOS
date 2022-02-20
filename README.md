@@ -4,7 +4,7 @@ Just an Operating System that isn't an Operating System.
 
 It's more like a self-made Command Prompt or Powershell.
 
-This OS was written in **C#** alongside with the **.NET Framework.**
+This OS was written in **C#** with the **.NET Framework** for the Main OS and **C++** for the External Applications.
 
 ## Extra Details
 
