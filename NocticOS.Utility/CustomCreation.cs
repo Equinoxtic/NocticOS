@@ -77,7 +77,9 @@ namespace NocticOS.Utility
         {
             ProgramReturn Program = new ProgramReturn();
 
-            Console.Write("\nThis feature is still in WIP.\n");
+            var functionName = "";
+            var functionArgLength = "";
+            var functionCodePreset = "";
 
             Program.DoReturn(false);
         }
