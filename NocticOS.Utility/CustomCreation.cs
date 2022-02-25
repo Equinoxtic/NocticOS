@@ -103,6 +103,10 @@ namespace NocticOS.Utility
                 functionArguments[i] = Console.ReadLine();
             }
 
+            for (int i = 0; i < 5; i++) {
+                Console.Write(presetLs[i] + "\n");
+            }
+
             functionCodePreset = Convert.ToInt32(Console.ReadLine());
 
             switch(functionCodePreset)
