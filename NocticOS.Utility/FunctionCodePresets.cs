@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using NocticOS.Utility;
 
-namespace NocticOS.Source
+namespace NocticOS.Utility
 {
     public class FunctionCodePresets
     {
