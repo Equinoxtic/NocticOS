@@ -77,6 +77,15 @@ namespace NocticOS.Utility
         public void FunctionCreation()
         {
             ProgramReturn Program = new ProgramReturn();
+            FunctionCodePresets functionCodePresets = new FunctionCodePresets();
+
+            string[] presetLs = {
+                "[1] Print, Hello World!",
+                "[2] Input Text",
+                "[3] Input Integer",
+                "[4] Input Float",
+                "[5] Input Double"
+            };
 
             var functionName = "";
             var functionArgLength = "";
