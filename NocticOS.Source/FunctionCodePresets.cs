@@ -10,6 +10,7 @@ namespace NocticOS.Source
         public void CodePresetSwitch(String curCodePreset)
         {
             CustomCreation customCreation = new CustomCreation();
+            StandardInput standardInput = new StandardInput();
 
             switch(curCodePreset)
             {
@@ -20,18 +21,22 @@ namespace NocticOS.Source
 
                 case "preset.input.text":
                     customCreation.functionPreset = "Input Text";
+                    standardInput.InputStr(true, false);
                     break;
 
                 case "preset.input.int":
                     customCreation.functionPreset = "Input Integer";
+                    standardInput.InputInt(true, false);
                     break;
 
                 case "preset.input.float":
                     customCreation.functionPreset = "Input Float";
+                    standardInput.InputFloat(true, false);
                     break;
 
                 case "preset.input.double":
                     customCreation.functionPreset = "Input Double";
+                    standardInput.InputDouble(true, false);
                     break;
             }
         }
