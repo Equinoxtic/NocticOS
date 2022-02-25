@@ -17,6 +17,22 @@ namespace NocticOS.Source
                     customCreation.functionPreset = "Print, Hello World!";
                     Console.Write("\nHello World!\n");
                     break;
+
+                case "preset.input.text":
+                    customCreation.functionPreset = "Input Text";
+                    break;
+
+                case "preset.input.int":
+                    customCreation.functionPreset = "Input Integer";
+                    break;
+
+                case "preset.input.float":
+                    customCreation.functionPreset = "Input Float";
+                    break;
+
+                case "preset.input.double":
+                    customCreation.functionPreset = "Input Double";
+                    break;
             }
         }
     }
