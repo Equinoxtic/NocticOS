@@ -74,6 +74,7 @@ namespace NocticOS.Utility
         }
         
         public string functionPreset = "";
+
         public void FunctionCreation()
         {
             ProgramReturn Program = new ProgramReturn();
@@ -88,8 +89,32 @@ namespace NocticOS.Utility
             };
 
             var functionName = "";
-            var functionArgLength = "";
-            var functionCodePreset = "";
+            var strCodePreset = "";
+            var functionArgLength = 0;
+            var functionCodePreset = 0;
+
+            functionName = Console.ReadLine();
+
+            functionArgLength = Convert.ToInt32(Console.ReadLine());
+
+            string[] functionArguments = new string[functionArgLength];
+
+            for (int i = 0; i < functionArgLength; i++) {
+                functionArguments[i] = Console.ReadLine();
+            }
+
+            functionCodePreset = Convert.ToInt32(Console.ReadLine());
+
+            switch(functionCodePreset)
+            {
+                case 1: strCodePreset = "preset.print-hello-word"; break;
+                case 2: strCodePreset = "preset.input.text"; break;
+                case 3: strCodePreset = "preset.input.int"; break;
+                case 4: strCodePreset = "preset.input.float"; break;
+                case 5: strCodePreset = "preset.input.double"; break;
+            }
+
+            functionCodePresets.CodePresetSwitch(strCodePreset);
 
             Program.DoReturn(false);
         }
