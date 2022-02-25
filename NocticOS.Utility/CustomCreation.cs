@@ -72,7 +72,8 @@ namespace NocticOS.Utility
 
             Program.DoReturn(false);
         }
-
+        
+        public string functionPreset = "";
         public void FunctionCreation()
         {
             ProgramReturn Program = new ProgramReturn();
