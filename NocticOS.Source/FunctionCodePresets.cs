@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using NocticOS.Utility;
 
 namespace NocticOS.Source
 {
@@ -8,7 +9,15 @@ namespace NocticOS.Source
     {
         public void CodePresetSwitch(String curCodePreset)
         {
-            // No code yet.
+            CustomCreation customCreation = new CustomCreation();
+
+            switch(curCodePreset)
+            {
+                case "preset.print-hello-world":
+                    customCreation.functionPreset = "Print, Hello World!";
+                    Console.Write("\nHello World!\n");
+                    break;
+            }
         }
     }
 }
