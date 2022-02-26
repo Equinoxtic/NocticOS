@@ -128,7 +128,9 @@ namespace NocticOS.Utility
         {
             ProgramReturn Program = new ProgramReturn();
 
-            throwError.WIPThrow("feature", true);
+            var className = "";
+            var classPreaset = 0;
+            var strClassPreset = "";
 
             Program.DoReturn(false);
         }
