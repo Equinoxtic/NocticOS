@@ -23,21 +23,23 @@ namespace NocticOS.Source
                 "[obj] - ",
                 "[func] - ",
                 "[class] - ",
-                "[struct] - "
+                "[struct] - ",
+                "[inface] - ",
             };
 
             string[] customTypeDescs = {
                 "Create a Custom Object.",
                 "Create a Custom Function.",
                 "Create a Custom Class.",
-                "Create a Custom Structure."
+                "Create a Custom Structure.",
+                "Create a Custom Interface."
             };
 
             var customType = "";
 
             Console.Write("\nSelect an action:\n");
 
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 5; i++) {
                 Console.Write(customTypeTags[i] + customTypeDescs[i] + "\n");
             }
 
@@ -51,6 +53,7 @@ namespace NocticOS.Source
                 case "func" : customCreation.FunctionCreation(); break;
                 case "class" : customCreation.ClassCreation(); break;
                 case "struct" : customCreation.StructCreation(); break;
+                case "inface" : customCreation.InterfaceCreation(); break;
             }
         }
 
@@ -64,6 +67,7 @@ namespace NocticOS.Source
                 case "func" : customCreation.FunctionCreation(); break;
                 case "class" : customCreation.ClassCreation(); break;
                 case "struct" : customCreation.ClassCreation(); break;
+                case "inface" : customCreation.InterfaceCreation(); break;
             }
         }
     }
