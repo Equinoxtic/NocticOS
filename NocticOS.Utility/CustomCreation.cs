@@ -131,5 +131,14 @@ namespace NocticOS.Utility
 
             Program.DoReturn(false);
         }
+
+        public void StructCreation()
+        {
+            ProgramReturn Program = new ProgramReturn();
+
+            Console.Write("\nThis feature is still in WIP.\n");
+
+            Program.DoReturn(false);
+        }
     }
 }
