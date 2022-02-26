@@ -15,6 +15,7 @@ namespace NocticOS.Utility
 {
     public class CustomCreation
     {
+        ThrowError throwError = new ThrowError();
         public void ObjectCreation()
         {
             ProgramReturn Program = new ProgramReturn();
@@ -127,7 +128,7 @@ namespace NocticOS.Utility
         {
             ProgramReturn Program = new ProgramReturn();
 
-            Console.Write("\nThis feature is still in WIP.\n");
+            throwError.WIPThrow("feature", true);
 
             Program.DoReturn(false);
         }
@@ -136,7 +137,7 @@ namespace NocticOS.Utility
         {
             ProgramReturn Program = new ProgramReturn();
 
-            Console.Write("\nThis feature is still in WIP.\n");
+            throwError.WIPThrow("feature", true);
 
             Program.DoReturn(false);
         }
@@ -145,7 +146,7 @@ namespace NocticOS.Utility
         {
             ProgramReturn Program = new ProgramReturn();
 
-            Console.Write("\nThis feature is still in WIP.\n");
+            throwError.WIPThrow("feature", true);
 
             Program.DoReturn(false);
         }
