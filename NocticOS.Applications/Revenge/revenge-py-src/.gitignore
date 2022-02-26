@@ -1,0 +1,3 @@
+# ignore pycache for REVENGE (Python)
+
+__pycache__/
