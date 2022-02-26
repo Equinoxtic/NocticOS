@@ -68,5 +68,13 @@ namespace NocticOS.Utility
             }
             Console.Write("Missing Parameters, please enter the following:\n");
         }
+
+        public void WIPThrow(string leType, bool insertNewLine)
+        {
+            if (insertNewLine) {
+                Console.Write("\n");
+            }
+            Console.Write("\nThis " + leType + " is still in WIP.\n");
+        }
     }
 }
