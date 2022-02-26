@@ -74,7 +74,7 @@ namespace NocticOS.Utility
             if (insertNewLine) {
                 Console.Write("\n");
             }
-            Console.Write("\nThis " + leType + " is still in WIP.\n");
+            Console.Write("This " + leType + " is still in WIP.\n");
         }
     }
 }
