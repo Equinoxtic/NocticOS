@@ -16,3 +16,8 @@ x64/
 *.exe
 *.obj
 *.dll
+
+# Other
+__pycache__/
+*.pyc
+*.txt
