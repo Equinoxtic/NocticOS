@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace NocticOS.Settings
 {
-    public class SettingsPrefs
+    public class ConsolePrefs
     {
         public static string currentCursorChar = "";
         public static string currentConsoleFG = "";
