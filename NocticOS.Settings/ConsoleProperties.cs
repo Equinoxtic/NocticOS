@@ -6,7 +6,7 @@ namespace NocticOS.Settings
 {
     public class ConsoleProperties
     {
-        SettingsPrefs settingsPrefs = new SettingsPrefs();
+        ConsolePrefs consolePrefs = new ConsolePrefs();
 
         public void ConsoleSettingsState()
         {
