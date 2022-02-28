@@ -74,6 +74,8 @@ namespace NocticOS
 				case "create -obj" : creationState.CreationSwitch("obj"); break;
 				case "create -func" : creationState.CreationSwitch("func"); break;
 				case "create -class" : creationState.CreationSwitch("class"); break;
+				case "create -struct" : creationState.CreationSwitch("struct"); break;
+				case "create -inface" : creationState.CreationSwitch("inface"); break;
 
 				case "build" : buildHelp.OpenHelp(true); break;
 				case "build -help" : buildHelp.OpenHelp(false); break;
