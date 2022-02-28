@@ -6,6 +6,8 @@ namespace NocticOS.Settings
 {
     public class SettingsPrefs
     {
-        // No code yet.
+        public static string currentCursorChar = "";
+        public static string currentConsoleFG = "";
+        public static string currentConsoleBG = "";
     }
 }
