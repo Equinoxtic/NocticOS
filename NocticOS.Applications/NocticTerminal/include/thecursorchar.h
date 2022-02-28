@@ -11,23 +11,23 @@ int switchChar(int curCursor)
 	switch(curCursor)
 	{
 		case 1:
-		printf("> ");
+		printf("\n> ");
 		break;
 
 		case 2:
-		printf("~ ");
+		printf("\n~ ");
 		break;
 
 		case 3:
-		printf("- ");
+		printf("\n- ");
 		break;
 
 		case 4:
-		printf("[>>>]: ");
+		printf("\n[>>>]: ");
 		break;
 
 		case 5:
-		printf("$ ")
+		printf("\n~$ ")
 		break;
 	}
 }
