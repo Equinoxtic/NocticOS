@@ -6,6 +6,13 @@ namespace NocticOS.Settings
 {
     public class ConsoleProperties
     {
-        // No code yet.
+        SettingsPrefs settingsPrefs = new SettingsPrefs();
+
+        public void ConsoleSettingsState()
+        {
+            ProgramReturn Program = new ProgramReturn();
+
+            Program.DoReturn(false);
+        }
     }
 }
