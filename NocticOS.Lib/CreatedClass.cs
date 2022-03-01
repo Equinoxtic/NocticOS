@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace NocticOS.Lib
 {
-	public static class CreatedClass
+	public class CreatedClass
 	{
 		public string? name;
 		public string? tag;
