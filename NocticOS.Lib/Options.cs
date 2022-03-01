@@ -9,12 +9,10 @@ namespace NocticOS.Lib
     {
         ThrowError throwError = new ThrowError();
         
-        public void PushOptions(string? daName, int? setLength, string[] setArr, string[] setArrTag) {
-            string[] curArr = setArr;
-            string[] curArrTags = setArrTag;
+        public void PushOptions(string? daName, int? setLength, string[] setArrTag, string[] setArr) {
             if (!String.IsNullOrEmpty(daName)) {
                 for (int i = 0; i < setLength; i++) {
-                    Console.Write(curArrTags[i] + curArr[i] + "\n");
+                    Console.Write(setArrTag[i] + setArr[i] + "\n");
                 }
             } else {
                 throwError.CustomThrow("ERROR: Name is empty.\n", true);
