@@ -74,7 +74,7 @@ namespace NocticOS.Utility
             Console.Write("Missing Parameters, please enter the following:\n");
         }
 
-        public void WIPThrow(string leType, bool insertNewLine)
+        public void WIPThrow(bool insertNewLine, string leType="")
         {
             if (insertNewLine) {
                 Console.Write("\n");
