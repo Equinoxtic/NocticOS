@@ -10,6 +10,7 @@ namespace NocticOS.Utility
         * ev - Empty Value
         * oc - Operation Cancelled
         * uc - Unknown Character
+        * wip - Work In Progress
         * mp - Missing Parameters
         */
         public void ThrowSwitch(string currentType, bool shouldNewLine)
@@ -28,6 +29,10 @@ namespace NocticOS.Utility
 
                 case "uc":
                     UnknownCharThrow(shouldNewLine);
+                    break;
+
+                case "wip":
+                    WIPThrow(shouldNewLine);
                     break;
 
                 // Missing Parameters
