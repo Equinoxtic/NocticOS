@@ -8,27 +8,30 @@ namespace NocticOS.HelpUtil
     public class MathHelp
     {
         ThrowError throwError = new ThrowError();
+
+        string[] MathCmdLs = {
+            "-help - Shows help and information on the 'math' command.",
+            "-new - Opens a built-in calculator.",
+            "-add - Input and add two numbers.",
+            "-subtract - Input and subtract two numbers.",
+            "-multiply - Input and multiply two numbers.",
+            "-divide - Input and divide two numbers.",
+        };
+
+        /*
+        string[] MathDescs = {
+            " - Shows help and information on the 'math' command.",
+            " - Opens a built-in calculator.",
+            " - Input and add two numbers.",
+            " - Input and subtract two numbers.",
+            " - Input and multiply two numbers.",
+            " - Input and divide two numbers.",
+        };
+        */
+
         public void OpenHelp(bool isMissingParams)
         {
             ProgramReturn Program = new ProgramReturn();
-
-            string[] MathCmdLs = {
-                "-help",
-                "-new",
-                "-add",
-                "-subtract",
-                "-multiply",
-                "-divide",
-            };
-
-            string[] MathDescs = {
-                " - Shows help and information on the 'math' command.",
-                " - Opens a built-in calculator.",
-                " - Input and add two numbers.",
-                " - Input and subtract two numbers.",
-                " - Input and multiply two numbers.",
-                " - Input and divide two numbers.",
-            };
 
             if (isMissingParams) {
                 throwError.MissingParamsThrow(true);
@@ -36,11 +39,11 @@ namespace NocticOS.HelpUtil
 
             Console.Write("\n");
 
-            for (int i = 0; i < 6; i++) {
+            for (int i = 0; i < MathCmdLs.Length; i++) {
                 if (isMissingParams) {
-                    Console.Write("math " + MathCmdLs[i] + MathDescs[i] + "\n");
+                    Console.Write("math " + MathCmdLs[i] + "\n");
                 } else { 
-                    Console.Write(MathCmdLs[i] + MathDescs[i] + "\n");
+                    Console.Write(MathCmdLs[i] + "\n");
                 }
             }
 
