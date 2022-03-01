@@ -38,7 +38,7 @@ namespace NocticOS.Utility
 
             Console.Write("\nSelect an Object Type:\n");
 
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < objTypes.Length; i++) {
                 Console.Write(objTypes[i] + "\n");
             }
 
@@ -104,7 +104,7 @@ namespace NocticOS.Utility
                 functionArguments[i] = Console.ReadLine();
             }
 
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < presetLs.Length; i++) {
                 Console.Write(presetLs[i] + "\n");
             }
 
