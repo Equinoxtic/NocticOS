@@ -8,23 +8,24 @@ namespace NocticOS.HelpUtil
     public class BuildHelp
     {
         ThrowError throwError = new ThrowError();
+
+        string[] BuildLs = {
+            "-dirs - Builds the standard NocticOS directories.",
+            "-os - (WIP) Builds NocticOS' system files (package managers and etc).",
+            "-de - (WIP) Builds NocticOS' Desktop Enviroment (Desktop UI)."
+        };
+
+        /*
+        string[] BuildDescs = {
+            " - Builds the standard NocticOS directories.",
+            " - (WIP) Builds NocticOS' system files (package managers and etc).",
+            " - (WIP) Builds NocticOS' Desktop Enviroment (Desktop UI)."
+        };
+        */
+
         public void OpenHelp(bool isMissingParams)
         {
             ProgramReturn Program = new ProgramReturn();
-
-            string[] BuildLs = {
-                "-dirs - Builds the standard NocticOS directories.",
-                "-os - (WIP) Builds NocticOS' system files (package managers and etc).",
-                "-de - (WIP) Builds NocticOS' Desktop Enviroment (Desktop UI)."
-            };
-
-            /*
-            string[] BuildDescs = {
-                " - Builds the standard NocticOS directories.",
-                " - (WIP) Builds NocticOS' system files (package managers and etc).",
-                " - (WIP) Builds NocticOS' Desktop Enviroment (Desktop UI)."
-            };
-            */
 
             if (isMissingParams) {
                 throwError.MissingParamsThrow(true);
