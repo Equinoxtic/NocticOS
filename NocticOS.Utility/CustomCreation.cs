@@ -139,7 +139,7 @@ namespace NocticOS.Utility
         {
             ProgramReturn Program = new ProgramReturn();
 
-            throwError.WIPThrow("feature", true);
+            throwError.WIPThrow(true, "feature");
 
             Program.DoReturn(false);
         }
@@ -148,7 +148,7 @@ namespace NocticOS.Utility
         {
             ProgramReturn Program = new ProgramReturn();
 
-            throwError.WIPThrow("feature", true);
+            throwError.WIPThrow(true, "feature");
 
             Program.DoReturn(false);
         }
