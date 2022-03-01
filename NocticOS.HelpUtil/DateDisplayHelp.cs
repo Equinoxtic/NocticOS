@@ -34,7 +34,7 @@ namespace NocticOS.HelpUtil
 
             Console.Write("\n");
 
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < dateDisplayLs.Length; i++) {
                 if (isMissingParams) {
                     Console.Write("day " + dateDisplayLs[i] + "\n");
                 } else {
