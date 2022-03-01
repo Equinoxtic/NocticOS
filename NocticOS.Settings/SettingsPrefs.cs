@@ -13,9 +13,9 @@ namespace NocticOS.Settings
 
     public class DebugPrefs
     {
-        public void SetDebugProperty(string dbgLevel, bool allowDebug)
+        public void SetDebugProperty(string funcTag, string dbgLevel, bool allowDebug)
         {
-            if (allowDebug) {
+            if (allowDebug && !String.IsNullOrEmpty(funcTag)) {
                 switch(dbgLevel) {
                     case "guest-debug":
                         dbgLevel = "guest";
