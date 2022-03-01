@@ -8,25 +8,26 @@ namespace NocticOS.HelpUtil
     public class DateDisplayHelp
     {
         ThrowError throwError = new ThrowError();
+
+        string[] dateDisplayLs = {
+            "-t - Displays the current time.",
+            "-help - Shows the available commands for 'day'",
+            "-d - Displays the current date.",
+            "-cur - Displays the current month, date and time."
+        };
+
+        /*
+        string[] dateDisplayDescs = {
+            " - Displays the current time.",
+            " - Shows the available commands for 'day'",
+            " - Displays the current date.",
+            " - Displays the current month, date and time."
+        };
+        */
+        
         public void OpenHelp(bool isMissingParams)
         {
             ProgramReturn Program = new ProgramReturn();
-
-            string[] dateDisplayLs = {
-                "-t - Displays the current time.",
-                "-help - Shows the available commands for 'day'",
-                "-d - Displays the current date.",
-                "-cur - Displays the current month, date and time."
-            };
-
-            /*
-            string[] dateDisplayDescs = {
-                " - Displays the current time.",
-                " - Shows the available commands for 'day'",
-                " - Displays the current date.",
-                " - Displays the current month, date and time."
-            };
-            */
 
             if (isMissingParams) {
                 throwError.MissingParamsThrow(true);   
