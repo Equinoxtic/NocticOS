@@ -19,9 +19,6 @@ namespace NocticOS.Lib
 		{
 			if (!String.IsNullOrEmpty(curName) || !String.IsNullOrEmpty(curTag) || !String.IsNullOrEmpty(curCodePreset))
 			{
-				curName = name;
-				curTag = tag;
-				curCodePreset = codePreset;
 				if (codeExec)
 				{
 					switch (curCodePreset)
