@@ -12,27 +12,21 @@ namespace NocticOS.HelpUtil
         {
             ProgramReturn Program = new ProgramReturn();
 
-            string[] BuildFlags = {
-                "-dirs",
-                "-os",
-                "-de"
-            };
-
-            string[] BuildDescs = {
-                " - Builds the standard NocticOS directories.",
-                " - (WIP) Builds NocticOS' system files (package managers and etc).",
-                " - (WIP) Builds NocticOS' Desktop Enviroment (Desktop UI)."
+            string[] BuildLs = {
+                "-dirs - Builds the standard NocticOS directories.",
+                "-os - (WIP) Builds NocticOS' system files (package managers and etc).",
+                "-de - (WIP) Builds NocticOS' Desktop Enviroment (Desktop UI)."
             };
 
             if (isMissingParams) {
                 throwError.MissingParamsThrow(true);
             }
 
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < BuildLs.Length; i++) {
                 if (isMissingParams) {
-                    Console.Write("build " + BuildFlags[i] + BuildDescs[i] + "\n");
+                    Console.Write("build " + BuildLs[i] + "\n");
                 } else {
-                    Console.Write(BuildFlags[i] + BuildDescs[i] + "\n");
+                    Console.Write(BuildLs[i] + "\n");
                 }
             }
 
