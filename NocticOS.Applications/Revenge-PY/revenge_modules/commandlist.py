@@ -1,6 +1,6 @@
 # commandlist.py
 
-from revenge_modules.text_graphics import textdivider
+from revenge_modules import textdivider
 
 class CommandList:
 	def CreateCommandList():

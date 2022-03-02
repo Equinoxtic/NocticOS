@@ -4,10 +4,14 @@ from revenge_modules import throwShit
 from revenge_modules import asciiprntr
 from revenge_modules import cursorchar
 from revenge_modules import taskbar
-from revenge_modules.text_graphics import textdivider
-from revenge_modules.revenge_util import commandlist
-from revenge_modules.revenge_util import scriptinstaller
-from revenge_modules.revenge_states.user_control import logintouser
+from revenge_modules import textdivider
+from revenge_modules import commandlist
+from revenge_modules import scriptinstaller
+from revenge_modules import versionchecker
+from revenge_modules import logintouser
+from revenge_modules import version
+from revenge_modules import revengedependencies
+# from ExternalScripts import (module)
 
 class RevengeReturn:
 	def DoReturn(showShit):
@@ -38,6 +42,9 @@ class RevengeReturn:
 			cursorchar.CursorChar.CursorCharPrefs("\n[>>>]: ", False)
 
 		# code-start
+
+		if revengedependencies.revenge_depends == "main":
+			versionchecker.VersionChecker.CheckVersion(version.Version.current_version)			
 
 		varInput = input()
 

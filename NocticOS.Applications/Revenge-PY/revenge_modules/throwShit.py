@@ -1,6 +1,6 @@
 # throwShit.py
 
-import revengereturn
+# import revengereturn
 
 class ThrowShit:
 	def ThrowContinue(message, shouldNewLine):
@@ -14,9 +14,9 @@ class ThrowShit:
 		if shouldNewLine:
 			print("\n")
 		choiceStr = input(message)
-		if choiceStr == "Y" or choiceStr == "y":
-			revengereturn.RevengeReturn.DoReturn(False)
-		elif choiceStr == "N" or choiceStr == "n":
-			ThrowShit.ThrowContinue("Press any key to exit...", True)
-		else:
-			ThrowShit.ThrowContinue("Unknown Character: " + choiceStr + "\nPress any key to exit...", True)
+		# if choiceStr == "Y" or choiceStr == "y":
+		# 	revengereturn.RevengeReturn.DoReturn(False)
+		# elif choiceStr == "N" or choiceStr == "n":
+		# 	ThrowShit.ThrowContinue("Press any key to exit...", True)
+		# else:
+		# 	ThrowShit.ThrowContinue("Unknown Character: " + choiceStr + "\nPress any key to exit...", True)
