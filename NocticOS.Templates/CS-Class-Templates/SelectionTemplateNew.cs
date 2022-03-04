@@ -10,9 +10,8 @@ namespace NocticOS.Templates.CS_Class_Templates
         public void SelectionName()
         {
             Options options = new Options();
-            string[] tag = {};
             string[] ls = {};
-            options.PushOptions("", 0, tag, ls);
+            options.PushOptions("list", ls, ls.Length);
         }
     }
 }
