@@ -12,7 +12,7 @@ namespace NocticOS.Source
         StandardInput DaInput = new StandardInput();
         public void InputSelect()
         {
-            var DaInputType = "";
+            var daInputType = "";
             var options = "";
             var ShowDaOutput = false;
 
@@ -30,14 +30,14 @@ namespace NocticOS.Source
             }
 
             Console.Write("\n~ ");
-            DaInputType = Console.ReadLine();
+            daInputType = Console.ReadLine();
 
             Console.Write("Show Output? [Y/N]: ");
             options = Console.ReadLine();
 
             if (options == "y" || options == "Y") {
                 ShowDaOutput = true;
-                switch(DaInputType)
+                switch(daInputType)
                 {
                     case "str" : DaInput.InputStr(ShowDaOutput, true); break;
                     case "flt" : DaInput.InputFloat(ShowDaOutput, true); break;
