@@ -1,13 +1,14 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using NocticOS.Lib;
 
 namespace NocticOS.Utility
 {
     public class StandardInput
     {
         ProgramReturn Program = new ProgramReturn();
-        ThrowError throwError = new ThrowError();
+        Throw emptyThrow = new Throw();
         public void InputStr(bool ShowOutput, bool ReturnToProgram)
         {
             string? curString;
@@ -17,7 +18,9 @@ namespace NocticOS.Utility
 
             if (ShowOutput) {
                 if (String.IsNullOrEmpty(curString)) {
-                    throwError.EmptyValThrow(true);
+                    emptyThrow.CreateThrow("et",
+                        "The current string has an empty value!\nPlease try again.",
+                        true);
                 } else {
                     Console.WriteLine("String: " + curString);
                 }
