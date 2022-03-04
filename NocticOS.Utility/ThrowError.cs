@@ -1,3 +1,4 @@
+/*
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -6,13 +7,6 @@ namespace NocticOS.Utility
 {
     public class ThrowError
     {
-        /*
-        * ev - Empty Value
-        * oc - Operation Cancelled
-        * uc - Unknown Character
-        * wip - Work In Progress
-        * mp - Missing Parameters
-        */
         public void ThrowSwitch(string currentType, bool shouldNewLine)
         {
             switch(currentType)
@@ -91,3 +85,4 @@ namespace NocticOS.Utility
         }
     }
 }
+*/
