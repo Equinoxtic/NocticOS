@@ -10,12 +10,14 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using NocticOS.Utility;
+using NocticOS.Lib;
 
 namespace NocticOS.Utility
 {
     public class CustomCreation
     {
-        ThrowError throwError = new ThrowError();
+        // ThrowError throwError = new ThrowError();
+        WIPThrow wipThrow = new WIPThrow();
         public void ObjectCreation()
         {
             ProgramReturn Program = new ProgramReturn();
@@ -139,7 +141,9 @@ namespace NocticOS.Utility
         {
             ProgramReturn Program = new ProgramReturn();
 
-            throwError.WIPThrow(true, "feature");
+            // throwError.WIPThrow(true, "feature");
+
+            wipThrow.ThrowWIP("feature", true);
 
             Program.DoReturn(false);
         }
@@ -148,7 +152,9 @@ namespace NocticOS.Utility
         {
             ProgramReturn Program = new ProgramReturn();
 
-            throwError.WIPThrow(true, "feature");
+            // throwError.WIPThrow(true, "feature");
+
+            wipThrow.ThrowWIP("feature", true);
 
             Program.DoReturn(false);
         }
