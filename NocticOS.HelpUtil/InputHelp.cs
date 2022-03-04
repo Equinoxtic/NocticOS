@@ -1,13 +1,14 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using NocticOS.Utility;
+using NocticOS.Lib;
 
 namespace NocticOS.HelpUtil
 {
     public class InputHelp
     {
-        ThrowError throwError = new ThrowError();
+        // ThrowError throwError = new ThrowError();
+        Throw missingParams = new Throw();
 
         string[] InputCmdLs = {
             "-help - Shows help and information for the 'input' command.",
@@ -34,7 +35,11 @@ namespace NocticOS.HelpUtil
             ProgramReturn Program = new ProgramReturn();
 
             if (isMissingParams) {
-                throwError.MissingParamsThrow(true);
+                // throwError.MissingParamsThrow(true);
+                missingParams.CreateThrow("mp",
+                    "Missing Parameters. Please enter the following:",
+                    true
+                );
             }
 
             Console.Write("\n");
