@@ -1,15 +1,15 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using NocticOS.Utility;
 using NocticOS.Lib;
 
 namespace NocticOS.HelpUtil
 {
     public class BuildHelp
     {
-        ThrowError throwError = new ThrowError();
+        // ThrowError throwError = new ThrowError();
         Options buildOptions = new Options();
+        Throw missingParams = new Throw();
 
         string[] buildLs = {
             "-dirs - Builds the standard NocticOS directories.",
@@ -28,9 +28,13 @@ namespace NocticOS.HelpUtil
         public void OpenHelp(bool isMissingParams)
         {
             ProgramReturn Program = new ProgramReturn();
-
+            
             if (isMissingParams) {
-                throwError.MissingParamsThrow(true);
+                // throwError.MissingParamsThrow(true);
+                missingParams.CreateThrow("mp",
+                    "Missing Parameters. Please enter the following:",
+                    true
+                );
             }
 
             Console.Write("\n");
