@@ -16,7 +16,7 @@ namespace NocticOS.Lib
                 if (shouldNewLine) {
                     Console.Write("\n");
                 }
-                Console.Write(msg + "\n");
+                Console.Write(curmsg + "\n");
             } else {
                 Console.Write("\nERROR: Tag or Message is MISSING.");
             }
