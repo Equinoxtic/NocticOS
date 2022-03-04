@@ -21,14 +21,14 @@ namespace NocticOS
 			DateDisplayHelp dateDisplayHelp = new DateDisplayHelp();
 
 			// Utils
-			DirectoryBuilder DirBuilder = new DirectoryBuilder();
+			DirectoryBuilder directoryBuilder = new DirectoryBuilder();
 			OSBuilder oSBuilder = new OSBuilder();
 			DesktopEnviromentBuilder deBuilder = new DesktopEnviromentBuilder();
-			DateDisplay DateDisplayer = new DateDisplay();
+			DateDisplay dateDisplayer = new DateDisplay();
 			StandardMath standardMath = new StandardMath();
 
 			// States /  Classes
-			InputState StandardInput = new InputState();
+			InputState standardInput = new InputState();
 			MathState mathState = new MathState();
 			CreationState creationState = new CreationState();
 
@@ -48,17 +48,17 @@ namespace NocticOS
 
 				case "day" : dateDisplayHelp.OpenHelp(true); break;
 				case "day -help" : dateDisplayHelp.OpenHelp(false); break;
-				case "day -t" : DateDisplayer.DisplayTime(); break;
-				case "day -d" : DateDisplayer.DisplayDate(); break;
-				case "day -cur" : DateDisplayer.DisplayTimeAndDate(); break;
+				case "day -t" : dateDisplayer.DisplayTime(); break;
+				case "day -d" : dateDisplayer.DisplayDate(); break;
+				case "day -cur" : dateDisplayer.DisplayTimeAndDate(); break;
 
 				case "input" : inputHelp.OpenHelp(true); break;
 				case "input -help" : inputHelp.OpenHelp(false); break;
-				case "input -sel" : StandardInput.InputSelect(); break;
-				case "input -str" : StandardInput.InputSwitch("str"); break;
-				case "input -flt" : StandardInput.InputSwitch("flt"); break;
-				case "input -int" : StandardInput.InputSwitch("int"); break;
-				case "input -dbl" : StandardInput.InputSwitch("dbl"); break;
+				case "input -sel" : standardInput.InputSelect(); break;
+				case "input -str" : standardInput.InputSwitch("str"); break;
+				case "input -flt" : standardInput.InputSwitch("flt"); break;
+				case "input -int" : standardInput.InputSwitch("int"); break;
+				case "input -dbl" : standardInput.InputSwitch("dbl"); break;
 
 				case "math" : mathHelp.OpenHelp(true); break;
 				case "math -help" : mathHelp.OpenHelp(false); break;
@@ -79,7 +79,7 @@ namespace NocticOS
 
 				case "build" : buildHelp.OpenHelp(true); break;
 				case "build -help" : buildHelp.OpenHelp(false); break;
-				case "build -dirs" : DirBuilder.DirBuild(); break;
+				case "build -dirs" : directoryBuilder.DirBuild(); break;
 				case "build -os" : oSBuilder.BuildOS(); break;
 				case "build -de" : deBuilder.DEBuild(); break;
 
