@@ -9,7 +9,7 @@ namespace NocticOS.HelpUtil
     {
         ThrowError throwError = new ThrowError();
 
-        string[] MathCmdLs = {
+        string[] mathCmdLs = {
             "-help - Shows help and information on the 'math' command.",
             "-new - Opens a built-in calculator.",
             "-add - Input and add two numbers.",
@@ -39,11 +39,11 @@ namespace NocticOS.HelpUtil
 
             Console.Write("\n");
 
-            for (int i = 0; i < MathCmdLs.Length; i++) {
+            for (int i = 0; i < mathCmdLs.Length; i++) {
                 if (isMissingParams) {
-                    Console.Write("math " + MathCmdLs[i] + "\n");
+                    Console.Write("math " + mathCmdLs[i] + "\n");
                 } else { 
-                    Console.Write(MathCmdLs[i] + "\n");
+                    Console.Write(mathCmdLs[i] + "\n");
                 }
             }
 
