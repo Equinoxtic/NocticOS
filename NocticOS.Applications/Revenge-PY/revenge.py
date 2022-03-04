@@ -57,6 +57,8 @@ class Revenge:
 			logintouser.LogIntoUser.RunPrompt()
 		elif varInput == "-inst":
 			scriptinstaller.ScriptInstaller.InstallPrompt()
+		elif varInput == "exit":
+			throwShit.ThrowShit.ThrowContinue("Press any key to exit...", True)
 		else:
 			throwShit.ThrowShit.ThrowContinue("Command: " + varInput + ", does not exist\nPress any key to exit... ", True)
 
