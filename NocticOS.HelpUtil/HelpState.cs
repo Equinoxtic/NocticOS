@@ -10,7 +10,7 @@ namespace NocticOS.HelpUtil
         InputHelp inputHelp = new InputHelp();
         MathHelp mathHelp = new MathHelp();
 
-        string[] CmdLs = {
+        string[] cmdLs = {
             "help <command> - Shows information and help on a command.",
             "day <flag> - Displays the current time and date.",
             "build <flag> - Builds the NocticOS files and directories.",
@@ -45,8 +45,8 @@ namespace NocticOS.HelpUtil
         {
             Console.Write("\n");
 
-            for (int i = 0; i < CmdLs.Length; i++) {
-                Console.Write(CmdLs[i] + "\n");
+            for (int i = 0; i < cmdLs.Length; i++) {
+                Console.Write(cmdLs[i] + "\n");
             }
 
             Program.DoReturn(false);
