@@ -2,13 +2,15 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using NocticOS.Utility;
+using NocticOS.Lib;
 
 namespace NocticOS.Source
 {
     public class InputState
     {
         ProgramReturn Program = new ProgramReturn();
-        ThrowError throwError = new ThrowError();
+        // ThrowError throwError = new ThrowError();
+        Throw theThrows = new Throw();
         StandardInput DaInput = new StandardInput();
         public void InputSelect()
         {
@@ -45,9 +47,17 @@ namespace NocticOS.Source
                     case "dbl" : DaInput.InputDouble(ShowDaOutput, true); break;
                 }
             } else if (options == "n" || options == "N") {
-                throwError.OperationCancelledThrow(true);
+                // throwError.OperationCancelledThrow(true);
+                theThrows.CreateThrow("mp",
+                    "Missing Parameters. Please enter the following:",
+                    true
+                );
             } else {
-                throwError.UnknownCharThrow(true);
+                // throwError.UnknownCharThrow(true);
+                theThrows.CreateThrow("uc",
+                    "Unknown Character.",
+                    true
+                );
                 Program.DoReturn(false);
             }
         }
