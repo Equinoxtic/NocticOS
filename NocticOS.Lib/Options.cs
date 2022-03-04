@@ -9,13 +9,13 @@ namespace NocticOS.Lib
     {
         ThrowError throwError = new ThrowError();
         
-        public void PushOptions(string? daName, int? setLength, string[] setArrTag, string[] setArr) {
-            if (!String.IsNullOrEmpty(daName)) {
+        public void PushOptions(string? cmd, string[] setArr, int? setLength) {
+            if (!String.IsNullOrEmpty(cmd)) {
                 for (int i = 0; i < setLength; i++) {
-                    Console.Write(setArrTag[i] + setArr[i] + "\n");
+                    Console.Write(cmd + " " + setArr[i] + "\n");
                 }
             } else {
-                throwError.CustomThrow("ERROR: Name is empty.\n", true);
+                throwError.CustomThrow("ERROR: Command Name is empty.\n", true);
             }
         }
     }
