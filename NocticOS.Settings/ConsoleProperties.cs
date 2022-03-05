@@ -10,9 +10,9 @@ namespace NocticOS.Settings
 
         public void ConsoleSettingsState()
         {
-            ProgramReturn Program = new ProgramReturn();
+            Program program = new Program();
 
-            Program.DoReturn(false);
+            program.DoReturn(false);
         }
     }
 }
