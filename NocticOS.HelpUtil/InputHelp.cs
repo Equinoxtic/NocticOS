@@ -32,7 +32,7 @@ namespace NocticOS.HelpUtil
         
         public void OpenHelp(bool isMissingParams)
         {
-            ProgramReturn Program = new ProgramReturn();
+            Program program = new Program();
 
             if (isMissingParams) {
                 // throwError.MissingParamsThrow(true);
@@ -48,7 +48,7 @@ namespace NocticOS.HelpUtil
                 Console.Write("input " + InputCmdLs[i] + "\n");
             }
 
-            Program.DoReturn(false);
+            program.DoReturn(false);
         }
     }
 }
