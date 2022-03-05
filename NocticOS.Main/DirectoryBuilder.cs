@@ -7,7 +7,7 @@ namespace NocticOS.Main
     {
         public void DirBuild()
         {
-            ProgramReturn ReturnToProgram = new ProgramReturn();
+            Program program = new Program();
 
             var curDir = @"C:\NocticOS";
 
@@ -22,14 +22,14 @@ namespace NocticOS.Main
             System.IO.Directory.CreateDirectory(curDir);
 			
 		    if (System.IO.Directory.Exists(curDir)) {
-				for (int i = 0; i < 5; i++) {
+				for (int i = 0; i < createDirs.Length; i++) {
 					System.IO.Directory.CreateDirectory(createDirs[i]);
 				}
 			}
 
 			Console.WriteLine("\nSuccessfully Built NocticOS directories.");
 
-            ReturnToProgram.DoReturn(false);
+            program.DoReturn(false);
         }
     }
 }
