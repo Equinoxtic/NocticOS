@@ -6,11 +6,11 @@ namespace NocticOS.Main
     {
         public void DEBuild()
         {
-            ProgramReturn Program = new ProgramReturn();
+            Program program = new Program();
 
             Console.Write("\nThis feature is still a WIP.");
 
-            Program.DoReturn(false);
+            program.DoReturn(false);
         }
     }
 }
