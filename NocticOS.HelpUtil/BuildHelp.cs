@@ -39,12 +39,20 @@ namespace NocticOS.HelpUtil
 
             Console.Write("\n");
 
+            /*
             for (int i = 0; i < buildLs.Length; i++) {
                 if (isMissingParams) {
                     buildOptions.PushOptions(buildLs, buildLs.Length, "build");
                 } else {
                     Console.Write(buildLs[i] + "\n");
                 }
+            }
+            */
+
+            if (!isMissingParams) {
+                buildOptions.PushOptions(buildLs, buildLs.Length);
+            } else {
+                buildOptions.PushOptions(buildLs, buildLs.Length, "build");
             }
 
             Program.DoReturn(false);
