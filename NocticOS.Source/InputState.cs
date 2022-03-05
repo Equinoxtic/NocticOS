@@ -8,7 +8,7 @@ namespace NocticOS.Source
 {
     public class InputState
     {
-        ProgramReturn Program = new ProgramReturn();
+        Program program = new Program();
         // ThrowError throwError = new ThrowError();
         Throw theThrows = new Throw();
         StandardInput DaInput = new StandardInput();
@@ -58,7 +58,7 @@ namespace NocticOS.Source
                     "Unknown Character.",
                     true
                 );
-                Program.DoReturn(false);
+                program.DoReturn(false);
             }
         }
 
