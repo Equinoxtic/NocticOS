@@ -11,7 +11,7 @@ namespace NocticOS.Templates.CS_Class_Templates
         {
             Options options = new Options();
             string[] ls = {};
-            options.PushOptions("list", ls, ls.Length);
+            options.PushOptions(ls, ls.Length, "list");
         }
     }
 }
