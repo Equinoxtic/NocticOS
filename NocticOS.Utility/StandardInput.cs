@@ -7,7 +7,7 @@ namespace NocticOS.Utility
 {
     public class StandardInput
     {
-        ProgramReturn Program = new ProgramReturn();
+        Program program = new Program();
         Throw emptyThrow = new Throw();
         public void InputStr(bool ShowOutput, bool ReturnToProgram)
         {
@@ -27,7 +27,7 @@ namespace NocticOS.Utility
             }
 
             if (ReturnToProgram) {
-                Program.DoReturn(false);
+                program.DoReturn(false);
             }
         }
 
@@ -43,7 +43,7 @@ namespace NocticOS.Utility
             }
 
             if (ReturnToProgram) {
-                Program.DoReturn(false);
+                program.DoReturn(false);
             }
         }
 
@@ -59,7 +59,7 @@ namespace NocticOS.Utility
             }
 
             if (ReturnToProgram) {
-                Program.DoReturn(false);
+                program.DoReturn(false);
             }
         }
 
@@ -75,7 +75,7 @@ namespace NocticOS.Utility
             }
 
             if (ReturnToProgram) {
-                Program.DoReturn(false);
+                program.DoReturn(false);
             }
         }
     }
