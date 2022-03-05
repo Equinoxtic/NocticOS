@@ -41,7 +41,7 @@ namespace NocticOS.HelpUtil
 
             for (int i = 0; i < buildLs.Length; i++) {
                 if (isMissingParams) {
-                    buildOptions.PushOptions("build", buildLs, buildLs.Length);
+                    buildOptions.PushOptions(buildLs, buildLs.Length, "build");
                 } else {
                     Console.Write(buildLs[i] + "\n");
                 }
