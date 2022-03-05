@@ -16,11 +16,12 @@ namespace NocticOS.Utility
 {
     public class CustomCreation
     {
+        Program program = new Program();
         // ThrowError throwError = new ThrowError();
         WIPThrow wipThrow = new WIPThrow();
+        
         public void ObjectCreation()
         {
-            ProgramReturn Program = new ProgramReturn();
             StandardInput standardInput = new StandardInput();
 
             string[] objTypes = {
@@ -73,14 +74,13 @@ namespace NocticOS.Utility
 
             Console.Write("Name: " + OBJECT_NAME + "\nType: " + STR_OBJECT_TYPE + "\n");
 
-            Program.DoReturn(false);
+            program.DoReturn(false);
         }
         
         public string functionPreset = "";
 
         public void FunctionCreation()
         {
-            ProgramReturn Program = new ProgramReturn();
             FunctionCodePresets functionCodePresets = new FunctionCodePresets();
 
             string[] presetLs = {
@@ -123,40 +123,34 @@ namespace NocticOS.Utility
 
             functionCodePresets.CodePresetSwitch(strCodePreset);
 
-            Program.DoReturn(false);
+            program.DoReturn(false);
         }
 
         public void ClassCreation()
         {
-            ProgramReturn Program = new ProgramReturn();
-
             var className = "";
             var classPreaset = 0;
             var strClassPreset = "";
 
-            Program.DoReturn(false);
+            program.DoReturn(false);
         }
 
         public void StructCreation()
         {
-            ProgramReturn Program = new ProgramReturn();
-
             // throwError.WIPThrow(true, "feature");
 
             wipThrow.ThrowWIP("feature", true);
 
-            Program.DoReturn(false);
+            program.DoReturn(false);
         }
 
         public void InterfaceCreation()
         {
-            ProgramReturn Program = new ProgramReturn();
-
             // throwError.WIPThrow(true, "feature");
 
             wipThrow.ThrowWIP("feature", true);
 
-            Program.DoReturn(false);
+            program.DoReturn(false);
         }
     }
 }
