@@ -10,38 +10,47 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using NocticOS.Utility;
+using NocticOS.Lib;
 
 namespace NocticOS.Source
 {
     public class CreationState
     {
+        Options createOptions = new Options();
+
+        string[] customTypeLs = {
+            "[obj] - Create a Custom Object.",
+            "[func] - Create a Custom Function.",
+            "[class] - Create a Custom Class.",
+            "[struct] - Create a Custom Structure.",
+            "[inface] - Create a Custom Interface.",
+        };
+
+        /*
+        string[] customTypeDescs = {
+            "Create a Custom Object.",
+            "Create a Custom Function.",
+            "Create a Custom Class.",
+            "Create a Custom Structure.",
+            "Create a Custom Interface."
+        };
+        */
+
         public void OpenState()
         {
             CustomCreation customCreation = new CustomCreation();
-
-            string[] customTypeTags = {
-                "[obj] - ",
-                "[func] - ",
-                "[class] - ",
-                "[struct] - ",
-                "[inface] - ",
-            };
-
-            string[] customTypeDescs = {
-                "Create a Custom Object.",
-                "Create a Custom Function.",
-                "Create a Custom Class.",
-                "Create a Custom Structure.",
-                "Create a Custom Interface."
-            };
 
             var customType = "";
 
             Console.Write("\nSelect an action:\n");
 
+            /*
             for (int i = 0; i < 5; i++) {
                 Console.Write(customTypeTags[i] + customTypeDescs[i] + "\n");
             }
+            */
+
+            createOptions.PushOptions(customTypeLs, customTypeLs.Length);
 
             Console.Write("~ ");
             
