@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using NocticOS.Utility;
+using NocticOS.Lib;
 
 namespace NocticOS.Source
 {
@@ -9,12 +10,12 @@ namespace NocticOS.Source
     {
         public void OpenState()
         {
-            ProgramReturn Program = new ProgramReturn();
             StandardMath standardMath = new StandardMath();
+            Options operationls = new Options();
 
             var operOpts = "";
             
-            string[] OperList = {
+            string[] operList = {
                 "[add] Addition",
                 "[subtract] Subtraction",
                 "[multiply] Multiplication",
@@ -23,11 +24,16 @@ namespace NocticOS.Source
 
             Console.WriteLine("\nSelect an Operation:\n");
 
+            /*
             for (int i = 0; i < 4; i++) {
                 Console.Write(OperList[i] + "\n");
             }
+            */
+
+            operationls.PushOptions(operList, operList.Length);
 
             Console.Write("~ ");
+            
             operOpts = Console.ReadLine();
 
             switch(operOpts)
