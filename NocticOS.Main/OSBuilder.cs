@@ -6,11 +6,11 @@ namespace NocticOS.Main
     {
         public void BuildOS()
         {
-            ProgramReturn Program = new ProgramReturn();
+            Program program = new Program();
 
             Console.Write("\nThis feature is still WIP.\n");
 
-            Program.DoReturn(false);
+            program.DoReturn(false);
         }
     }
 }
