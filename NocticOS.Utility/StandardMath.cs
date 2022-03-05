@@ -8,7 +8,7 @@ namespace NocticOS.Utility
     {
         public void NocticMath(string oper, bool includeInput, int a = 0, int b = 0)
         {
-            ProgramReturn Program = new ProgramReturn();
+            Program program = new Program();
 
             if (includeInput)
             {
@@ -30,7 +30,7 @@ namespace NocticOS.Utility
 
             Console.Write("\n");
             
-            Program.DoReturn(false);
+            program.DoReturn(false);
         }
     }
 }
