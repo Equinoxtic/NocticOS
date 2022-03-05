@@ -27,7 +27,7 @@ namespace NocticOS.HelpUtil
 
         public void OpenHelp(bool isMissingParams)
         {
-            ProgramReturn Program = new ProgramReturn();
+            Program program = new Program();
             
             if (isMissingParams) {
                 // throwError.MissingParamsThrow(true);
@@ -55,7 +55,7 @@ namespace NocticOS.HelpUtil
                 buildOptions.PushOptions(buildLs, buildLs.Length, "build");
             }
 
-            Program.DoReturn(false);
+            program.DoReturn(false);
         }
     }
 }
