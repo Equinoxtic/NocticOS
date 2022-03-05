@@ -12,6 +12,7 @@ namespace NocticOS.HelpUtil
         Throw missingParams = new Throw();
 
         string[] buildLs = {
+            "-help - Shows information about the 'build' command.",
             "-dirs - Builds the standard NocticOS directories.",
             "-os - (WIP) Builds NocticOS' system files (package managers and etc).",
             "-de - (WIP) Builds NocticOS' Desktop Enviroment (Desktop UI)."
