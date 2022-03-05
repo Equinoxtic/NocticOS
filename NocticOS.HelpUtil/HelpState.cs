@@ -6,7 +6,7 @@ namespace NocticOS.HelpUtil
 {
     public class HelpState
     {
-        ProgramReturn Program = new ProgramReturn();
+        Program program = new Program();
         InputHelp inputHelp = new InputHelp();
         MathHelp mathHelp = new MathHelp();
 
@@ -49,7 +49,7 @@ namespace NocticOS.HelpUtil
                 Console.Write(cmdLs[i] + "\n");
             }
 
-            Program.DoReturn(false);
+            program.DoReturn(false);
         }
     }
 }
