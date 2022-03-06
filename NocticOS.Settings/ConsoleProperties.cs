@@ -6,6 +6,9 @@ namespace NocticOS.Settings
 {
     public class ConsoleProperties
     {
-        // No code.
+        public string? consoleColorBG;
+        public string? consoleColorFG;
+        public string? consoleCursor;
+        public bool showNocticInfo;
     }
 }
