@@ -83,6 +83,11 @@ namespace NocticOS.Utility
         {
             FunctionCodePresets functionCodePresets = new FunctionCodePresets();
 
+            var functionName = "";
+            var strCodePreset = "";
+            var functionArgLength = 0;
+            var functionCodePreset = 0;
+
             string[] presetLs = {
                 "[1] Print, Hello World!",
                 "[2] Input Text",
@@ -90,11 +95,6 @@ namespace NocticOS.Utility
                 "[4] Input Float",
                 "[5] Input Double"
             };
-
-            var functionName = "";
-            var strCodePreset = "";
-            var functionArgLength = 0;
-            var functionCodePreset = 0;
 
             Console.Write("\nInput the name for your function: ");
             functionName = Console.ReadLine();
@@ -134,7 +134,7 @@ namespace NocticOS.Utility
                     case 3: strOrder = "Fourth"; break;
                     case 4: strOrder = "Fifth"; break;
                 }
-                Console.Write(strOrder + " " + functionArguments[i] + "\n");
+                Console.Write(strOrder + " Argument - " + functionArguments[i] + "\n");
             }
 
             Console.Write("\nSelect a code preset:\n\n");
