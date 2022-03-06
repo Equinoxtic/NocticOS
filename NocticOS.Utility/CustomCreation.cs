@@ -96,25 +96,59 @@ namespace NocticOS.Utility
             var functionArgLength = 0;
             var functionCodePreset = 0;
 
+            Console.Write("\nInput the name for your function: ");
             functionName = Console.ReadLine();
 
+            Console.Write("\nInput the amount of arguments (Maximum is 5): ");
             functionArgLength = Convert.ToInt32(Console.ReadLine());
+            if (functionArgLength > 5) {
+                functionArgLength = 5;
+            }
 
             string[] functionArguments = new string[functionArgLength];
 
+            Console.Write("\n");
+
+            string strOrder = "";
+
             for (int i = 0; i < functionArgLength; i++) {
+                switch (i) {
+                    case 0: strOrder = "First"; break;
+                    case 1: strOrder = "Second"; break;
+                    case 2: strOrder = "Third"; break;
+                    case 3: strOrder = "Fourth"; break;
+                    case 4: strOrder = "Fifth"; break;
+                }
+                Console.Write(strOrder + " Argument: ");
                 functionArguments[i] = Console.ReadLine();
+                functionArguments.Append(functionArguments[i]);
             }
+
+            Console.Write("\nArguments:\n");
+
+            for (int i = 0; i < functionArgLength; i++) {
+                switch (i) {
+                    case 0: strOrder = "First"; break;
+                    case 1: strOrder = "Second"; break;
+                    case 2: strOrder = "Third"; break;
+                    case 3: strOrder = "Fourth"; break;
+                    case 4: strOrder = "Fifth"; break;
+                }
+                Console.Write(strOrder + " " + functionArguments[i] + "\n");
+            }
+
+            Console.Write("\nSelect a code preset:\n\n");
 
             for (int i = 0; i < presetLs.Length; i++) {
                 Console.Write(presetLs[i] + "\n");
             }
 
+            Console.Write("~ ");
             functionCodePreset = Convert.ToInt32(Console.ReadLine());
 
             switch(functionCodePreset)
             {
-                case 1: strCodePreset = "preset.print-hello-word"; break;
+                case 1: strCodePreset = "preset.print-hello-world"; break;
                 case 2: strCodePreset = "preset.input.text"; break;
                 case 3: strCodePreset = "preset.input.int"; break;
                 case 4: strCodePreset = "preset.input.float"; break;
@@ -131,6 +165,8 @@ namespace NocticOS.Utility
             var className = "";
             var classPreaset = 0;
             var strClassPreset = "";
+
+            wipThrow.ThrowWIP("feature", true);
 
             program.DoReturn(false);
         }
