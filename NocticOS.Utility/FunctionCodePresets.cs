@@ -16,26 +16,24 @@ namespace NocticOS.Utility
             {
                 case "preset.print-hello-world":
                     customCreation.functionPreset = "Print, Hello World!";
-                    Console.Write("\nHello World!\n");
                     break;
 
                 case "preset.input.text":
-                    customCreation.functionPreset = "Input Text";
-                    standardInput.InputStr(true, false);
+                    customCreation.functionPreset = "Input Text / String";
                     break;
 
                 case "preset.input.int":
                     customCreation.functionPreset = "Input Integer";
-                    standardInput.InputInt(true, false);
                     break;
 
                 case "preset.input.float":
                     customCreation.functionPreset = "Input Float";
-                    standardInput.InputFloat(true, false);
                     break;
 
                 case "preset.input.double":
                     customCreation.functionPreset = "Input Double";
+                    break;
+            }
                     standardInput.InputDouble(true, false);
                     break;
             }
