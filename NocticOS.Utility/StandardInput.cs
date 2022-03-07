@@ -18,7 +18,8 @@ namespace NocticOS.Utility
 
             if (ShowOutput) {
                 if (String.IsNullOrEmpty(curString)) {
-                    emptyThrow.CreateThrow("et",
+                    emptyThrow.CreateThrow(false, 
+                        "et",
                         "The current string has an empty value!\nPlease try again.",
                         true);
                 } else {
