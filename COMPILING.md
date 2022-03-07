@@ -50,8 +50,8 @@ If you wanna get an older version of NocticOS, please visit the releases page.
 
 | **Operating System** | **64 Bit** | **32 Bit** | **ARM64** | **ARM** | **Universal** | **Intel Chip** | **Apple Silicon** |
 | :------------------: | :--------: | :--------: | :-------: | :-----: | :-----------: | :------------: | :---------------: |
-| **Windows**		   | <https://code.visualstudio.com/docs/?dv=win64user> | <https://code.visualstudio.com/docs/?dv=win32user> | - | <https://code.visualstudio.com/docs/?dv=win32arm64user> | - | - | - |
-| **MacOS**            |
+| **Windows**		   | `<https://code.visualstudio.com/docs/?dv=win64user>` | `<https://code.visualstudio.com/docs/?dv=win32user>` | - | `<https://code.visualstudio.com/docs/?dv=win32arm64user>` | - | - | - |
+| **MacOS**            | - | - | - | - | - | `<>` | `<>` | `<>` |
 | **Linux**            |
 
 * **C# Extension:** <https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp>
