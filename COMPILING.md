@@ -52,7 +52,7 @@ If you wanna get an older version of NocticOS, please visit the releases page.
 | :------------------: | :--------: | :--------: | :-------: | :-----: | :-----------: | :------------: | :---------------: |
 | **Windows**		   | <https://code.visualstudio.com/docs/?dv=win64user> | <https://code.visualstudio.com/docs/?dv=win32user> | - | <https://code.visualstudio.com/docs/?dv=win32arm64user>` | - | - | - |
 | **MacOS**            | - | - | - | - | <https://code.visualstudio.com/docs/?dv=osx> | <https://code.visualstudio.com/docs/?dv=darwinx64> | <https://code.visualstudio.com/docs/?dv=darwinarm64> |
-| **Linux**            | <https://code.visualstudio.com/docs/?dv=linux64_deb> **(.deb)** \| <https://code.visualstudio.com/docs/?dv=linux64_rpm> **(.rpm)** | - | <https://code.visualstudio.com/docs/?dv=linuxarmhf_deb> **(.deb)** \| <https://code.visualstudio.com/docs/?dv=linuxarmhf_rpm> **(.rpm)** | <https://code.visualstudio.com/docs/?dv=linuxarm64_deb> **(.deb)** \| <https://code.visualstudio.com/docs/?dv=linuxarm64_rpm> **(.rpm)** | - | - | - |
+| **Linux**            | <https://code.visualstudio.com/docs/?dv=linux64_deb> **(.deb)** <https://code.visualstudio.com/docs/?dv=linux64_rpm> **(.rpm)** | - | <https://code.visualstudio.com/docs/?dv=linuxarmhf_deb> **(.deb)** <https://code.visualstudio.com/docs/?dv=linuxarmhf_rpm> **(.rpm)** | <https://code.visualstudio.com/docs/?dv=linuxarm64_deb> **(.deb)** <https://code.visualstudio.com/docs/?dv=linuxarm64_rpm> **(.rpm)** | - | - | - |
 
 * **C# Extension:** <https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp>
 * **C# IDE Extensions:** <https://marketplace.visualstudio.com/items?itemName=jchannon.csharpextensions>
