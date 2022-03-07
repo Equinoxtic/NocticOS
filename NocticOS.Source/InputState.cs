@@ -48,13 +48,15 @@ namespace NocticOS.Source
                 }
             } else if (options == "n" || options == "N") {
                 // throwError.OperationCancelledThrow(true);
-                theThrows.CreateThrow("mp",
+                theThrows.CreateThrow(false, 
+                    "mp",
                     "Missing Parameters. Please enter the following:",
                     true
                 );
             } else {
                 // throwError.UnknownCharThrow(true);
-                theThrows.CreateThrow("uc",
+                theThrows.CreateThrow(false, 
+                    "uc",
                     "Unknown Character.",
                     true
                 );
