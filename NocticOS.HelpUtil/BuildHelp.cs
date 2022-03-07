@@ -32,7 +32,8 @@ namespace NocticOS.HelpUtil
             
             if (isMissingParams) {
                 // throwError.MissingParamsThrow(true);
-                missingParams.CreateThrow("mp",
+                missingParams.CreateThrow(false, 
+                    "mp",
                     "Missing Parameters. Please enter the following:",
                     true
                 );
