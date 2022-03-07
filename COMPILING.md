@@ -31,18 +31,19 @@ If you wanna get an older version of NocticOS, please visit the releases page.
 
 **Link:** <https://github.com/Equinoxtic/NocticOS/releases>
 
-## Installing The .NET SDK and VS-Code
+## Installing The .NET Framework and VS-Code
 
-* Install the **.NET SDK 6.0.**
+* Install the **.NET Framework 6.0.**
 * Install **Visual Studio Code.**
 * Install Extensions for **C# support** in VS-Code
 
-## Download Links
+## Download Links (.NET SDK and Runtime)
 
 | **Operating System** | **SDK Installers** | **SDK Binaries** | **Runtime Installers** | **Runtime Binaries** |
 | :--------------: | :------------: | :----------: | :----------------: | :--------------: |
 | **Windows**      | [ARM64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-arm64-installer) \| [x86](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-x86-installer) \| [x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-x64-installer) | [ARM64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-arm64-binaries) \| [x86](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-x86-binaries)  \| [x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-x64-binaries) | [ARM64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-arm64-installer) \| [x86](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-x86-installer) \| [x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-x64-installer) | [ARM64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-arm64-binaries) \| [x86](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-x86-binaries) \| [x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-x64-binaries) |
 | **MacOS**        | [ARM64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-macos-arm64-installer) \| [x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-macos-x64-installer) | [ARM64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-macos-arm64-binaries) \| [x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-macos-x64-binaries) | [ARM64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-macos-arm64-installer) \| [x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-macos-x64-installer) | [ARM64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-macos-arm64-binaries) \| [x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-macos-x64-binaries) |
+| **Linux**        | [Package Manager Instructions](https://docs.microsoft.com/dotnet/core/install/linux?WT.mc_id=dotnet-35129-website) | [ARM32](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-linux-arm32-binaries) \| [ARM32 Alpine](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-linux-arm32-alpine-binaries) \| [ARM64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-linux-arm64-binaries) \| [ARM64 Alpine](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-linux-arm64-alpine-binaries) \| [x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-linux-x64-binaries) \| [x64 Alpine](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-linux-x64-alpine-binaries) | [Package Manager Instructions](https://docs.microsoft.com/dotnet/core/install/linux?WT.mc_id=dotnet-35129-website) | [ARM32](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-linux-arm32-binaries) \| [ARM32 Alpine](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-linux-arm32-alpine-binaries) \| [ARM64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-linux-arm64-binaries) \| [ARM64 Alpine](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-linux-arm64-alpine-binaries) \| [x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-linux-x64-binaries) \| [x64 Alpine]https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-linux-x64-alpine-binaries() |
 
 
 * **Visual Studio Code:** <https://code.visualstudio.com>
