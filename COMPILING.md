@@ -46,7 +46,14 @@ If you wanna get an older version of NocticOS, please visit the releases page.
 | **Linux**        | [Package Manager Instructions](https://docs.microsoft.com/dotnet/core/install/linux?WT.mc_id=dotnet-35129-website) | [ARM32](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-linux-arm32-binaries) \| [ARM32 Alpine](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-linux-arm32-alpine-binaries) \| [ARM64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-linux-arm64-binaries) \| [ARM64 Alpine](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-linux-arm64-alpine-binaries) \| [x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-linux-x64-binaries) \| [x64 Alpine](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-linux-x64-alpine-binaries) | [Package Manager Instructions](https://docs.microsoft.com/dotnet/core/install/linux?WT.mc_id=dotnet-35129-website) | [ARM32](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-linux-arm32-binaries) \| [ARM32 Alpine](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-linux-arm32-alpine-binaries) \| [ARM64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-linux-arm64-binaries) \| [ARM64 Alpine](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-linux-arm64-alpine-binaries) \| [x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-linux-x64-binaries) \| [x64 Alpine](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-linux-x64-alpine-binaries) |
 
 
-* **Visual Studio Code:** <https://code.visualstudio.com>
+## Download Links (Visual Studio Code)
+
+| **Operating System** | **64 Bit** | **32 Bit** | **ARM64** | **ARM** | **Universal** | **Intel Chip** | **Apple Silicon** |
+| :------------------: | :--------: | :--------: | :-------: | :-----: | :-----------: | :------------: | :---------------: |
+| **Windows**		   | <https://code.visualstudio.com/docs/?dv=win64user> | <https://code.visualstudio.com/docs/?dv=win32user> | - | <https://code.visualstudio.com/docs/?dv=win32arm64user> | - | - | - |
+| **MacOS**            |
+| **Linux**            |
+
 * **C# Extension:** <https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp>
 * **C# IDE Extensions:** <https://marketplace.visualstudio.com/items?itemName=jchannon.csharpextensions>
 
