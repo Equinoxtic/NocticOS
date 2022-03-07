@@ -17,8 +17,9 @@ namespace NocticOS.Utility
     public class CustomCreation
     {
         Program program = new Program();
+        Throw wipThrow = new Throw();
         // ThrowError throwError = new ThrowError();
-        WIPThrow wipThrow = new WIPThrow();
+        // WIPThrow wipThrow = new WIPThrow();
         
         public void ObjectCreation()
         {
@@ -168,7 +169,9 @@ namespace NocticOS.Utility
             var strClassPreset = "";
             */
 
-            wipThrow.ThrowWIP("feature", true);
+            // wipThrow.ThrowWIP("feature", true);
+
+            wipThrow.CreateThrow(true, null, null, true, "feature");
 
             program.DoReturn(false);
         }
@@ -177,7 +180,7 @@ namespace NocticOS.Utility
         {
             // throwError.WIPThrow(true, "feature");
 
-            wipThrow.ThrowWIP("feature", true);
+            wipThrow.CreateThrow(true, null, null, true, "feature");
 
             program.DoReturn(false);
         }
@@ -186,7 +189,7 @@ namespace NocticOS.Utility
         {
             // throwError.WIPThrow(true, "feature");
 
-            wipThrow.ThrowWIP("feature", true);
+            wipThrow.CreateThrow(true, null, null, true, "feature");
 
             program.DoReturn(false);
         }
