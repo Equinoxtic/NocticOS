@@ -10,7 +10,7 @@ namespace NocticOS.Lib
 		public string? msg;
 		public bool? newLine;
 
-		public void CreateThrow(bool setaswip, string curtag, string curmsg, bool shouldNewLine, string wipkey = "") {
+		public void CreateThrow(bool setaswip, string? curtag = "", string? curmsg = "", bool shouldNewLine = false, string? wipkey = "") {
 			if (!setaswip) {
 				if (!String.IsNullOrEmpty(curtag) || !String.IsNullOrEmpty(curmsg)) {
 					if (shouldNewLine) {
