@@ -162,9 +162,11 @@ namespace NocticOS.Utility
 
         public void ClassCreation()
         {
+            /*
             var className = "";
             var classPreaset = 0;
             var strClassPreset = "";
+            */
 
             wipThrow.ThrowWIP("feature", true);
 
