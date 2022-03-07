@@ -1,4 +1,4 @@
-# NocticOS License.
+# NocticOS License
 
 If you're planning to make a rewrite / remake of NocticOS, follow the regulations here:
 
