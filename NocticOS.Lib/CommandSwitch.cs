@@ -69,8 +69,8 @@ namespace NocticOS.Lib
 				case "build" : buildHelp.OpenHelp(true); break;
 				case "build -help" : buildHelp.OpenHelp(false); break;
 				case "build -dirs" : directoryBuilder.DirBuild(); break;
-				case "build -os" : oSBuilder.BuildOS(); break;
-				case "build -de" : deBuilder.DEBuild(); break;
+				// case "build -os" : oSBuilder.BuildOS(); break;
+				// case "build -de" : deBuilder.DEBuild(); break;
 
 				case "exit" : Console.WriteLine("\nExiting program...\n"); Thread.Sleep(3000); break;
 			}
