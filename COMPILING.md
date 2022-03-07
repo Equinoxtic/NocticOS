@@ -31,23 +31,25 @@ If you wanna get an older version of NocticOS, please visit the releases page.
 
 **Link:** <https://github.com/Equinoxtic/NocticOS/releases>
 
-## Installing .NET and VS-Code
+## Installing The .NET SDK and VS-Code
 
-* Install the .NET Framework 6.0.
+* Install the .NET SDK 6.0.
 * Install Visual Studio Code.
 * Install Extensions for C# support in VS-Code
 
 **Links:**
 
-* **.NET Framework (6.0):** <https://dotnet.microsoft.com/en-us/>
+* **.NET SDK (6.0):** <https://dotnet.microsoft.com/en-us/>
 * **Visual Studio Code:** <https://code.visualstudio.com>
 * **C# Extension:** <https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp>
 * **C# IDE Extensions:** <https://marketplace.visualstudio.com/items?itemName=jchannon.csharpextensions>
 
 ### ADDITIONAL NOTES WHEN INSTALLING .NET
 
-* For x64 users install the x86 binaries.
-* For x32 users install the x64 binaries.
+* When running NocticOS (Without source) download the Runtime Binaries.
+* When building NocticOS (With source) download the SDK Binaries.
+* For 64-bit users install the x86 binaries.
+* For 32-bit users install the x64 binaries.
 
 Once you have followed those steps. open up your desired Terminal (Command Prompt, PowerShell or Windows Terminal)
 
