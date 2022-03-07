@@ -4,30 +4,38 @@ using System.Threading.Tasks;
 
 namespace NocticOS.Lib
 {
-    public class Throw
-    {
-        public string? tag;
-        public string? msg;
-        public bool? newLine;
+	public class Throw
+	{
+		public string? tag;
+		public string? msg;
+		public bool? newLine;
 
-        public void CreateThrow(string curtag, string curmsg, bool shouldNewLine)
-        {
-            if (!String.IsNullOrEmpty(curtag) || !String.IsNullOrEmpty(curmsg)) {
-                if (shouldNewLine) {
-                    Console.Write("\n");
-                }
-                Console.Write(curmsg + "\n");
-            } else {
-                Console.Write("\nERROR: Tag or Message is MISSING.");
-            }
-        }
+		public void CreateThrow(bool setaswip, string curtag, string curmsg, bool shouldNewLine, string wipkey = "") {
+			if (!setaswip) {
+				if (!String.IsNullOrEmpty(curtag) || !String.IsNullOrEmpty(curmsg)) {
+					if (shouldNewLine) {
+						Console.Write("\n");
+					}
+					Console.Write(curmsg + "\n");
+				}
+				else {
+					Console.Write("\nERROR: Tag or Message is MISSING.");
+				}
+			} else {
+				if (!String.IsNullOrEmpty(wipkey)) {
+					if (shouldNewLine) {
+						Console.Write("\n");
+					}
+					Console.Write("This " + wipkey + " is still a WIP.");
+				}
+			}
+		}
 
-        public void DoThrow()
-        {
-            if (newLine == true) {
-                Console.Write("\n");
-            }
-            Console.Write(msg + "\n");
-        }
-    }
+		public void DoThrow() {
+			if (newLine == true) {
+				Console.Write("\n");
+			}
+			Console.Write(msg + "\n");
+		}
+	}
 }
