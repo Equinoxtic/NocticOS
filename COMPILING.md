@@ -37,9 +37,14 @@ If you wanna get an older version of NocticOS, please visit the releases page.
 * Install **Visual Studio Code.**
 * Install Extensions for **C# support** in VS-Code
 
-**Links:**
+## Download Links
 
-* **.NET (6.0):** <https://dotnet.microsoft.com/en-us/download/dotnet/6.0>
+**.NET SDK**
+| ![x86](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-x86-installer) | ![x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-x64-installer) | ![Arm64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-arm64-installer) |
+
+**.NET Runtime**
+| ![x86](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-x86-installer) | ![x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-x64-installer) | ![Arm64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-arm64-installer) |
+
 * **Visual Studio Code:** <https://code.visualstudio.com>
 * **C# Extension:** <https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp>
 * **C# IDE Extensions:** <https://marketplace.visualstudio.com/items?itemName=jchannon.csharpextensions>
