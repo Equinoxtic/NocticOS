@@ -39,7 +39,7 @@ If you wanna get an older version of NocticOS, please visit the releases page.
 
 **Links:**
 
-* **.NET (6.0):** <https://dotnet.microsoft.com/en-us/>
+* **.NET (6.0):** <https://dotnet.microsoft.com/en-us/download/dotnet/6.0>
 * **Visual Studio Code:** <https://code.visualstudio.com>
 * **C# Extension:** <https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp>
 * **C# IDE Extensions:** <https://marketplace.visualstudio.com/items?itemName=jchannon.csharpextensions>
