@@ -40,6 +40,10 @@ If you wanna get an older version of NocticOS, please visit the releases page.
 ## Download Links
 
 **.NET SDK**
+| **Operating System** | **SDK Installers** | **SDK Binaries** | **Runtime Installers** | **Runtime Binaries** |
+| :--------------: | :------------: | :----------: | :----------------: | :--------------: |
+| **Windows**      | [ARM64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-arm64-installer) \| [x86](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-x86-installer) \| [x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-x64-installer) | [ARM64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-arm64-binaries) \| [x86](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-x86-binaries)  \| [x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-x64-binaries) | [ARM644](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-arm64-installer) \| [x86](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-x86-installer) \| [x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-x64-installer) | [ARM64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-arm64-binaries) \| [x86](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-x86-binaries) \| [x64](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-x64-binaries) |
+
 
 
 **.NET Runtime**
