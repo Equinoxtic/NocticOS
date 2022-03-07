@@ -26,7 +26,7 @@ namespace NocticOS.Lib
 					if (shouldNewLine) {
 						Console.Write("\n");
 					}
-					Console.Write("This " + wipkey + " is still a WIP.");
+					Console.Write("This " + wipkey + " is still a WIP.\n");
 				}
 			}
 		}
