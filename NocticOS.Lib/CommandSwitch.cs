@@ -21,8 +21,8 @@ namespace NocticOS.Lib
 
 			// Utils
 			DirectoryBuilder directoryBuilder = new DirectoryBuilder();
-			OSBuilder oSBuilder = new OSBuilder();
-			DesktopEnviromentBuilder deBuilder = new DesktopEnviromentBuilder();
+			// OSBuilder oSBuilder = new OSBuilder();
+			// DesktopEnviromentBuilder deBuilder = new DesktopEnviromentBuilder();
 			DateDisplay dateDisplayer = new DateDisplay();
 			StandardMath standardMath = new StandardMath();
 
