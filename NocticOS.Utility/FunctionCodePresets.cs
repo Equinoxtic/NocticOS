@@ -34,6 +34,28 @@ namespace NocticOS.Utility
                     customCreation.functionPreset = "Input Double";
                     break;
             }
+
+            Console.Write("\nSelected Code Preset: " + customCreation.functionPreset);
+
+            switch(customCreation.functionPreset)
+            {
+                case "Print, Hello World!":
+                    Console.Write("\nHello World!\n");
+                    break;
+
+                case "Input Text / String":
+                    standardInput.InputStr(true, false);
+                    break;
+
+                case "Input Integer":
+                    standardInput.InputInt(true, false);
+                    break;
+                
+                case "Input Float":
+                    standardInput.InputFloat(true, false);
+                    break;
+
+                case "Input Double":
                     standardInput.InputDouble(true, false);
                     break;
             }
