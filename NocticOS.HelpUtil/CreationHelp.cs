@@ -15,7 +15,9 @@ namespace NocticOS.HelpUtil
             "-sel - Standard Creation selection, gives you the options for creating a custom object, function and class.",
             "-obj - Create a Custom Object, input it's own name and type.",
             "-func - Create a Custom Function, input it's own name and allows you to select a code preset to run.",
-            "-class - Create a Custom Class, input it's own name and it also allows you to store objects within it."
+            "-class - Create a Custom Class, input it's own name and it also allows you to store objects within it.",
+            "-struct - Create a Custom Structure, input it's name and store data in it.",
+            "-inface -  Create a Custom Blueprint for a Class."
         };
 
         /*
