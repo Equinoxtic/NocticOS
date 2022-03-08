@@ -168,9 +168,7 @@ namespace NocticOS.Utility
             var classPreaset = 0;
             var strClassPreset = "";
             */
-
-            // wipThrow.ThrowWIP("feature", true);
-
+            
             wipThrow.CreateThrow(true, null, null, true, "feature");
 
             program.DoReturn(false);
@@ -178,8 +176,6 @@ namespace NocticOS.Utility
 
         public void StructCreation()
         {
-            // throwError.WIPThrow(true, "feature");
-
             wipThrow.CreateThrow(true, null, null, true, "feature");
 
             program.DoReturn(false);
@@ -187,8 +183,6 @@ namespace NocticOS.Utility
 
         public void InterfaceCreation()
         {
-            // throwError.WIPThrow(true, "feature");
-
             wipThrow.CreateThrow(true, null, null, true, "feature");
 
             program.DoReturn(false);
