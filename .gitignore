@@ -18,6 +18,9 @@ x64/
 *.dll
 
 # Other
+[Dd]ist/
+[Bb]uild/
 __pycache__/
 *.pyc
+*.spec
 *.txt
