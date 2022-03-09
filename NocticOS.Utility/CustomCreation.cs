@@ -33,9 +33,9 @@ namespace NocticOS.Utility
                 "[dbl] Double"
             };
 
-            var OBJECT_NAME = "";
-            var OBJECT_TYPE = "";
-            var STR_OBJECT_TYPE = "";
+            string? OBJECT_NAME = "";
+            string? OBJECT_TYPE = "";
+            string? STR_OBJECT_TYPE = "";
 
             Console.Write("\nInput a name for your object: ");
 
