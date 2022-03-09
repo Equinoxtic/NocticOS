@@ -164,10 +164,16 @@ namespace NocticOS.Utility
 
         public void ClassCreation()
         {
-            string className = "";
+            string? className = "";
+            bool hasConstructor = false;
+            bool createInstance = false;
 
             Console.Write("Input a name for your class: ");
             className = Console.ReadLine();
+
+            if (hasConstructor) {}
+            
+            if (createInstance) {}
 
             program.DoReturn(false);
         }
