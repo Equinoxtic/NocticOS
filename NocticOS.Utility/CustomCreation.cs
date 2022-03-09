@@ -85,10 +85,10 @@ namespace NocticOS.Utility
         {
             FunctionCodePresets functionCodePresets = new FunctionCodePresets();
 
-            var functionName = "";
-            var strCodePreset = "";
-            var functionArgLength = 0;
-            var functionCodePreset = 0;
+            string? functionName = "";
+            string? strCodePreset = "";
+            int functionArgLength = 0;
+            int functionCodePreset = 0;
 
             string[] presetLs = {
                 "[1] Print, Hello World!",
