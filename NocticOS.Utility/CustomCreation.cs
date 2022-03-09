@@ -164,13 +164,10 @@ namespace NocticOS.Utility
 
         public void ClassCreation()
         {
-            /*
-            var className = "";
-            var classPreaset = 0;
-            var strClassPreset = "";
-            */
-            
-            wipThrow.CreateThrow(true, null, null, true, "feature");
+            string className = "";
+
+            Console.Write("Input a name for your class: ");
+            className = Console.ReadLine();
 
             program.DoReturn(false);
         }
