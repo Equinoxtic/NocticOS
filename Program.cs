@@ -13,7 +13,6 @@ namespace NocticOS
 
 		public static void Main(String[] args)
 		{
-			Throw unknownCmdThrow = new Throw();
 			CommandSwitch cmdSwitch = new CommandSwitch();
 			OSConfiguration prefs = new OSConfiguration();
 			string currentCursor = prefs.curCursor;
@@ -24,22 +23,11 @@ namespace NocticOS
 
 			curSelected = Console.ReadLine();
 
-			if (String.Equals(curSelected, curSelected)) {
-				unknownCmdThrow.CreateThrow(
-					false,
-					"unknownCmd",
-					"Unknown command: " + curSelected + ", please try again.",
-					false
-				);
-				cmdSwitch.OpenCommand("exit");
-			} else {
-				cmdSwitch.OpenCommand(curSelected);
-			}
+			cmdSwitch.OpenCommand(curSelected);
 		}
 
 		public void DoReturn(bool showInfo)
 		{
-			Throw unknownCmdThrow = new Throw();
 			CommandSwitch cmdSwitch = new CommandSwitch();
 			OSConfiguration prefs = new OSConfiguration();
 			string currentCursor = prefs.curCursor;
@@ -53,17 +41,7 @@ namespace NocticOS
 
 			curSelected = Console.ReadLine();
 
-			if (String.Equals(curSelected, curSelected)) {
-				unknownCmdThrow.CreateThrow(
-					false,
-					"unknownCmd",
-					"Unknown command: " + curSelected + ", please try again.",
-					false
-				);
-				cmdSwitch.OpenCommand("exit");
-			} else {
-				cmdSwitch.OpenCommand(curSelected);
-			}
+			cmdSwitch.OpenCommand(curSelected);
 		}
 	}
 }
