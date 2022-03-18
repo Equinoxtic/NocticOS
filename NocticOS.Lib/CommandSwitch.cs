@@ -13,6 +13,8 @@ namespace NocticOS.Lib
     {
         public void OpenCommand(string curCmd)
         {
+			// Help things
+			ConfigHelp configHelp = new ConfigHelp();
             BuildHelp buildHelp = new BuildHelp();
 			HelpState helpState = new HelpState();
 			DateDisplayHelp dateDisplayHelp = new DateDisplayHelp();
@@ -73,6 +75,8 @@ namespace NocticOS.Lib
 				case "build -help" : buildHelp.OpenHelp(false); break;
 				case "build -dirs" : directoryBuilder.DirBuild(); break;
 
+				case "config" : configHelp.OpenHelp(true); break;
+				case "config -help" : configHelp.OpenHelp(false); break;
 				case "config -bg" or "bg -config" : osConfig.SwitchConfigState("-bg"); break;
 				case "config -fg" or "fg -config" : osConfig.SwitchConfigState("-fg"); break;
 				case "config -cursor" or "cursor -config" : osConfig.SwitchConfigState("-cursor"); break;

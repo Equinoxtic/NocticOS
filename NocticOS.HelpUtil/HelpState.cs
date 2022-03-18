@@ -16,7 +16,8 @@ namespace NocticOS.HelpUtil
             "build <flag> - Builds the NocticOS files and directories.",
             "input <type> - Standard Input for strings, integers and doubles.",
             "math <operation>  - Math for NocticOS. Does simple operations such as Addition, Subtraction, Multiplication and Division.",
-            "create <type> - Allows you to create Custom Objects, Functions, and Classes!"
+            "create <type> - Allows you to create Custom Objects, Functions, and Classes!",
+            "config <flag> - Standard configuration for the Foreground, Background and Cursor for the OS."
         };
 
         /*
