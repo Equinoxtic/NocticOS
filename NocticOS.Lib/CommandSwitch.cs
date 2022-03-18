@@ -73,8 +73,8 @@ namespace NocticOS.Lib
 				case "build -help" : buildHelp.OpenHelp(false); break;
 				case "build -dirs" : directoryBuilder.DirBuild(); break;
 
-				case "config -bg" : osConfig.BGorFGconfig("bg"); break;
-				case "config -fg" : osConfig.BGorFGconfig("fg"); break;
+				case "config -bg" : osConfig.SwitchConfigState("-bg"); break;
+				case "config -fg" : osConfig.SwitchConfigState("-fg"); break;
 
 				case "open -noctic" or "open -os" or "open -home": mainConsole.OpenConsole(); break;
 

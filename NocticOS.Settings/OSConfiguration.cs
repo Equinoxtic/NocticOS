@@ -34,7 +34,7 @@ namespace NocticOS.Settings
             }
         }
         
-        static void SwitchConfigState(string choice)
+        public void SwitchConfigState(string choice)
         {
             switch (choice)
             {
@@ -62,7 +62,7 @@ namespace NocticOS.Settings
             "White"
         };
 
-        public static void BGorFGconfig(string type) {
+        static void BGorFGconfig(string type) {
             BackgroundSwitch bgSwitch = new BackgroundSwitch();
             ForegroundSwitch fgSwitch = new ForegroundSwitch();
             string kw = "";
