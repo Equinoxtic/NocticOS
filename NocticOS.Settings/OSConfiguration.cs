@@ -13,10 +13,12 @@ namespace NocticOS.Settings
 
         static string choice = "";
         static string[] choiceArray = {
-            ""
+            "-bg",
+            "-fg"
         };
         static string[] choiceDescs = {
-            ""
+            "Background Configuration",
+            "Foreground Configuration"
         };
 
         public void Open(bool isList)
