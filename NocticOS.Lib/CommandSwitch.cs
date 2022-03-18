@@ -78,9 +78,9 @@ namespace NocticOS.Lib
 				case "config" : configHelp.OpenHelp(true); break;
 				case "config -help" : configHelp.OpenHelp(false); break;
 				case "config -sel" or "config -select" : osConfig.Open(false); break;
-				case "config -bg" or "bg -config" : osConfig.SwitchConfigState("-bg"); break;
-				case "config -fg" or "fg -config" : osConfig.SwitchConfigState("-fg"); break;
-				case "config -cursor" or "cursor -config" : osConfig.SwitchConfigState("-cursor"); break;
+				case "config -bg" or "bg -config" : osConfig.SwitchConfigState("bg"); break;
+				case "config -fg" or "fg -config" : osConfig.SwitchConfigState("fg"); break;
+				case "config -cursor" or "cursor -config" : osConfig.SwitchConfigState("cursor"); break;
 
 				case "open -noctic" or "open -os" or "open -home": mainConsole.OpenConsole(); break;
 
