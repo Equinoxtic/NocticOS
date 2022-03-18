@@ -8,8 +8,6 @@ namespace NocticOS.Settings
     public class OSConfiguration
     {
         Options choices = new Options();
-        ConsoleProperties consoleProperties = new ConsoleProperties();
-        SystemProperties systemProperties = new SystemProperties();
 
         static string choice = "";
         static string[] choiceArray = {
@@ -63,6 +61,7 @@ namespace NocticOS.Settings
         };
 
         static void BGorFGconfig(string type) {
+            Program program = new Program();
             BackgroundSwitch bgSwitch = new BackgroundSwitch();
             ForegroundSwitch fgSwitch = new ForegroundSwitch();
             string kw = "";
@@ -90,6 +89,7 @@ namespace NocticOS.Settings
                     fgSwitch.FGSwitch(choice);
                 break;
             }
+            program.DoReturn(false);
         }
     }
 }
