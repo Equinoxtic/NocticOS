@@ -25,6 +25,7 @@ namespace NocticOS.Lib
 			StandardMath standardMath = new StandardMath();
 
 			// States /  Classes
+			MainConsole mainConsole = new MainConsole();
 			InputState standardInput = new InputState();
 			MathState mathState = new MathState();
 			CreationState creationState = new CreationState();
@@ -35,17 +36,17 @@ namespace NocticOS.Lib
 
 				case "day" : dateDisplayHelp.OpenHelp(true); break;
 				case "day -help" : dateDisplayHelp.OpenHelp(false); break;
-				case "day -t" : dateDisplayer.DisplayTime(); break;
-				case "day -d" : dateDisplayer.DisplayDate(); break;
-				case "day -cur" : dateDisplayer.DisplayTimeAndDate(); break;
+				case "day -t" or "day -time" : dateDisplayer.DisplayTime(); break;
+				case "day -d" or "day -day" : dateDisplayer.DisplayDate(); break;
+				case "day -cur" or "day -current" : dateDisplayer.DisplayTimeAndDate(); break;
 
 				case "input" : inputHelp.OpenHelp(true); break;
 				case "input -help" : inputHelp.OpenHelp(false); break;
-				case "input -sel" : standardInput.InputSelect(); break;
-				case "input -str" : standardInput.InputSwitch("str"); break;
-				case "input -flt" : standardInput.InputSwitch("flt"); break;
-				case "input -int" : standardInput.InputSwitch("int"); break;
-				case "input -dbl" : standardInput.InputSwitch("dbl"); break;
+				case "input -sel" or "input -select" : standardInput.InputSelect(); break;
+				case "input -str" or "input -string" : standardInput.InputSwitch("str"); break;
+				case "input -flt" or "input -float" : standardInput.InputSwitch("flt"); break;
+				case "input -int" or "input -integer" : standardInput.InputSwitch("int"); break;
+				case "input -dbl" or "uboyt -double" : standardInput.InputSwitch("dbl"); break;
 
 				case "math" : mathHelp.OpenHelp(true); break;
 				case "math -help" : mathHelp.OpenHelp(false); break;
@@ -57,18 +58,20 @@ namespace NocticOS.Lib
 
 				case "create" : creationHelp.OpenHelp(true); break;
 				case "create -help" : creationHelp.OpenHelp(false); break;
-				case "create -sel" : creationState.OpenState(); break;
-				case "create -obj" : creationState.CreationSwitch("obj"); break;
-				case "create -func" : creationState.CreationSwitch("func"); break;
+				case "create -sel" or "create -select" : creationState.OpenState(); break;
+				case "create -obj" or "create -object" : creationState.CreationSwitch("obj"); break;
+				case "create -func" or "create -function" : creationState.CreationSwitch("func"); break;
 				case "create -class" : creationState.CreationSwitch("class"); break;
-				case "create -struct" : creationState.CreationSwitch("struct"); break;
-				case "create -inface" : creationState.CreationSwitch("inface"); break;
+				case "create -struct" or "create -structure" : creationState.CreationSwitch("struct"); break;
+				case "create -inface" or "create -interface" : creationState.CreationSwitch("inface"); break;
 
 				case "build" : buildHelp.OpenHelp(true); break;
 				case "build -help" : buildHelp.OpenHelp(false); break;
 				case "build -dirs" : directoryBuilder.DirBuild(); break;
 
-				case "exit" : Console.WriteLine("\nExiting program...\n"); Thread.Sleep(3000); break;
+				case "open -noctic" or "open -os" or "open -home": mainConsole.OpenConsole(); break;
+
+				case "exit" or "out" or "close" : Console.WriteLine("\nExiting program...\n"); Thread.Sleep(3000); break;
 			}
         }
     }
