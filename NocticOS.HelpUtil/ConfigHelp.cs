@@ -10,6 +10,8 @@ namespace NocticOS.HelpUtil
         Throw missingParamsThrow = new Throw();
 
         string[] configHelpLs = {
+            "-help - Shows help and information for the 'config' command.",
+            "-sel - Prompts you to what property you want to configure.",
             "-bg - Background Color configuration.",
             "-fg - Foreground Color configuration.",
             "-cursor - Cursor configuration."
