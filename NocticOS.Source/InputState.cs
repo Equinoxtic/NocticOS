@@ -2,12 +2,14 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using NocticOS.Utility;
+using NocticOS.Settings;
 using NocticOS.Lib;
 
 namespace NocticOS.Source
 {
     public class InputState
     {
+        OSConfiguration prefs = new OSConfiguration();
         Program program = new Program();
         // ThrowError throwError = new ThrowError();
         Throw theThrows = new Throw();
@@ -31,7 +33,7 @@ namespace NocticOS.Source
                 Console.Write(InputTypeList[i]);
             }
 
-            Console.Write("\n~ ");
+            Console.Write("\n" + prefs.curSelectCursor);
             daInputType = Console.ReadLine();
 
             Console.Write("Show Output? [Y/N]: ");

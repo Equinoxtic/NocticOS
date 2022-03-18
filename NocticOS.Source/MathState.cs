@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using NocticOS.Utility;
+using NocticOS.Settings;
 using NocticOS.Lib;
 
 namespace NocticOS.Source
@@ -10,6 +11,7 @@ namespace NocticOS.Source
     {
         public void OpenState()
         {
+            OSConfiguration prefs = new OSConfiguration();
             StandardMath standardMath = new StandardMath();
             Options operationls = new Options();
 
@@ -32,7 +34,7 @@ namespace NocticOS.Source
 
             operationls.PushOptions(operList, operList.Length);
 
-            Console.Write("~ ");
+            Console.Write(prefs.curSelectCursor);
             
             operOpts = Console.ReadLine();
 

@@ -10,12 +10,14 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using NocticOS.Utility;
+using NocticOS.Settings;
 using NocticOS.Lib;
 
 namespace NocticOS.Source
 {
     public class CreationState
     {
+        OSConfiguration prefs = new OSConfiguration();
         Options createOptions = new Options();
 
         string[] customTypeLs = {
@@ -52,7 +54,7 @@ namespace NocticOS.Source
 
             createOptions.PushOptions(customTypeLs, customTypeLs.Length);
 
-            Console.Write("~ ");
+            Console.Write(prefs.curSelectCursor);
             
             customType = Console.ReadLine();
 
