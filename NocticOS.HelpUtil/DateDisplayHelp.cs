@@ -11,8 +11,8 @@ namespace NocticOS.HelpUtil
         Throw missingParams = new Throw();
 
         string[] dateDisplayLs = {
-            "-t - Displays the current time.",
             "-help - Shows the available commands for 'day'",
+            "-t - Displays the current time.",
             "-d - Displays the current date.",
             "-cur - Displays the current month, date and time."
         };
