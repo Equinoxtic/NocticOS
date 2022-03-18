@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using NocticOS.Main;
 using NocticOS.Source;
+using NocticOS.Settings;
 using NocticOS.HelpUtil;
 using NocticOS.Utility;
 
@@ -18,6 +19,9 @@ namespace NocticOS.Lib
 			MathHelp mathHelp = new MathHelp();
 			InputHelp inputHelp = new InputHelp();
 			CreationHelp creationHelp = new CreationHelp();
+
+			// Settings
+			OSConfiguration osConfig = new OSConfiguration();
 
 			// Utils
 			DirectoryBuilder directoryBuilder = new DirectoryBuilder();
@@ -68,6 +72,9 @@ namespace NocticOS.Lib
 				case "build" : buildHelp.OpenHelp(true); break;
 				case "build -help" : buildHelp.OpenHelp(false); break;
 				case "build -dirs" : directoryBuilder.DirBuild(); break;
+
+				case "config -bg" : osConfig.SwitchConfigState("bg"); break;
+				case "config -fg" : osConfig.SwitchConfigState("fg"); break;
 
 				case "open -noctic" or "open -os" or "open -home": mainConsole.OpenConsole(); break;
 

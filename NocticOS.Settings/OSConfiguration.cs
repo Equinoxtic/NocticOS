@@ -34,7 +34,7 @@ namespace NocticOS.Settings
             }
         }
         
-        static void SwitchConfigState(string choice)
+        public void SwitchConfigState(string choice)
         {
             switch (choice)
             {
