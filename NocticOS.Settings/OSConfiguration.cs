@@ -20,9 +20,9 @@ namespace NocticOS.Settings
         string? choice = "";
         
         string[] choiceArray = {
-            "-bg",
-            "-fg",
-            "-cursor"
+            "bg",
+            "fg",
+            "cursor"
         };
         string[] choiceDescs = {
             "Background Configuration",
