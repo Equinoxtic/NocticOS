@@ -30,20 +30,22 @@ namespace NocticOS.Settings
             "Cursor Configuration"
         };
 
-        void Open(bool isList)
+        public void Open(bool isList)
         {
             Console.Write("\nSelect configuration:\n");
-            choice = Console.ReadLine();
             if (isList) {
                 choices.PushOptions(choiceArray, choiceArray.Length, "config");
             } else {
                 for (int i = 0; i < choiceArray.Length; i++) {
-                    Console.Write("[" + choiceArray[i] + "]" + " - " + choiceDescs + "\n");
+                    Console.Write("[" + choiceArray[i] + "]" + " - " + choiceDescs[i] + "\n");
                 }
             }
+            Console.Write("\n" + curSelectCursor);
+            choice = Console.ReadLine();
+            SwitchConfigState(choice);
         }
         
-        public void SwitchConfigState(string choice)
+        public void SwitchConfigState(string? choice)
         {
             switch (choice)
             {
