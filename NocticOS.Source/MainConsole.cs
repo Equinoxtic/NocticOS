@@ -7,7 +7,7 @@ namespace NocticOS.Source
 {
     public class MainConsole
     {
-        static string mainPath = "Home/";
+        static string mainPath = "Home";
         static string choice = "";
         ConsoleCommandSwitch consoleCommandSwitch = new ConsoleCommandSwitch();
         public void OpenConsole()
