@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using NocticOS.Settings;
 using NocticOS.Lib;
 
 namespace NocticOS.Source
@@ -10,9 +11,10 @@ namespace NocticOS.Source
         static string mainPath = "Home";
         static string choice = "";
         ConsoleCommandSwitch consoleCommandSwitch = new ConsoleCommandSwitch();
+        OSConfiguration prefs = new OSConfiguration();
         public void OpenConsole()
-        {   
-            Console.Write("\n" + mainPath + "> ");
+        {
+            Console.Write("\n" + mainPath + prefs.curCursor);
             choice = Console.ReadLine();
             consoleCommandSwitch.DoSwitch(choice);
         }
