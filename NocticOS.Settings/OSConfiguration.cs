@@ -8,18 +8,29 @@ namespace NocticOS.Settings
     public class OSConfiguration
     {
         Options choices = new Options();
+        
+        static string? cursor = "";
+        static string? selectCursor = "";
 
-        static string choice = "";
-        static string[] choiceArray = {
+        // Auto space lol. v
+        public string curCursor = cursor + " ";
+        public string curSelectCursor = selectCursor + " "; 
+        // Auto space lol. ^
+
+        string? choice = "";
+        
+        string[] choiceArray = {
             "-bg",
-            "-fg"
+            "-fg",
+            "-cursor"
         };
-        static string[] choiceDescs = {
+        string[] choiceDescs = {
             "Background Configuration",
-            "Foreground Configuration"
+            "Foreground Configuration",
+            "Cursor Configuration"
         };
 
-        public void Open(bool isList)
+        void Open(bool isList)
         {
             Console.Write("\nSelect configuration:\n");
             choice = Console.ReadLine();
@@ -38,10 +49,11 @@ namespace NocticOS.Settings
             {
                 case "config -bg" or "-bg" : BGorFGconfig("bg"); break;
                 case "config -fg" or "-fg" : BGorFGconfig("fg"); break;
+                case "config -cursor" or "-cursor" : CursorConfigPrompt(); break;
             }
         }
 
-        static string[] colorChoices = {
+        string[] colorChoices = {
             "Black",
             "Dark Blue",
             "Dark Green",
@@ -60,7 +72,7 @@ namespace NocticOS.Settings
             "White"
         };
 
-        static void BGorFGconfig(string type) {
+        void BGorFGconfig(string type) {
             Program program = new Program();
             BackgroundSwitch bgSwitch = new BackgroundSwitch();
             ForegroundSwitch fgSwitch = new ForegroundSwitch();
@@ -74,7 +86,7 @@ namespace NocticOS.Settings
                     kw = "Foreground";
                     break;
             }
-            Console.Write(kw + " color configuration, input your desired color.\n");
+            Console.Write("\n" + kw + " color configuration, input your desired color.\n");
             for (int i = 0; i < colorChoices.Length; i++) {
                 Console.Write("[" + i + "]" + " - " + colorChoices[i] + "\n");
             }
@@ -89,6 +101,54 @@ namespace NocticOS.Settings
                     fgSwitch.FGSwitch(choice);
                 break;
             }
+            program.DoReturn(false);
+        }
+
+        string[] cursorTypeChoice = {
+            "default",
+            "selection"
+        };
+
+        void CursorConfigPrompt() {
+            string choice = "";
+            Console.Write("\nCursor Configuration, please select a cursor type to configure.\n");
+            for (int i = 0; i < cursorTypeChoice.Length; i++) {
+                Console.Write(cursorTypeChoice[i] + "\n");
+            }
+            Console.Write("\n" + curSelectCursor);
+            choice = Console.ReadLine();
+            CursorConfig(choice);
+        }
+
+        void CursorConfig(string? configCursorChoice)
+        {
+            Program program = new Program();
+            switch (configCursorChoice)
+            {
+                case "default" or "main":
+                    Console.Write("Input a character from your keyboard to be as your cursor: ");
+                    cursor = Console.ReadLine();
+                    if (String.IsNullOrEmpty(cursor)) {
+                        Throw emptyThrow = new Throw();
+                        emptyThrow.CreateThrow(false, "et", "FAILED: Empty Value.", true);
+                    } else {
+                        Console.Write("\nCursor has been successfully configured.\n");
+                    }
+                break;
+
+                case "selection" or "secondary":
+                    Console.Write("Input a character from your keyboard to be as your selection cursor: ");
+                    selectCursor = Console.ReadLine();
+                    if (String.IsNullOrEmpty(selectCursor)) {
+                        Throw emptyThrow = new Throw();
+                        emptyThrow.CreateThrow(false, "et", "FAILED: Empty Value.", true);
+                    } else {
+                        Console.Write("\nSelection Cursor has been successfully configured.\n");
+                    }
+                break;
+            }
+            curCursor = cursor;
+            curSelectCursor = selectCursor;
             program.DoReturn(false);
         }
     }
