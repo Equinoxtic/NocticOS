@@ -36,7 +36,8 @@ namespace NocticOS.Settings
         {
             switch (choice)
             {
-                case "config -bg" or "-bg":
+                case "config -bg" or "-bg" : BGorFGconfig("bg"); break;
+                case "config -fg" or "-fg" : BGorFGconfig("fg"); break;
             }
         }
 
@@ -61,6 +62,7 @@ namespace NocticOS.Settings
 
         static void BGorFGconfig(string type) {
             BackgroundSwitch bgSwitch = new BackgroundSwitch();
+            ForegroundSwitch fgSwitch = new ForegroundSwitch();
             string kw = "";
             int choice = 0;
             switch (type) {
@@ -80,6 +82,10 @@ namespace NocticOS.Settings
             {
                 case "Background":
                     bgSwitch.BGSwitch(choice);
+                break;
+
+                case "Foreground":
+                    fgSwitch.FGSwitch(choice);
                 break;
             }
         }
