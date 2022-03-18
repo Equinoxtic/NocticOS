@@ -49,9 +49,9 @@ namespace NocticOS.Settings
         {
             switch (choice)
             {
-                case "config -bg" or "-bg" : BGorFGconfig("bg"); break;
-                case "config -fg" or "-fg" : BGorFGconfig("fg"); break;
-                case "config -cursor" or "-cursor" : CursorConfigPrompt(); break;
+                case "config -bg" or "bg" : BGorFGconfig("bg"); break;
+                case "config -fg" or "fg" : BGorFGconfig("fg"); break;
+                case "config -cursor" or "cursor" : CursorConfigPrompt(); break;
             }
         }
 
