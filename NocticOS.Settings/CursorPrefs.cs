@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using System.IO;
 using NocticOS.Lib;
 
 namespace NocticOS.Settings
@@ -34,29 +35,34 @@ namespace NocticOS.Settings
         void CursorConfig(string? configCursorChoice)
         {
             Program program = new Program();
-            switch (configCursorChoice)
-            {
+            string cursorPrefix = "";
+            string charParse = "";
+            if (configCursorChoice == "selection" || configCursorChoice == "secondary") {
+                cursorPrefix = "Selection ";
+            }
+            Console.Write("Input a character from your keyboard to be as your " + cursorPrefix.ToLower() +  "cursor: ");
+            switch (configCursorChoice) {
                 case "default" or "main":
-                    Console.Write("Input a character from your keyboard to be as your cursor: ");
                     cursor = Console.ReadLine();
-                    if (String.IsNullOrEmpty(cursor)) {
-                        Throw emptyThrow = new Throw();
-                        emptyThrow.CreateThrow(false, "et", "FAILED: Empty Value.", true);
-                    } else {
-                        Console.Write("\nCursor has been successfully configured.\n");
-                    }
-                break;
-
+                    charParse = cursor;
+                    break;
                 case "selection" or "secondary":
-                    Console.Write("Input a character from your keyboard to be as your selection cursor: ");
                     selectCursor = Console.ReadLine();
-                    if (String.IsNullOrEmpty(selectCursor)) {
-                        Throw emptyThrow = new Throw();
-                        emptyThrow.CreateThrow(false, "et", "FAILED: Empty Value.", true);
-                    } else {
-                        Console.Write("\nSelection Cursor has been successfully configured.\n");
-                    }
-                break;
+                    charParse = selectCursor;
+                    break;
+            }
+            if (!String.IsNullOrEmpty(charParse)) {
+                Console.Write(
+                    "\n" + cursorPrefix + "Cursor has been successfully configured.\nCharacter: " + charParse + "\n"
+                );
+            } else {
+                Throw emptyThrow = new Throw();
+                emptyThrow.CreateThrow(
+                    false, 
+                    "et", 
+                    "FAILED: Empty Value.", 
+                    true
+                );
             }
             curCursor = cursor;
             curSelectCursor = selectCursor;
