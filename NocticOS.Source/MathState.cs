@@ -11,7 +11,7 @@ namespace NocticOS.Source
     {
         public void OpenState()
         {
-            OSConfiguration prefs = new OSConfiguration();
+            CursorPrefs prefs = new CursorPrefs();
             StandardMath standardMath = new StandardMath();
             Options operationls = new Options();
 

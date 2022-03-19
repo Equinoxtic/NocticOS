@@ -11,7 +11,7 @@ namespace NocticOS.Source
         static string mainPath = "Home";
         static string choice = "";
         ConsoleCommandSwitch consoleCommandSwitch = new ConsoleCommandSwitch();
-        OSConfiguration prefs = new OSConfiguration();
+        CursorPrefs prefs = new CursorPrefs();
         public void OpenConsole()
         {
             Console.Write("\n" + mainPath + prefs.curCursor);

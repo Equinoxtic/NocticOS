@@ -17,7 +17,7 @@ namespace NocticOS.Source
 {
     public class CreationState
     {
-        OSConfiguration prefs = new OSConfiguration();
+        CursorPrefs prefs = new CursorPrefs();
         Options createOptions = new Options();
 
         string[] customTypeLs = {

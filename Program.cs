@@ -13,8 +13,8 @@ namespace NocticOS
 
 		public static void Main(String[] args)
 		{
+			CursorPrefs prefs = new CursorPrefs();
 			CommandSwitch cmdSwitch = new CommandSwitch();
-			OSConfiguration prefs = new OSConfiguration();
 			string currentCursor = prefs.curCursor;
 			
 			Console.WriteLine("\nNocticOS - Version (1.1.5)");
@@ -28,8 +28,8 @@ namespace NocticOS
 
 		public void DoReturn(bool showInfo)
 		{
+			CursorPrefs prefs = new CursorPrefs();
 			CommandSwitch cmdSwitch = new CommandSwitch();
-			OSConfiguration prefs = new OSConfiguration();
 			string currentCursor = prefs.curCursor;
 
 			if (showInfo) {

@@ -9,7 +9,7 @@ namespace NocticOS.Source
 {
     public class InputState
     {
-        OSConfiguration prefs = new OSConfiguration();
+        CursorPrefs prefs = new CursorPrefs();
         Program program = new Program();
         // ThrowError throwError = new ThrowError();
         Throw theThrows = new Throw();
