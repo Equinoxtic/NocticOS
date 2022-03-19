@@ -8,14 +8,7 @@ namespace NocticOS.Settings
     public class OSConfiguration
     {
         Options choices = new Options();
-        
-        static string? cursor = "";
-        static string? selectCursor = "";
-
-        // Auto space lol. v
-        public string curCursor = cursor + " ";
-        public string curSelectCursor = selectCursor + " "; 
-        // Auto space lol. ^
+        CursorPrefs cursorPrefs = new CursorPrefs();
 
         string? choice = "";
         
@@ -40,7 +33,7 @@ namespace NocticOS.Settings
                     Console.Write("[" + choiceArray[i] + "]" + " - " + choiceDescs[i] + "\n");
                 }
             }
-            Console.Write("\n" + curSelectCursor);
+            Console.Write("\n" + cursorPrefs.curSelectCursor);
             choice = Console.ReadLine();
             SwitchConfigState(choice);
         }
@@ -51,7 +44,7 @@ namespace NocticOS.Settings
             {
                 case "config -bg" or "bg" : BGorFGconfig("bg"); break;
                 case "config -fg" or "fg" : BGorFGconfig("fg"); break;
-                case "config -cursor" or "cursor" : CursorConfigPrompt(); break;
+                case "config -cursor" or "cursor" : cursorPrefs.CursorConfigPrompt(); break;
             }
         }
 
@@ -103,54 +96,6 @@ namespace NocticOS.Settings
                     fgSwitch.FGSwitch(choice);
                 break;
             }
-            program.DoReturn(false);
-        }
-
-        string[] cursorTypeChoice = {
-            "default",
-            "selection"
-        };
-
-        void CursorConfigPrompt() {
-            string choice = "";
-            Console.Write("\nCursor Configuration, please select a cursor type to configure.\n");
-            for (int i = 0; i < cursorTypeChoice.Length; i++) {
-                Console.Write(cursorTypeChoice[i] + "\n");
-            }
-            Console.Write("\n" + curSelectCursor);
-            choice = Console.ReadLine();
-            CursorConfig(choice);
-        }
-
-        void CursorConfig(string? configCursorChoice)
-        {
-            Program program = new Program();
-            switch (configCursorChoice)
-            {
-                case "default" or "main":
-                    Console.Write("Input a character from your keyboard to be as your cursor: ");
-                    cursor = Console.ReadLine();
-                    if (String.IsNullOrEmpty(cursor)) {
-                        Throw emptyThrow = new Throw();
-                        emptyThrow.CreateThrow(false, "et", "FAILED: Empty Value.", true);
-                    } else {
-                        Console.Write("\nCursor has been successfully configured.\n");
-                    }
-                break;
-
-                case "selection" or "secondary":
-                    Console.Write("Input a character from your keyboard to be as your selection cursor: ");
-                    selectCursor = Console.ReadLine();
-                    if (String.IsNullOrEmpty(selectCursor)) {
-                        Throw emptyThrow = new Throw();
-                        emptyThrow.CreateThrow(false, "et", "FAILED: Empty Value.", true);
-                    } else {
-                        Console.Write("\nSelection Cursor has been successfully configured.\n");
-                    }
-                break;
-            }
-            curCursor = cursor;
-            curSelectCursor = selectCursor;
             program.DoReturn(false);
         }
     }
