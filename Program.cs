@@ -8,7 +8,6 @@ namespace NocticOS
 {
 	class Program
 	{
-		
 		static string? curSelected;
 
 		public static void Main(String[] args)
@@ -17,7 +16,7 @@ namespace NocticOS
 			CommandSwitch cmdSwitch = new CommandSwitch();
 			string currentCursor = prefs.curCursor;
 			
-			Console.WriteLine("\nNocticOS - Version (1.1.5)");
+			Console.WriteLine("\nNocticOS - (1.1.5)");
 			Console.Write("Type in 'help' to get started.");
 			Console.Write("\n" + currentCursor);
 
@@ -33,7 +32,7 @@ namespace NocticOS
 			string currentCursor = prefs.curCursor;
 
 			if (showInfo) {
-				Console.WriteLine("\nNocticOS - Version (1.1.5)");
+				Console.WriteLine("\nNocticOS - (1.1.5)");
 				Console.Write("Type in 'help' to get started.");
 			}
 
