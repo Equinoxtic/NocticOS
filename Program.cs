@@ -21,8 +21,17 @@ namespace NocticOS
 			Console.Write("\n" + currentCursor);
 
 			curSelected = Console.ReadLine();
-
-			cmdSwitch.OpenCommand(curSelected);
+			if (String.IsNullOrEmpty(curSelected)) {
+				Throw emptyValue = new Throw();
+				emptyValue.CreateThrow(
+					false,
+					"ev",
+					"Empty Value, please try again.",
+					true
+				);
+			} else {
+				cmdSwitch.OpenCommand(curSelected);
+			}
 		}
 
 		public void DoReturn(bool showInfo)
@@ -39,8 +48,17 @@ namespace NocticOS
 			Console.Write("\n" + currentCursor);
 
 			curSelected = Console.ReadLine();
-
-			cmdSwitch.OpenCommand(curSelected);
+			if (String.IsNullOrEmpty(curSelected)) {
+				Throw emptyValue = new Throw();
+				emptyValue.CreateThrow(
+					false,
+					"ev",
+					"Empty Value, please try again.",
+					true
+				);
+			} else {
+				cmdSwitch.OpenCommand(curSelected);
+			}
 		}
 	}
 }
