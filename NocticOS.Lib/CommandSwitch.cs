@@ -24,6 +24,7 @@ namespace NocticOS.Lib
 
 			// Settings
 			OSConfiguration osConfig = new OSConfiguration();
+			CursorPrefs cursorPrefs = new CursorPrefs();
 
 			// Utils
 			DirectoryBuilder directoryBuilder = new DirectoryBuilder();
@@ -81,6 +82,8 @@ namespace NocticOS.Lib
 				case "config -bg" or "bg -config" : osConfig.SwitchConfigState("bg"); break;
 				case "config -fg" or "fg -config" : osConfig.SwitchConfigState("fg"); break;
 				case "config -cursor" or "cursor -config" : osConfig.SwitchConfigState("cursor"); break;
+				case "config -cursor /default" or "cursor -config /default" : cursorPrefs.SwitchCursorConfig("default"); break;
+				case "config -cursor /selection" or "cursor -config /selection" : cursorPrefs.SwitchCursorConfig("selection"); break;
 
 				case "open -noctic" or "open -os" or "open -home": mainConsole.OpenConsole(); break;
 
