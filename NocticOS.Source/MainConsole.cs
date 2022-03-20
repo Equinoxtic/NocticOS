@@ -16,7 +16,17 @@ namespace NocticOS.Source
         {
             Console.Write("\n" + mainPath + prefs.curCursor);
             choice = Console.ReadLine();
-            consoleCommandSwitch.DoSwitch(choice);
+            if (String.IsNullOrEmpty(choice)) {
+                Throw emptyValue = new Throw();
+                emptyValue.CreateThrow(
+                    false,
+                    "ev",
+                    "Empty value, please try again.",
+                    true
+                );
+            } else {
+                consoleCommandSwitch.DoSwitch(choice);
+            }
         }
     }
 }
