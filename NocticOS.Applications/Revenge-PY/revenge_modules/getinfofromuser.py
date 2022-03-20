@@ -1,1 +1,0 @@
-# getinfofromuser.py

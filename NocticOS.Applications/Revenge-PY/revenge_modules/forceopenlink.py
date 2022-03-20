@@ -1,1 +1,0 @@
-# forceopenlink.py

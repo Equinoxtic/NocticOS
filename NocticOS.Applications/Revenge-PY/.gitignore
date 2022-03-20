@@ -1,7 +1,0 @@
-# ignore pycache for REVENGE (Python)
-
-__pycache__/
-dist/
-build/
-zips/
-*.spec

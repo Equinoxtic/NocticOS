@@ -1,1 +1,0 @@
-# spamcreateroles.py

@@ -1,3 +1,0 @@
-# scriptchecker.py
-
-
