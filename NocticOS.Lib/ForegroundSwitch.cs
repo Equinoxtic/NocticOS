@@ -19,6 +19,30 @@ namespace NocticOS.Lib
                 case 2:
                     Console.ForegroundColor = ConsoleColor.DarkGreen;
                 break;
+
+                case 3:
+                    Console.ForegroundColor = ConsoleColor.DarkCyan;
+                break;
+
+                case 4:
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                break;
+
+                case 5:
+                    Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                break;
+
+                case 6:
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                break;
+
+                case 7:
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                break;
+
+                case 8:
+                    Console.ForegroundColor = ConsoleColor.DarkGray;
+                break;
             }
         }
     }
