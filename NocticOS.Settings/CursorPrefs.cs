@@ -18,7 +18,8 @@ namespace NocticOS.Settings
 
         string[] cursorTypeChoice = {
             "default",
-            "selection"
+            "selection",
+            "back"
         };
 
         public void CursorConfigPrompt() {
@@ -37,10 +38,18 @@ namespace NocticOS.Settings
             Program program = new Program();
             string cursorPrefix = "";
             string charParse = "";
-            if (configCursorChoice == "selection" || configCursorChoice == "secondary") {
-                cursorPrefix = "Selection ";
+            bool isConfig = false;
+            if (configCursorChoice != "back") {
+                isConfig = true;
+                Console.Write("Input a character from your keyboard to be as your " + cursorPrefix.ToLower() +  "cursor: ");
+                if (isConfig) {
+                    if (configCursorChoice == "selection" || configCursorChoice == "secondary") {
+                        cursorPrefix = "Selection ";
+                    }
+                }
+            } else {
+                Console.Write("\nAre you sure you want to exit out of this operation? [Y/N]: ");
             }
-            Console.Write("Input a character from your keyboard to be as your " + cursorPrefix.ToLower() +  "cursor: ");
             switch (configCursorChoice) {
                 case "default" or "main":
                     cursor = Console.ReadLine();
@@ -49,6 +58,9 @@ namespace NocticOS.Settings
                 case "selection" or "secondary":
                     selectCursor = Console.ReadLine();
                     charParse = selectCursor;
+                    break;
+                case "back" or "exit":
+                    ExitPrompt();
                     break;
             }
             if (!String.IsNullOrEmpty(charParse)) {
@@ -67,6 +79,23 @@ namespace NocticOS.Settings
             curCursor = cursor;
             curSelectCursor = selectCursor;
             program.DoReturn(false);
+        }
+
+        void ExitPrompt()
+        {
+            Program program = new Program();
+            string? choice = "";
+            choice = Console.ReadLine();
+            switch(choice) {
+                case "Y" or "y":
+                    Console.Write("\nExiting...\n");
+                    Thread.Sleep(3000);
+                    program.DoReturn(false);
+                    break;
+                case "N" or "n":
+                    CursorConfigPrompt();
+                    break;
+            }
         }
     }
 }
