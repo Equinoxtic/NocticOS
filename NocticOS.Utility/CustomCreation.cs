@@ -11,6 +11,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using NocticOS.Utility;
+using NocticOS.Settings;
 using NocticOS.Lib;
 
 namespace NocticOS.Utility
@@ -83,6 +84,7 @@ namespace NocticOS.Utility
 
         public void FunctionCreation()
         {
+            CursorPrefs prefs = new CursorPrefs();
             FunctionCodePresets functionCodePresets = new FunctionCodePresets();
 
             string? functionName = "";
@@ -145,7 +147,7 @@ namespace NocticOS.Utility
                 Console.Write(presetLs[i] + "\n");
             }
 
-            Console.Write("~ ");
+            Console.Write(prefs.curSelectCursor);
             functionCodePreset = Convert.ToInt32(Console.ReadLine());
 
             switch(functionCodePreset)
@@ -165,15 +167,38 @@ namespace NocticOS.Utility
         public void ClassCreation()
         {
             string? className = "";
+            string? constructChoice = "";
             bool hasConstructor = false;
-            bool createInstance = false;
 
             Console.Write("Input a name for your class: ");
             className = Console.ReadLine();
+            if (String.IsNullOrEmpty(className)) {
+                Throw emptyValue = new Throw();
+                emptyValue.CreateThrow(
+                    false,
+                    "ev",
+                    "Empty value, please try again.",
+                    true
+                );
+            }
 
-            if (hasConstructor) {}
-            
-            if (createInstance) {}
+            Console.Write("Include a constructor? [Y/N]: ");
+            constructChoice = Console.ReadLine();
+            if (String.IsNullOrEmpty(constructChoice)) {
+                Throw emptyValue = new Throw();
+                emptyValue.CreateThrow(
+                    false,
+                    "ev",
+                    "Empty value, please try again.",
+                    true
+                );
+            } else {
+                hasConstructor = true;
+            }
+
+            if (hasConstructor) {
+
+            }
 
             program.DoReturn(false);
         }
