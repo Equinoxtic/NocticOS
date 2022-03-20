@@ -84,7 +84,7 @@ namespace NocticOS.Lib
 				case "config -cursor" or "cursor -config" : osConfig.SwitchConfigState("cursor"); break;
 				case "config -cursor /default" or "cursor -config /default" : cursorPrefs.SwitchCursorConfig("default"); break;
 				case "config -cursor /selection" or "cursor -config /selection" : cursorPrefs.SwitchCursorConfig("selection"); break;
-
+				
 				case "open -noctic" or "open -os" or "open -home": mainConsole.OpenConsole(); break;
 
 				case "exit" or "out" or "close" : Console.WriteLine("\nExiting program...\n"); Thread.Sleep(3000); break;
