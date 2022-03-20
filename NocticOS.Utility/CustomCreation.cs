@@ -25,6 +25,7 @@ namespace NocticOS.Utility
         
         public void ObjectCreation()
         {
+            CursorPrefs prefs = new CursorPrefs();
             StandardInput standardInput = new StandardInput();
 
             string[] objTypes = {
@@ -39,8 +40,16 @@ namespace NocticOS.Utility
             string? STR_OBJECT_TYPE = "";
 
             Console.Write("\nInput a name for your object: ");
-
             OBJECT_NAME = Console.ReadLine();
+            if (String.IsNullOrEmpty(OBJECT_NAME)) {
+                Throw emptyValue = new Throw();
+                emptyValue.CreateThrow(
+                    false,
+                    "ev",
+                    "Emtpy value, please try again.",
+                    true
+                );
+            }
 
             Console.Write("\nSelect an Object Type:\n");
 
@@ -48,9 +57,17 @@ namespace NocticOS.Utility
                 Console.Write(objTypes[i] + "\n");
             }
 
-            Console.Write("~ ");
-
+            Console.Write(prefs.curSelectCursor);
             OBJECT_TYPE = Console.ReadLine();
+            if (String.IsNullOrEmpty(OBJECT_TYPE)) {
+                Throw emptyValue = new Throw();
+                emptyValue.CreateThrow(
+                    false,
+                    "ev",
+                    "Empty value, please try again.",
+                    true
+                );
+            }
 
             switch(OBJECT_TYPE) 
             {
@@ -102,6 +119,15 @@ namespace NocticOS.Utility
 
             Console.Write("\nInput the name for your function: ");
             functionName = Console.ReadLine();
+            if (String.IsNullOrEmpty(functionName)) {
+                Throw emptyValue = new Throw();
+                emptyValue.CreateThrow(
+                    false,
+                    "ev",
+                    "Empty value, please try again.",
+                    true
+                );
+            }
 
             Console.Write("\nInput the amount of arguments (Maximum is 5): ");
             functionArgLength = Convert.ToInt32(Console.ReadLine());
@@ -170,7 +196,7 @@ namespace NocticOS.Utility
             string? constructChoice = "";
             bool hasConstructor = false;
 
-            Console.Write("Input a name for your class: ");
+            Console.Write("\nInput a name for your class: ");
             className = Console.ReadLine();
             if (String.IsNullOrEmpty(className)) {
                 Throw emptyValue = new Throw();
@@ -181,8 +207,9 @@ namespace NocticOS.Utility
                     true
                 );
             }
+            Console.Write("Class name: " + className + "\n");
 
-            Console.Write("Include a constructor? [Y/N]: ");
+            Console.Write("\nInclude a constructor? [Y/N]: ");
             constructChoice = Console.ReadLine();
             if (String.IsNullOrEmpty(constructChoice)) {
                 Throw emptyValue = new Throw();
@@ -196,8 +223,15 @@ namespace NocticOS.Utility
                 hasConstructor = true;
             }
 
-            if (hasConstructor) {
+            Console.Write("\n");
 
+            if (hasConstructor) {
+                
+            } else {
+                string[] objectList = {};
+                for (int i = 0; i < objectList.Length; i++) {
+                    objectList[i] = Console.ReadLine();
+                }
             }
 
             program.DoReturn(false);
