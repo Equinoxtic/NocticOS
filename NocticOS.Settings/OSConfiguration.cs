@@ -85,6 +85,7 @@ namespace NocticOS.Settings
             for (int i = 0; i < colorChoices.Length; i++) {
                 Console.Write("[" + i + "]" + " - " + colorChoices[i] + "\n");
             }
+            Console.Write(cursorPrefs.curSelectCursor);
             choice = Convert.ToInt32(Console.ReadLine());
             switch (kw)
             {
