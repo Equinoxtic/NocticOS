@@ -22,6 +22,18 @@ namespace NocticOS.Settings
             "back"
         };
 
+        public void SwitchCursorConfig(string? cursorChoice)
+        {
+            switch(cursorChoice) {
+                case "default":
+                    CursorConfig("default");
+                    break;
+                case "selection":
+                    CursorConfig("selection");
+                    break;
+            }
+        }
+
         public void CursorConfigPrompt() {
             string choice = "";
             Console.Write("\nCursor Configuration, please select a cursor type to configure.\n");
