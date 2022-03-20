@@ -94,7 +94,7 @@ namespace NocticOS.Settings
             switch(choice) {
                 case "Y" or "y":
                     Console.Write("\nExiting...\n");
-                    Thread.Sleep(3000);
+                    Thread.Sleep(1000);
                     program.DoReturn(false);
                     break;
                 case "N" or "n":
