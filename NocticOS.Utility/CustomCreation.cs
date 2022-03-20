@@ -223,18 +223,32 @@ namespace NocticOS.Utility
                 hasConstructor = true;
             }
 
-            Console.Write("\n");
-
             if (hasConstructor) {
-                
-            } else {
-                string[] objectList = {};
-                for (int i = 0; i < objectList.Length; i++) {
-                    objectList[i] = Console.ReadLine();
+                int constructLength = 0;
+                Console.Write("\nInput the amount of length for your contructor");
+                constructLength = Convert.ToInt32(Console.ReadLine());
+                string[] constructList = new string[constructLength];
+                string[] constructObjects = {};
+                for (int i = 0; i < constructLength; i++) {
+                    constructList[i] = Console.ReadLine();
+                    constructObjects.Append(constructList[i]);
                 }
+                Console.Write("\nConstructor Objects:\n");
+                for (int i = 0; i < constructObjects.Length; i++) {
+                    Console.Write("[" + i + "] - " + constructObjects[i] + "\n");
+                }
+            } else {
+                OutputClassInfo(className, constructChoice);
+                program.DoReturn(false);
             }
+        }
 
-            program.DoReturn(false);
+        void OutputClassInfo(string? name = "", string? includesConstructor = "") {
+            Console.Write(
+                "\n===== CLASS INFO =====\n"
+                + "Name: " + name
+                + "Includes Constructor?: " + includesConstructor
+            );
         }
 
         public void StructCreation()
