@@ -30,7 +30,7 @@ namespace NocticOS.Utility
         {
             Console.Write("\n");
 
-            Console.WriteLine(DateTime.Now.ToString("dddd, MMM dd yyyy, hh:mm:ss"));
+            Console.WriteLine(DateTime.Now.ToString("dddd, MMMM dd yyyy, hh:mm:ss"));
 
             program.DoReturn(false);
         }
@@ -39,7 +39,7 @@ namespace NocticOS.Utility
         {
             Console.Write("\n");
 
-            Console.WriteLine(DateTime.Now.ToString("MMM"));
+            Console.WriteLine(DateTime.Now.ToString("MMMM"));
 
             program.DoReturn(false);
         }
