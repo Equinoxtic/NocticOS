@@ -34,5 +34,24 @@ namespace NocticOS.Utility
 
             program.DoReturn(false);
         }
+
+        public void DisplayMonth()
+        {
+            Console.Write("\n");
+
+            Console.WriteLine(DateTime.Now.ToString("MMM"));
+
+            program.DoReturn(false);
+        }
+
+
+        public void DisplayYear()
+        {
+            Console.Write("\n");
+
+            Console.WriteLine(DateTime.Now.ToString("yyyy"));
+
+            program.DoReturn(false);
+        }
     }
 }

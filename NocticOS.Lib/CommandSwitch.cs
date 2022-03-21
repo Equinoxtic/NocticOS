@@ -47,6 +47,8 @@ namespace NocticOS.Lib
 				case "day -t" or "day -time" : dateDisplayer.DisplayTime(); break;
 				case "day -d" or "day -day" : dateDisplayer.DisplayDate(); break;
 				case "day -cur" or "day -current" : dateDisplayer.DisplayTimeAndDate(); break;
+				case "day -m" or "day -month" : dateDisplayer.DisplayMonth(); break;
+				case "day -y" or "day -year" : dateDisplayer.DisplayYear(); break;
 
 				case "input" : inputHelp.OpenHelp(true); break;
 				case "input -help" : inputHelp.OpenHelp(false); break;
