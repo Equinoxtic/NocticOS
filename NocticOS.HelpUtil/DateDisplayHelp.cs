@@ -12,9 +12,11 @@ namespace NocticOS.HelpUtil
 
         string[] dateDisplayLs = {
             "-help - Shows the available commands for 'day'",
-            "-t - Displays the current time.",
-            "-d - Displays the current date.",
-            "-cur - Displays the current month, date and time."
+            "-t - Outputs the current time.",
+            "-d - Outputs the current date.",
+            "-m - Outputs the current month.",
+            "-y - Outputs the curretn year.",
+            "-cur - Outputs the current month, date and time."
         };
 
         /*
@@ -43,7 +45,7 @@ namespace NocticOS.HelpUtil
 
             for (int i = 0; i < dateDisplayLs.Length; i++) {
                 if (isMissingParams) {
-                    Console.Write("day " + dateDisplayLs[i] + "\n");
+                    Console.Write("date " + dateDisplayLs[i] + "\n");
                 } else {
                     Console.Write(dateDisplayLs[i] + "\n");
                 }
