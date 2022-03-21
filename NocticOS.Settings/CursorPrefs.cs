@@ -62,7 +62,7 @@ namespace NocticOS.Settings
                             cursorPrefix = "Selection";
                             break;
                     }
-                    Console.Write("Input a character from your keyboard to be as your " + cursorPrefix.ToLower() +  " cursor: ");
+                    Console.Write("Input character(s) from your keyboard to be as your " + cursorPrefix.ToLower() +  " cursor: ");
                 }
             } else {
                 Console.Write("\nAre you sure you want to exit out of this operation? [Y/N]: ");
