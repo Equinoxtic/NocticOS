@@ -42,13 +42,13 @@ namespace NocticOS.Lib
 			{
 				case "help" : helpState.OpenState(); break;
 
-				case "day" : dateDisplayHelp.OpenHelp(true); break;
-				case "day -help" : dateDisplayHelp.OpenHelp(false); break;
-				case "day -t" or "day -time" : dateDisplayer.DisplayTime(); break;
-				case "day -d" or "day -day" : dateDisplayer.DisplayDate(); break;
-				case "day -cur" or "day -current" : dateDisplayer.DisplayTimeAndDate(); break;
-				case "day -m" or "day -month" : dateDisplayer.DisplayMonth(); break;
-				case "day -y" or "day -year" : dateDisplayer.DisplayYear(); break;
+				case "date" : dateDisplayHelp.OpenHelp(true); break;
+				case "date -help" : dateDisplayHelp.OpenHelp(false); break;
+				case "date -t" or "date -time" : dateDisplayer.DisplaySwitch("time"); break;
+				case "date -d" or "date -day" : dateDisplayer.DisplaySwitch("date"); break;
+				case "date -m" or "date -month" : dateDisplayer.DisplaySwitch("month"); break;
+				case "date -y" or "date -year" : dateDisplayer.DisplaySwitch("year"); break;
+				case "date -cur" or "date -current" : dateDisplayer.DisplaySwitch("time-and-date"); break;
 
 				case "input" : inputHelp.OpenHelp(true); break;
 				case "input -help" : inputHelp.OpenHelp(false); break;
