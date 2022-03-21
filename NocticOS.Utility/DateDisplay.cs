@@ -8,48 +8,31 @@ namespace NocticOS.Utility
     {
         Program program = new Program();
 
-        public void DisplayTime()
+        public void DisplaySwitch(string dateTime)
         {
+            string prefix = "";
+
+            switch(dateTime) {
+                case "time":
+                    prefix = "HH:mm:ss";
+                    break;
+                case "date":
+                    prefix = DateTime.Now.ToShortDateString();
+                    break;
+                case "time-and-date":
+                    prefix = "dddd, MMMM dd yyyy, HH:mm:ss";
+                    break;
+                case "month":
+                    prefix = "MMMM";
+                    break;
+                case "year":
+                    prefix = "yyyy";
+                    break;
+            }
+
             Console.Write("\n");
 
-            Console.WriteLine("Time: " + DateTime.Now.ToString("HH:mm:ss"));
-
-            program.DoReturn(false);
-        }
-
-        public void DisplayDate()
-        {
-            Console.Write("\n");
-
-            Console.WriteLine("Date: " + DateTime.Now.ToShortDateString());
-
-            program.DoReturn(false);
-        }
-
-        public void DisplayTimeAndDate()
-        {
-            Console.Write("\n");
-
-            Console.WriteLine(DateTime.Now.ToString("dddd, MMMM dd yyyy, hh:mm:ss"));
-
-            program.DoReturn(false);
-        }
-
-        public void DisplayMonth()
-        {
-            Console.Write("\n");
-
-            Console.WriteLine(DateTime.Now.ToString("MMMM"));
-
-            program.DoReturn(false);
-        }
-
-
-        public void DisplayYear()
-        {
-            Console.Write("\n");
-
-            Console.WriteLine(DateTime.Now.ToString("yyyy"));
+            Console.WriteLine(DateTime.Now.ToString(prefix));
 
             program.DoReturn(false);
         }
