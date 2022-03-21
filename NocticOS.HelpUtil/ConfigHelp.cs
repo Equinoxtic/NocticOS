@@ -14,7 +14,8 @@ namespace NocticOS.HelpUtil
             "-sel - Prompts you to what property you want to configure.",
             "-bg - Background Color configuration.",
             "-fg - Foreground Color configuration.",
-            "-cursor - Cursor configuration."
+            "-cursor - Cursor configuration.",
+            "-interface - Interface configuration."
         };
 
         public void OpenHelp(bool isMissingParams)

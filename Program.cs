@@ -13,15 +13,33 @@ namespace NocticOS
 		static void MainProgram(bool showInfo = true)
 		{
 			CursorPrefs prefs = new CursorPrefs();
+			UIConfiguration uiConfiguration = new UIConfiguration();
 			CommandSwitch cmdSwitch = new CommandSwitch();
 			string currentCursor = prefs.curCursor;
+			string version =  "";
+			string dotnetversion = Environment.Version.ToString();
+			string timeStr = "HH:mm:ss";
+			bool versionAllowed = uiConfiguration.showOSVersion;
+			bool dotnetVersionAllowed = uiConfiguration.showDotnetVersion;
+			bool timeAllowed = uiConfiguration.showTime;
 
-			if (showInfo) {
-				Console.WriteLine("\nNocticOS - (1.1.5)");
-				Console.Write("Type in 'help' to get started.");
+			if (versionAllowed) {
+				version = " - (1.1.5)";
 			}
 
-			Console.Write("\n" + currentCursor);
+			if (showInfo) {
+				Console.WriteLine("\nNocticOS" + version);
+				Console.Write("Type in 'help' to get started.");
+				if (dotnetVersionAllowed) {
+					Console.Write("\n" + dotnetversion);
+				}
+			}
+
+			if (timeAllowed) {
+				Console.Write("\n" + "[" + DateTime.Now.ToString(timeStr) + "]" + currentCursor);
+			} else {
+				Console.Write("\n" + currentCursor);
+			}
 
 			curSelected = Console.ReadLine();
 			if (String.IsNullOrEmpty(curSelected)) {

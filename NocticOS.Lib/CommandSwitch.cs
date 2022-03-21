@@ -24,6 +24,7 @@ namespace NocticOS.Lib
 
 			// Settings
 			OSConfiguration osConfig = new OSConfiguration();
+			UIConfiguration uiConfig = new UIConfiguration();
 			CursorPrefs cursorPrefs = new CursorPrefs();
 
 			// Utils
@@ -87,6 +88,10 @@ namespace NocticOS.Lib
 				case "config -cursor" or "cursor -config" : osConfig.SwitchConfigState("cursor"); break;
 				case "config -cursor /default" or "cursor -config /default" : cursorPrefs.SwitchCursorConfig("default"); break;
 				case "config -cursor /selection" or "cursor -config /selection" : cursorPrefs.SwitchCursorConfig("selection"); break;
+				case "config -interface" or "interface -config" : uiConfig.ConfigPrompt(); break;
+				case "config -interface /time" or "interface -config /time" : uiConfig.SwitchConfigState("show-time"); break;
+				case "config -interface /dnver" or "interface -config /dnver" : uiConfig.SwitchConfigState("show-dotnet-version"); break;
+				case "config -interface /osver" or "interface -config /osver" : uiConfig.SwitchConfigState("show-os-version"); break;
 
 				case "open -noctic" or "open -os" or "open -home": mainConsole.OpenConsole(); break;
 
