@@ -9,32 +9,8 @@ namespace NocticOS
 	class Program
 	{
 		static string? curSelected;
-
-		public static void Main(String[] args)
-		{
-			CursorPrefs prefs = new CursorPrefs();
-			CommandSwitch cmdSwitch = new CommandSwitch();
-			string currentCursor = prefs.curCursor;
-			
-			Console.WriteLine("\nNocticOS - (1.1.5)");
-			Console.Write("Type in 'help' to get started.");
-			Console.Write("\n" + currentCursor);
-
-			curSelected = Console.ReadLine();
-			if (String.IsNullOrEmpty(curSelected)) {
-				Throw emptyValue = new Throw();
-				emptyValue.CreateThrow(
-					false,
-					"ev",
-					"Empty Value, please try again.",
-					true
-				);
-			} else {
-				cmdSwitch.OpenCommand(curSelected);
-			}
-		}
-
-		public void DoReturn(bool showInfo)
+		
+		static void MainProgram(bool showInfo = true)
 		{
 			CursorPrefs prefs = new CursorPrefs();
 			CommandSwitch cmdSwitch = new CommandSwitch();
@@ -60,5 +36,16 @@ namespace NocticOS
 				cmdSwitch.OpenCommand(curSelected);
 			}
 		}
+
+		public static void Main(String[] args)
+		{
+			MainProgram();
+		}
+
+		public void DoReturn(bool showInfo)
+		{
+			MainProgram(showInfo);
+		}
+
 	}
 }
