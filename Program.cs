@@ -37,15 +37,12 @@ namespace NocticOS
 			}
 		}
 
-		public static void Main(String[] args)
-		{
+		public static void Main(String[] args) {
 			MainProgram();
 		}
 
-		public void DoReturn(bool showInfo)
-		{
+		public void DoReturn(bool showInfo) {
 			MainProgram(showInfo);
 		}
-
 	}
 }
