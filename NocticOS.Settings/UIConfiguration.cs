@@ -10,7 +10,7 @@ namespace NocticOS.Settings
     {
         static bool timeAllowed = false;
         static bool dotnetVersionShowing = false;
-        static bool osVersionShowing = false;
+        static bool osVersionShowing = true;
         public bool showTime = timeAllowed;
         public bool showDotnetVersion = dotnetVersionShowing;
         public bool showOSVersion = osVersionShowing;
