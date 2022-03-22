@@ -33,6 +33,7 @@ namespace NocticOS.Lib
 			DirectoryBuilder directoryBuilder = new DirectoryBuilder();
 			DateDisplay dateDisplayer = new DateDisplay();
 			StandardMath standardMath = new StandardMath();
+			ClearScreen clearScreen = new ClearScreen();
 
 			// States /  Classes
 			MainConsole mainConsole = new MainConsole();
@@ -98,6 +99,8 @@ namespace NocticOS.Lib
 				case "open -noctic" or "open -os" or "open -home": mainConsole.OpenConsole(); break;
 
 				case "os-info" or "sys-info" : osInfo.ShowInfo(); break;
+
+				case "clear" or "cls" : clearScreen.ScreenClear(true);  break;
 
 				case "exit" or "out" or "close" : Console.WriteLine("\nExiting program...\n"); Thread.Sleep(3000); break;
 			}
