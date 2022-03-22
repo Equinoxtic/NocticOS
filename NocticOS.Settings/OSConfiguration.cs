@@ -15,12 +15,14 @@ namespace NocticOS.Settings
         string[] choiceArray = {
             "bg",
             "fg",
-            "cursor"
+            "cursor",
+            "interface"
         };
         string[] choiceDescs = {
             "Background Configuration",
             "Foreground Configuration",
-            "Cursor Configuration"
+            "Cursor Configuration",
+            "Interface Configuration"
         };
 
         public void Open(bool isList)
@@ -49,26 +51,27 @@ namespace NocticOS.Settings
         }
 
         string[] colorChoices = {
-            "Black",
-            "Dark Blue",
-            "Dark Green",
-            "Dark Cyan",
-            "Dark Red",
-            "Dark Magenta",
-            "Dark Yellow",
-            "Gray",
-            "Dark Gray",
-            "Blue",
-            "Green",
-            "Cyan",
-            "Red",
-            "Magenta",
-            "Yellow",
-            "White"
+            "[0] - Black",
+            "[1] - Dark Blue",
+            "[2] - Dark Green",
+            "[3] - Dark Cyan",
+            "[4] - Dark Red",
+            "[5] - Dark Magenta",
+            "[6] - Dark Yellow",
+            "[7] - Gray",
+            "[8] - Dark Gray",
+            "[9] - Blue",
+            "[10] - Green",
+            "[11] - Cyan",
+            "[12] - Red",
+            "[13] - Magenta",
+            "[14] - Yellow",
+            "[15] - White"
         };
 
         void BGorFGconfig(string type) {
             Program program = new Program();
+            Options colorOptions = new Options();
             BackgroundSwitch bgSwitch = new BackgroundSwitch();
             ForegroundSwitch fgSwitch = new ForegroundSwitch();
             string kw = "";
@@ -82,9 +85,7 @@ namespace NocticOS.Settings
                     break;
             }
             Console.Write("\n" + kw + " color configuration, input your desired color.\n");
-            for (int i = 0; i < colorChoices.Length; i++) {
-                Console.Write("[" + i + "]" + " - " + colorChoices[i] + "\n");
-            }
+            colorOptions.PushOptions(colorChoices, colorChoices.Length);
             Console.Write(cursorPrefs.curSelectCursor);
             choice = Convert.ToInt32(Console.ReadLine());
             switch (kw)

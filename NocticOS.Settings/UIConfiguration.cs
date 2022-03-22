@@ -23,11 +23,10 @@ namespace NocticOS.Settings
 
         public void ConfigPrompt() {
             Program program = new Program();
+            Options configOptions = new Options();
             CursorPrefs cursorPrefs = new CursorPrefs();
             string? choice = "";
-            for (int i = 0; i < configList.Length; i++) {
-                Console.Write(configList[i] + "\n");
-            }
+            configOptions.PushOptions(configList, configList.Length);
             Console.Write("\n" + cursorPrefs.curSelectCursor);
             choice = Console.ReadLine();
             if (String.IsNullOrEmpty(choice)) {
@@ -45,20 +44,22 @@ namespace NocticOS.Settings
         }
 
         public void SwitchConfigState(string state) {
+            string prefix = "";
             switch(state) {
                 case "show-time" or "time":
-                    ConfigState("show-time");
+                    prefix = "show-time";
                     break;
                 case "show-dotnet-version" or "dnver":
-                    ConfigState("show-dotnet-version");
+                    prefix = "show-dotnet-version";
                     break;
                 case "show-os-version" or "osver":
-                    ConfigState("show-os-version");
+                    prefix = "show-os-version";
                     break;
                 case "back":
-                    ConfigState("back");
+                    prefix = "back";
                     break;
             }
+            ConfigState(prefix);
         }
 
         void ConfigState(string curState) {
