@@ -11,6 +11,11 @@ namespace NocticOS.Settings
         static bool showSeconds = false;
         static bool showMinutes = false;
         static bool showHour = false;
+        static bool[] showList = {
+            showSeconds,
+            showMinutes,
+            showHour
+        };
         static bool isAll = true;
         public bool secondsShowing = showSeconds;
         public bool minutesShowing = showMinutes;
@@ -113,12 +118,15 @@ namespace NocticOS.Settings
                         case "Y" or "y":
                             switch(curState) {
                                 case "secs":
+                                    isAll = false;
                                     showSeconds = true;
                                     break;
                                 case "mins":
+                                    isAll = false;
                                     showMinutes = true;
                                     break;
                                 case "hrs":
+                                    isAll = false;
                                     showHour = true;
                                     break;
                                 case "all":
@@ -139,14 +147,18 @@ namespace NocticOS.Settings
                                     showHour = false;
                                     break;
                                 case "all":
-                                    isAll = true;
+                                    isAll = false;
                                     break;
                             }
                         break;
                     }
-                    if (showSeconds || showMinutes || showHour) {
+                    /* if (showSeconds || showMinutes || showHour) {
                         isAll = false;
-                    } else {
+                    } */
+                    if (isAll) {
+                        for (int i = 0; i < showList.Length; i++) {
+                            showList[i] = false;
+                        }
                         isAll = true;
                     }
                 }
