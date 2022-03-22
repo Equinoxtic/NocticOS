@@ -14,17 +14,40 @@ namespace NocticOS
 		{
 			CursorPrefs prefs = new CursorPrefs();
 			UIConfiguration uiConfiguration = new UIConfiguration();
+			TimeConfiguration timeConfiguration = new TimeConfiguration();
 			CommandSwitch cmdSwitch = new CommandSwitch();
 			string currentCursor = prefs.curCursor;
 			string version =  "";
 			string dotnetversion = Environment.Version.ToString();
-			string timeStr = "HH:mm:ss";
+			string timeStr = "";
 			bool versionAllowed = uiConfiguration.showOSVersion;
 			bool dotnetVersionAllowed = uiConfiguration.showDotnetVersion;
 			bool timeAllowed = uiConfiguration.showTime;
 
 			if (versionAllowed) {
 				version = " - (1.1.5)";
+			}
+
+			if (timeConfiguration.hoursShowing) {
+				timeConfiguration.minutesShowing = false;
+				timeConfiguration.secondsShowing = false;
+				timeStr = "HH";
+			}
+			
+			if (timeConfiguration.minutesShowing) {
+				timeConfiguration.hoursShowing = false;
+				timeConfiguration.secondsShowing = false;
+				timeStr = "mm";
+			}
+			
+			if (timeConfiguration.secondsShowing) {
+				timeConfiguration.hoursShowing = false;
+				timeConfiguration.minutesShowing = false;
+				timeStr = "ss";
+			}
+			
+			if (timeConfiguration.showingAll) {
+				timeStr = "HH:mm:ss";
 			}
 
 			if (showInfo) {
