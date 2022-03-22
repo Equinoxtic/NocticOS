@@ -6,7 +6,7 @@ namespace NocticOS.Security
 {
     public class UserPrefs
     {
-        string username = "";
-        string userpw = "";
+        public string username = "";
+        public string userpw = "";
     }
 }
