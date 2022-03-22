@@ -34,6 +34,7 @@ namespace NocticOS.Lib
 			DateDisplay dateDisplayer = new DateDisplay();
 			StandardMath standardMath = new StandardMath();
 			ClearScreen clearScreen = new ClearScreen();
+			OSExit osExit = new OSExit();
 
 			// States /  Classes
 			MainConsole mainConsole = new MainConsole();
@@ -102,7 +103,7 @@ namespace NocticOS.Lib
 
 				case "clear" or "cls" : clearScreen.ScreenClear(true);  break;
 
-				case "exit" or "out" or "close" : Console.WriteLine("\nExiting program...\n"); Thread.Sleep(3000); break;
+				case "exit" or "out" or "close" : osExit.Exit(true); break;
 			}
         }
     }
