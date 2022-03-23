@@ -40,6 +40,7 @@ namespace NocticOS.Source
 
         public void OpenState()
         {
+            Program program = new Program();
             CustomCreation customCreation = new CustomCreation();
 
             var customType = "";
@@ -57,14 +58,24 @@ namespace NocticOS.Source
             Console.Write(prefs.curSelectCursor);
             
             customType = Console.ReadLine();
-
-            switch(customType)
-            {
-                case "obj": customCreation.ObjectCreation(); break;
-                case "func" : customCreation.FunctionCreation(); break;
-                case "class" : customCreation.ClassCreation(); break;
-                case "struct" : customCreation.StructCreation(); break;
-                case "inface" : customCreation.InterfaceCreation(); break;
+            if (String.IsNullOrEmpty(customType)) {
+                Throw emptyValue = new Throw();
+                emptyValue.CreateThrow(
+                    false,
+                    "ev",
+                    "Empty value. Please try again.",
+                    true
+                );
+                program.DoReturn(false);
+            } else {
+                switch(customType)
+                {
+                    case "obj": customCreation.ObjectCreation(); break;
+                    case "func" : customCreation.FunctionCreation(); break;
+                    case "class" : customCreation.ClassCreation(); break;
+                    case "struct" : customCreation.StructCreation(); break;
+                    case "inface" : customCreation.InterfaceCreation(); break;
+                }
             }
         }
 

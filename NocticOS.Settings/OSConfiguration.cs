@@ -27,6 +27,7 @@ namespace NocticOS.Settings
 
         public void Open(bool isList)
         {
+            Program program = new Program();
             Console.Write("\nSelect configuration:\n");
             if (isList) {
                 choices.PushOptions(choiceArray, choiceArray.Length, "config");
@@ -37,7 +38,18 @@ namespace NocticOS.Settings
             }
             Console.Write("\n" + cursorPrefs.curSelectCursor);
             choice = Console.ReadLine();
-            SwitchConfigState(choice);
+            if (String.IsNullOrEmpty(choice)) {
+                Throw emptyValue = new Throw();
+                emptyValue.CreateThrow(
+                    false,
+                    "ev",
+                    "Empty value. Please try again.",
+                    false
+                );
+                program.DoReturn(false);
+            } else {
+                SwitchConfigState(choice);
+            }
         }
         
         public void SwitchConfigState(string? choice)

@@ -35,13 +35,25 @@ namespace NocticOS.Settings
         }
 
         public void CursorConfigPrompt() {
+            Program program = new Program();
             Options cursorOptions = new Options();
             string choice = "";
             Console.Write("\nCursor Configuration, please select a cursor type to configure.\n");
             cursorOptions.PushOptions(cursorTypeChoice, cursorTypeChoice.Length);
             Console.Write("\n" + curSelectCursor);
             choice = Console.ReadLine();
-            CursorConfig(choice);
+            if (String.IsNullOrEmpty(choice)) {
+                Throw emptyValue = new Throw();
+                emptyValue.CreateThrow(
+                    false,
+                    "ev",
+                    "Empty value. Please try again.",
+                    true
+                );
+                program.DoReturn(false);
+            } else {
+                CursorConfig(choice);
+            }
         }
 
         void CursorConfig(string? configCursorChoice)

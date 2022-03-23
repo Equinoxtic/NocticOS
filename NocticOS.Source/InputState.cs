@@ -9,8 +9,8 @@ namespace NocticOS.Source
 {
     public class InputState
     {
-        CursorPrefs prefs = new CursorPrefs();
         Program program = new Program();
+        CursorPrefs prefs = new CursorPrefs();
         // ThrowError throwError = new ThrowError();
         Throw theThrows = new Throw();
         StandardInput DaInput = new StandardInput();
@@ -29,15 +29,34 @@ namespace NocticOS.Source
 
             Console.Write("\nSelect a type for input:\n");
 
-            for (int i = 0; i < 4; i++) {
-                Console.Write(InputTypeList[i]);
-            }
+            Options inputList = new Options();
+            inputList.PushOptions(InputTypeList, InputTypeList.Length);
 
             Console.Write("\n" + prefs.curSelectCursor);
             daInputType = Console.ReadLine();
+            if (String.IsNullOrEmpty(daInputType)) {
+                Throw EmptyValue = new Throw();
+                EmptyValue.CreateThrow(
+                    false,
+                    "ev",
+                    "Empty value. Please try again.",
+                    true
+                );
+                program.DoReturn(false);
+            }
 
             Console.Write("Show Output? [Y/N]: ");
             options = Console.ReadLine();
+            if (String.IsNullOrEmpty(options)) {
+                Throw EmptyValue = new Throw();
+                EmptyValue.CreateThrow(
+                    false,
+                    "ev",
+                    "Empty value. Please try again.",
+                    true
+                );
+                program.DoReturn(false);
+            }
 
             if (options == "y" || options == "Y") {
                 ShowDaOutput = true;

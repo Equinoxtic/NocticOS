@@ -11,11 +11,12 @@ namespace NocticOS.Source
     {
         public void OpenState()
         {
+            Program program = new Program();
             CursorPrefs prefs = new CursorPrefs();
             StandardMath standardMath = new StandardMath();
             Options operationls = new Options();
 
-            var operOpts = "";
+            string? operOpts = "";
             
             string[] operList = {
                 "[add] Addition",
@@ -37,13 +38,22 @@ namespace NocticOS.Source
             Console.Write(prefs.curSelectCursor);
             
             operOpts = Console.ReadLine();
-
-            switch(operOpts)
-            {
-                case "add" : standardMath.NocticMath("add", true); break;
-                case "subtract" : standardMath.NocticMath("subtract", true); break;
-                case "multiply" : standardMath.NocticMath("multiply", true); break;
-                case "divide" : standardMath.NocticMath("divide", true); break;
+            if (String.IsNullOrEmpty(operOpts)) {
+                Throw EmptyValue = new Throw();
+                EmptyValue.CreateThrow(
+                    false,
+                    "ev",
+                    "Empty value. Please try again later.",
+                    true
+                );
+                program.DoReturn(false);
+            } else {
+                switch(operOpts) {
+                    case "add" : standardMath.NocticMath("add", true); break;
+                    case "subtract" : standardMath.NocticMath("subtract", true); break;
+                    case "multiply" : standardMath.NocticMath("multiply", true); break;
+                    case "divide" : standardMath.NocticMath("divide", true); break;
+                }
             }
         }
     }
