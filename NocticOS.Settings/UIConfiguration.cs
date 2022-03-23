@@ -34,7 +34,7 @@ namespace NocticOS.Settings
                 emptyValueThrow.CreateThrow(
                     false,
                     "ev",
-                    "Emtpy value, please try again",
+                    "Emtpy value. Please try again",
                     true
                 );
                 program.DoReturn(false);
@@ -132,7 +132,7 @@ namespace NocticOS.Settings
                     emptyValueThrow.CreateThrow(
                         false,
                         "ev",
-                        "Empty value, please try again.",
+                        "Empty value. Please try again.",
                         true
                     );
                     program.DoReturn(false);

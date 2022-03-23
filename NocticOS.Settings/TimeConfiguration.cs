@@ -42,7 +42,7 @@ namespace NocticOS.Settings
                 emptyValue.CreateThrow(
                     false,
                     "ev",
-                    "Empty value, please try again.",
+                    "Empty value. Please try again.",
                     true
                 );
                 program.DoReturn(false);
@@ -109,7 +109,7 @@ namespace NocticOS.Settings
                     emptyValue.CreateThrow(
                         false,
                         "ev",
-                        "Empty value, please try again.",
+                        "Empty value. Please try again.",
                         true
                     );
                     program.DoReturn(false);
@@ -172,7 +172,7 @@ namespace NocticOS.Settings
                     emptyValue.CreateThrow(
                         false,
                         "ev",
-                        "Empty value, please try again.",
+                        "Empty value. Please try again.",
                         true
                     );
                     TimeConfigPrompt();
