@@ -100,6 +100,10 @@ namespace NocticOS.Lib
 				case "open -noctic" or "open -os" or "open -home": mainConsole.OpenConsole(); break;
 
 				case "os-info" or "sys-info" : osInfo.ShowInfo(); break;
+				case "os-info /version" or "sys-info /version" : osInfo.InfoSwitch("version"); break;
+				case "os-info /os-build" or "sys-info /os-build" : osInfo.InfoSwitch("os-build"); break;
+				case "os-info /cur-os" or "sys-info /cur-os" : osInfo.InfoSwitch("cur-os"); break;
+				case "os-info /dotnet-version" or "sys-info /dotnet-version" : osInfo.InfoSwitch("dotnet-version"); break;
 
 				case "clear" or "cls" : clearScreen.ScreenClear(true);  break;
 
