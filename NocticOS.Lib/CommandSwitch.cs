@@ -36,6 +36,7 @@ namespace NocticOS.Lib
 			StandardMath standardMath = new StandardMath();
 			ClearScreen clearScreen = new ClearScreen();
 			OSExit osExit = new OSExit();
+			LinkOpener linkOpener = new LinkOpener();
 
 			// States /  Classes
 			MainConsole mainConsole = new MainConsole();
@@ -112,6 +113,8 @@ namespace NocticOS.Lib
 				case "clear" or "cls" : clearScreen.ScreenClear(true);  break;
 
 				case "fitness-gram-pacer-test" : fitnessGramPacerTest.Description(); break;
+				case "evpx-ebyy" : linkOpener.OpenLink("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); break;
+				case "evpxgebanhg-va-gur-bprna" : linkOpener.OpenLink("https://www.youtube.com/watch?v=1w432mbp2jQ"); break;
 
 				case "exit" or "out" or "close" : osExit.Exit(true); break;
 			}
