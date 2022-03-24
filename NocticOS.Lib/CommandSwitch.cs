@@ -112,6 +112,8 @@ namespace NocticOS.Lib
 
 				case "clear" or "cls" : clearScreen.ScreenClear(true);  break;
 
+				case "repo" or "noctic-repo" : linkOpener.OpenLink("https://github.com/Equinoxtic/NocticOS"); break;
+
 				case "fitness-gram-pacer-test" : fitnessGramPacerTest.Description(); break;
 				case "evpx-ebyy" : linkOpener.OpenLink("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); break;
 				case "evpxgebanhg-va-gur-bprna" : linkOpener.OpenLink("https://www.youtube.com/watch?v=1w432mbp2jQ"); break;
