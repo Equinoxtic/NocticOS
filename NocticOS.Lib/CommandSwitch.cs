@@ -113,10 +113,15 @@ namespace NocticOS.Lib
 				case "clear" or "cls" : clearScreen.ScreenClear(true);  break;
 
 				case "repo" or "noctic-repo" : linkOpener.OpenLink("https://github.com/Equinoxtic/NocticOS"); break;
-
-				case "fitness-gram-pacer-test" : fitnessGramPacerTest.Description(); break;
 				case "evpx-ebyy" : linkOpener.OpenLink("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); break;
 				case "evpxgebanhg-va-gur-bprna" : linkOpener.OpenLink("https://www.youtube.com/watch?v=1w432mbp2jQ"); break;
+				case "me-when" : linkOpener.OpenLink("https://www.youtube.com/watch?v=Fakw7Rxa1PI"); break;
+				case "6D 75 73 69 63 2D 64 69 73 63 2D 72 65 61 63 74 69 6F 6E" : linkOpener.OpenLink("https://www.youtube.com/watch?v=cwem1LLlTPI"); break;
+				case "consume" : linkOpener.OpenLink("https://www.youtube.com/watch?v=Q7o4Hn1vSPw"); break;
+				case "heheheha" : linkOpener.OpenLink("https://www.youtube.com/watch?v=Sag4AGymNr0"); break;
+				case "fard" : linkOpener.OpenLink("https://www.youtube.com/watch?v=Qi1KebO4bzc"); break;
+				case "somebody-scream" : linkOpener.OpenLink("https://www.youtube.com/watch?v=FnEnQzyXSFk"); break;
+				case "fitness-gram-pacer-test" : fitnessGramPacerTest.Description(); break;
 
 				case "exit" or "out" or "close" : osExit.Exit(true); break;
 			}
