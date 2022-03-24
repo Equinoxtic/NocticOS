@@ -30,7 +30,7 @@ namespace NocticOS.Source
             Console.Write("\nSelect a type for input:\n");
 
             Options inputList = new Options();
-            inputList.PushOptions(InputTypeList, InputTypeList.Length);
+            inputList.PushOptions(InputTypeList, InputTypeList.Length, false);
 
             Console.Write("\n" + prefs.curSelectCursor);
             daInputType = Console.ReadLine();
@@ -56,32 +56,32 @@ namespace NocticOS.Source
                     true
                 );
                 program.DoReturn(false);
-            }
-
-            if (options == "y" || options == "Y") {
-                ShowDaOutput = true;
-                switch(daInputType)
-                {
-                    case "str" : DaInput.InputStr(ShowDaOutput, true); break;
-                    case "flt" : DaInput.InputFloat(ShowDaOutput, true); break;
-                    case "int" : DaInput.InputInt(ShowDaOutput, true); break;
-                    case "dbl" : DaInput.InputDouble(ShowDaOutput, true); break;
-                }
-            } else if (options == "n" || options == "N") {
-                // throwError.OperationCancelledThrow(true);
-                theThrows.CreateThrow(false, 
-                    "mp",
-                    "Missing Parameters. Please enter the following:",
-                    true
-                );
             } else {
-                // throwError.UnknownCharThrow(true);
-                theThrows.CreateThrow(false, 
-                    "uc",
-                    "Unknown Character.",
-                    true
-                );
-                program.DoReturn(false);
+                if (options == "y" || options == "Y") {
+                    ShowDaOutput = true;
+                    switch(daInputType)
+                    {
+                        case "str" : DaInput.InputStr(ShowDaOutput, true); break;
+                        case "flt" : DaInput.InputFloat(ShowDaOutput, true); break;
+                        case "int" : DaInput.InputInt(ShowDaOutput, true); break;
+                        case "dbl" : DaInput.InputDouble(ShowDaOutput, true); break;
+                    }
+                } else if (options == "n" || options == "N") {
+                    // throwError.OperationCancelledThrow(true);
+                    theThrows.CreateThrow(false, 
+                        "mp",
+                        "Missing Parameters. Please enter the following:",
+                        true
+                    );
+                } else {
+                    // throwError.UnknownCharThrow(true);
+                    theThrows.CreateThrow(false, 
+                        "uc",
+                        "Unknown Character.",
+                        true
+                    );
+                    program.DoReturn(false);
+                }
             }
         }
 
