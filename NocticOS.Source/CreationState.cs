@@ -45,7 +45,7 @@ namespace NocticOS.Source
 
             var customType = "";
 
-            Console.Write("\nSelect an action:\n");
+            Console.Write("\nSelect an action:\n\n");
 
             /*
             for (int i = 0; i < 5; i++) {
@@ -55,7 +55,7 @@ namespace NocticOS.Source
 
             createOptions.PushOptions(customTypeLs, customTypeLs.Length);
 
-            Console.Write(prefs.curSelectCursor);
+            Console.Write("\n" + prefs.curSelectCursor);
             
             customType = Console.ReadLine();
             if (String.IsNullOrEmpty(customType)) {
