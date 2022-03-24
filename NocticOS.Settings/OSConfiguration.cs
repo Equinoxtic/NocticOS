@@ -25,16 +25,15 @@ namespace NocticOS.Settings
             "Interface Configuration"
         };
 
-        public void Open(bool isList)
+        public void Open()
         {
             Program program = new Program();
             Console.Write("\nSelect configuration:\n");
-            if (isList) {
-                choices.PushOptions(choiceArray, choiceArray.Length, "config");
-            } else {
-                for (int i = 0; i < choiceArray.Length; i++) {
-                    Console.Write("[" + choiceArray[i] + "]" + " - " + choiceDescs[i] + "\n");
-                }
+            /* if (isList) {
+                choices.PushOptions(choiceArray, choiceArray.Length, true, "config");
+            } */
+            for (int i = 0; i < choiceArray.Length; i++) {
+                Console.Write("[" + choiceArray[i] + "]" + " - " + choiceDescs[i] + "\n");
             }
             Console.Write("\n" + cursorPrefs.curSelectCursor);
             choice = Console.ReadLine();
