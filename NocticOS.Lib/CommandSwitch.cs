@@ -6,7 +6,7 @@ using NocticOS.Source;
 using NocticOS.Settings;
 using NocticOS.HelpUtil;
 using NocticOS.Utility;
-using NocticOS.Extras;
+using NocticOS.Secrets;
 
 namespace NocticOS.Lib
 {

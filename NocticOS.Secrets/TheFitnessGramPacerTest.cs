@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NocticOS.Extras
+namespace NocticOS.Secrets
 {
 	public class TheFitnessGramPacerTest
 	{
