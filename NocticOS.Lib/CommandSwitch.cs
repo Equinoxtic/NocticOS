@@ -6,16 +6,17 @@ using NocticOS.Source;
 using NocticOS.Settings;
 using NocticOS.HelpUtil;
 using NocticOS.Utility;
+using NocticOS.Extras;
 
 namespace NocticOS.Lib
 {
-    public class CommandSwitch
-    {
-        public void OpenCommand(string curCmd)
-        {
+	public class CommandSwitch
+	{
+		public void OpenCommand(string curCmd)
+		{
 			// Help things
 			ConfigHelp configHelp = new ConfigHelp();
-            BuildHelp buildHelp = new BuildHelp();
+			BuildHelp buildHelp = new BuildHelp();
 			HelpState helpState = new HelpState();
 			DateDisplayHelp dateDisplayHelp = new DateDisplayHelp();
 			MathHelp mathHelp = new MathHelp();
@@ -41,8 +42,11 @@ namespace NocticOS.Lib
 			InputState standardInput = new InputState();
 			MathState mathState = new MathState();
 			CreationState creationState = new CreationState();
+			
+			// Secrets
+			TheFitnessGramPacerTest fitnessGramPacerTest = new TheFitnessGramPacerTest();
 
-            switch (curCmd)
+			switch (curCmd)
 			{
 				case "help" : helpState.OpenState(); break;
 
@@ -107,8 +111,10 @@ namespace NocticOS.Lib
 
 				case "clear" or "cls" : clearScreen.ScreenClear(true);  break;
 
+				case "fitness-gram-pacer-test" : fitnessGramPacerTest.Description(); break;
+
 				case "exit" or "out" or "close" : osExit.Exit(true); break;
 			}
-        }
-    }
+		}
+	}
 }
