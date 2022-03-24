@@ -33,7 +33,7 @@ namespace NocticOS.Source
             }
             */
 
-            operationls.PushOptions(operList, operList.Length);
+            operationls.PushOptions(operList, operList.Length, true);
 
             Console.Write(prefs.curSelectCursor);
             
