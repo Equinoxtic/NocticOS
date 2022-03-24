@@ -29,14 +29,20 @@ namespace NocticOS
 			}
 
 			if (timeConfiguration.hoursShowing) {
+				timeConfiguration.minutesShowing = false;
+				timeConfiguration.secondsShowing = false;
 				timeStr = "HH";
 			}
 			
 			if (timeConfiguration.minutesShowing) {
+				timeConfiguration.hoursShowing = false;
+				timeConfiguration.secondsShowing = false;
 				timeStr = "mm";
 			}
 			
 			if (timeConfiguration.secondsShowing) {
+				timeConfiguration.hoursShowing = false;
+				timeConfiguration.minutesShowing = false;
 				timeStr = "ss";
 			}
 			
