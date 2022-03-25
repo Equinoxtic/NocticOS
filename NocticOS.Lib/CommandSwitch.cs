@@ -45,6 +45,7 @@ namespace NocticOS.Lib
 			CreationState creationState = new CreationState();
 			
 			// Secrets
+			SecretSwitcher secretSwitcher = new SecretSwitcher();
 			TheFitnessGramPacerTest fitnessGramPacerTest = new TheFitnessGramPacerTest();
 
 			switch (curCmd)
@@ -114,6 +115,7 @@ namespace NocticOS.Lib
 
 				case "repo" or "os-repo" : linkOpener.OpenLink("https://github.com/Equinoxtic/NocticOS"); break;
 
+
 				/* Commenting this for now, until April Fools arrives :trollface:
 				case "evpx-ebyy" : linkOpener.OpenLink("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); break;
 				case "evpxgebanhg-va-gur-bprna" : linkOpener.OpenLink("https://www.youtube.com/watch?v=1w432mbp2jQ"); break;
@@ -123,6 +125,7 @@ namespace NocticOS.Lib
 				case "heheheha" : linkOpener.OpenLink("https://www.youtube.com/watch?v=Sag4AGymNr0"); break;
 				case "fard" : linkOpener.OpenLink("https://www.youtube.com/watch?v=Qi1KebO4bzc"); break;
 				case "somebody-scream" : linkOpener.OpenLink("https://www.youtube.com/watch?v=FnEnQzyXSFk"); break;
+				case "secret /infinite" : secretSwitcher.SecretSwitch("infinite"); break;
 				case "fitness-gram-pacer-test" : fitnessGramPacerTest.Description(); break;
 				*/
 
