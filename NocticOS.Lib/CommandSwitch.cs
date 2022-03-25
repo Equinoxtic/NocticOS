@@ -112,7 +112,9 @@ namespace NocticOS.Lib
 
 				case "clear" or "cls" : clearScreen.ScreenClear(true);  break;
 
-				case "repo" or "noctic-repo" : linkOpener.OpenLink("https://github.com/Equinoxtic/NocticOS"); break;
+				case "repo" or "os-repo" : linkOpener.OpenLink("https://github.com/Equinoxtic/NocticOS"); break;
+
+				/* Commenting this for now, until April Fools arrives :trollface:
 				case "evpx-ebyy" : linkOpener.OpenLink("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); break;
 				case "evpxgebanhg-va-gur-bprna" : linkOpener.OpenLink("https://www.youtube.com/watch?v=1w432mbp2jQ"); break;
 				case "me-when" : linkOpener.OpenLink("https://www.youtube.com/watch?v=Fakw7Rxa1PI"); break;
@@ -122,6 +124,7 @@ namespace NocticOS.Lib
 				case "fard" : linkOpener.OpenLink("https://www.youtube.com/watch?v=Qi1KebO4bzc"); break;
 				case "somebody-scream" : linkOpener.OpenLink("https://www.youtube.com/watch?v=FnEnQzyXSFk"); break;
 				case "fitness-gram-pacer-test" : fitnessGramPacerTest.Description(); break;
+				*/
 
 				case "exit" or "out" or "close" : osExit.Exit(true); break;
 			}
