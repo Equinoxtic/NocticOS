@@ -25,12 +25,14 @@ namespace NocticOS.Secrets
 		}
 
 		void GoToCode(string? theCode) {
+			Program program = new Program();
 			LinkOpener linkOpener = new LinkOpener();
 			switch(theCode) {
 				case "0707":
 					linkOpener.OpenLink("https://www.youtube.com/watch?v=9kN8BQ6pUfY");
 					break;
 			}
+			program.DoReturn(false);
 		}
 	}
 }
