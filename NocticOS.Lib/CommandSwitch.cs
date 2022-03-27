@@ -126,7 +126,7 @@ namespace NocticOS.Lib
 				case "fard" : linkOpener.OpenLink("https://www.youtube.com/watch?v=Qi1KebO4bzc"); break;
 				case "somebody-scream" : linkOpener.OpenLink("https://www.youtube.com/watch?v=FnEnQzyXSFk"); break;
 				case "secret /infinite" : secretSwitcher.SecretSwitch("infinite"); break;
-				case "fitness-gram-pacer-test" : fitnessGramPacerTest.Description(); break;
+				case "secret /pacer-test" : fitnessGramPacerTest.Description(); break;
 				*/
 
 				case "exit" or "out" or "close" : osExit.Exit(true); break;
