@@ -13,18 +13,7 @@ namespace NocticOS.Main
 {
 	public class PkgInstaller
 	{
-		public void InstallPackage(string? pkgUrl = "", string? path = "")
-		{
-			Program program = new Program();
-			if (!String.IsNullOrEmpty(pkgUrl) || !String.IsNullOrEmpty(path)) {
-				Repository.Clone(pkgUrl, path);
-			} else {
-				InstallPrompt();
-			}
-			program.DoReturn(false);
-		}
-		
-		void InstallPrompt()
+		public void InstallPackage()
 		{
 			Program program = new Program();
 			string? pkgUrl = "";
