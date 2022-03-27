@@ -22,6 +22,7 @@ namespace NocticOS.Lib
 			MathHelp mathHelp = new MathHelp();
 			InputHelp inputHelp = new InputHelp();
 			CreationHelp creationHelp = new CreationHelp();
+			PkgInstallationHelp pkgInstallationHelp = new PkgInstallationHelp();
 
 			// Settings
 			OSConfiguration osConfig = new OSConfiguration();
@@ -37,6 +38,7 @@ namespace NocticOS.Lib
 			ClearScreen clearScreen = new ClearScreen();
 			OSExit osExit = new OSExit();
 			LinkOpener linkOpener = new LinkOpener();
+			PkgInstaller pkgInstaller = new PkgInstaller();
 
 			// States /  Classes
 			MainConsole mainConsole = new MainConsole();
@@ -113,10 +115,13 @@ namespace NocticOS.Lib
 
 				case "clear" or "cls" : clearScreen.ScreenClear(true);  break;
 
+				case "pkg" : pkgInstallationHelp.OpenPkgInstallerHelp(true); break;
+				case "pkg -help" : pkgInstallationHelp.OpenPkgInstallerHelp(false); break;
+				case "pkg -install" : pkgInstaller.InstallPackage(); break;
+
 				case "repo" or "os-repo" : linkOpener.OpenLink("https://github.com/Equinoxtic/NocticOS"); break;
 
-
-				/* Commenting this for now, until April Fools arrives :trollface:
+				/* April Fools is coming kiddos.
 				case "evpx-ebyy" : linkOpener.OpenLink("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); break;
 				case "evpxgebanhg-va-gur-bprna" : linkOpener.OpenLink("https://www.youtube.com/watch?v=1w432mbp2jQ"); break;
 				case "me-when" : linkOpener.OpenLink("https://www.youtube.com/watch?v=Fakw7Rxa1PI"); break;
