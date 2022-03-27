@@ -25,7 +25,7 @@ namespace NocticOS.HelpUtil
 				missingParams.CreateThrow(
 					false,
 					"mp",
-					"Missing Parameters, please enter the following and try again:\n\n",
+					"Missing Parameters, please enter the following and try again:\n",
 					true
 				);
 				pkgInstallOpts.PushOptions(pkgInstallLs, pkgInstallLs.Length, true, "pkg");
