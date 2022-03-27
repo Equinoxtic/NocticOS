@@ -24,7 +24,7 @@ namespace NocticOS.Main
 		{
 			Program program = new Program();
 			string? url = "";
-			Console.Write("\nInput a URL:\n");
+			Console.Write("\nInput a URL: ");
 			url = Console.ReadLine();
 			if (String.IsNullOrEmpty(url)) {
 				Throw emptyValue = new Throw();
@@ -39,6 +39,7 @@ namespace NocticOS.Main
 				url = url.Replace("&", "&^");
 				Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
 			}
+			program.DoReturn(false);
 		}
 	}
 }
