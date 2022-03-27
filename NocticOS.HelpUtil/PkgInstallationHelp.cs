@@ -8,8 +8,8 @@ namespace NocticOS.HelpUtil
 	public class PkgInstallationHelp
 	{
 		string[] pkgInstallLs = {
-			"-help ::  Displays the information for the 'pkg' command.",
-			"-install :: Standard Installation Prompt."
+			"-help - Displays the information for the 'pkg' command.",
+			"-install - Standard Installation Prompt."
 		};
 		
 		public void OpenPkgInstallerHelp(bool isMissingParams)
