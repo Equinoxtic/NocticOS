@@ -5,7 +5,6 @@ Pretty much the same as the "LinkOpener" class
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Diagnostics;
 using NocticOS.Lib;
 using LibGit2Sharp;
 
