@@ -14,7 +14,6 @@ namespace NocticOS
 		{
 			CursorPrefs prefs = new CursorPrefs();
 			UIConfiguration uiConfiguration = new UIConfiguration();
-			TimeConfiguration timeConfiguration = new TimeConfiguration();
 			CommandSwitch cmdSwitch = new CommandSwitch();
 			string currentCursor = prefs.curCursor;
 			string version =  "";
@@ -26,28 +25,6 @@ namespace NocticOS
 
 			if (versionAllowed) {
 				version = " - (1.1.5)";
-			}
-
-			if (timeConfiguration.hoursShowing) {
-				timeConfiguration.minutesShowing = false;
-				timeConfiguration.secondsShowing = false;
-				timeStr = "HH";
-			}
-			
-			if (timeConfiguration.minutesShowing) {
-				timeConfiguration.hoursShowing = false;
-				timeConfiguration.secondsShowing = false;
-				timeStr = "mm";
-			}
-			
-			if (timeConfiguration.secondsShowing) {
-				timeConfiguration.hoursShowing = false;
-				timeConfiguration.minutesShowing = false;
-				timeStr = "ss";
-			}
-			
-			if (timeConfiguration.showingAll) {
-				timeStr = "HH:mm:ss";
 			}
 
 			if (showInfo) {
