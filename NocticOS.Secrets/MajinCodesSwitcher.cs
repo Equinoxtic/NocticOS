@@ -31,6 +31,9 @@ namespace NocticOS.Secrets
 				case "0707":
 					linkOpener.OpenLink("https://www.youtube.com/watch?v=9kN8BQ6pUfY");
 					break;
+				case "back":
+					program.DoReturn(false);
+					break;
 			}
 			program.DoReturn(false);
 		}

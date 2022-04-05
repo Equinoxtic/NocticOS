@@ -15,7 +15,7 @@ namespace NocticOS.Secrets
 			CursorPrefs cursorPrefs = new CursorPrefs();
 			string? secretCode = "";
 			Console.Write("\nFun is infinite. -Majin\n");
-			Console.Write("\n" + cursorPrefs.curSelectCursor);
+			Console.Write("\n" + cursorPrefs.curSecretCursor);
 			secretCode = Console.ReadLine();
 			if (String.IsNullOrEmpty(secretCode)) {
 				Throw emptyValue = new Throw();
