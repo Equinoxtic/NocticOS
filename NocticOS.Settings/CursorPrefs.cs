@@ -10,10 +10,12 @@ namespace NocticOS.Settings
     {
         static string? cursor = "";
         static string? selectCursor = "";
+        static string? secretCursor = "";
 
         // Auto space lol. v
         public string curCursor = cursor + " ";
         public string curSelectCursor = selectCursor + " "; 
+        public string curSecretCursor = secretCursor + " ";
         // Auto space lol. ^
 
         string[] cursorTypeChoice = {
@@ -30,6 +32,10 @@ namespace NocticOS.Settings
                     break;
                 case "selection":
                     CursorConfig("selection");
+                    break;
+
+                case "secret":
+                    CursorConfig("secret");
                     break;
             }
         }
@@ -72,6 +78,9 @@ namespace NocticOS.Settings
                         case "selection" or "secondary":
                             cursorPrefix = "Selection";
                             break;
+                        case "secret":
+                            cursorPrefix = "Secret";
+                            break;
                     }
                     Console.Write("Input character(s) from your keyboard to be as your " + cursorPrefix.ToLower() +  " cursor: ");
                 }
@@ -86,6 +95,10 @@ namespace NocticOS.Settings
                 case "selection" or "secondary":
                     selectCursor = Console.ReadLine();
                     charParse = selectCursor;
+                    break;
+                case "secret":
+                    secretCursor = Console.ReadLine();
+                    charParse = secretCursor;
                     break;
                 case "back" or "exit":
                     ExitPrompt();
@@ -106,6 +119,7 @@ namespace NocticOS.Settings
             }
             curCursor = cursor;
             curSelectCursor = selectCursor;
+            curSecretCursor = secretCursor;
             program.DoReturn(false);
         }
 

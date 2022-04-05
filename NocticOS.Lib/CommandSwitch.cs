@@ -97,6 +97,7 @@ namespace NocticOS.Lib
 				case "config -fg" or "fg -config" : osConfig.SwitchConfigState("fg"); break;
 				case "config -cursor" or "cursor -config" : osConfig.SwitchConfigState("cursor"); break;
 				case "config -cursor /default" or "cursor -config /default" : cursorPrefs.SwitchCursorConfig("default"); break;
+				case "config -cursor /secret" : cursorPrefs.SwitchCursorConfig("secret"); break;
 				case "config -cursor /selection" or "cursor -config /selection" : cursorPrefs.SwitchCursorConfig("selection"); break;
 				case "config -interface" or "interface -config" : uiConfig.ConfigPrompt(); break;
 				case "config -interface /time" or "interface -config /time" : uiConfig.SwitchConfigState("show-time"); break;
@@ -118,8 +119,7 @@ namespace NocticOS.Lib
 				case "pkg -install" : pkgInstaller.InstallPackage(); break;
 
 				case "repo" or "os-repo" : linkOpener.OpenLink("https://github.com/Equinoxtic/NocticOS"); break;
-
-				/* April Fools is coming kiddos.
+				
 				case "evpx-ebyy" : linkOpener.OpenLink("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); break;
 				case "evpxgebanhg-va-gur-bprna" : linkOpener.OpenLink("https://www.youtube.com/watch?v=1w432mbp2jQ"); break;
 				case "me-when" : linkOpener.OpenLink("https://www.youtube.com/watch?v=Fakw7Rxa1PI"); break;
@@ -130,7 +130,6 @@ namespace NocticOS.Lib
 				case "somebody-scream" : linkOpener.OpenLink("https://www.youtube.com/watch?v=FnEnQzyXSFk"); break;
 				case "secret /infinite" : secretSwitcher.SecretSwitch("infinite"); break;
 				case "secret /pacer-test" : fitnessGramPacerTest.Description(); break;
-				*/
 
 				case "exit" or "out" or "close" : osExit.Exit(true); break;
 			}
