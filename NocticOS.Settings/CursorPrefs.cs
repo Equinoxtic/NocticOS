@@ -10,12 +10,10 @@ namespace NocticOS.Settings
     {
         static string? cursor = "";
         static string? selectCursor = "";
-        static string? secretCursor = "";
 
         // Auto space lol. v
         public string curCursor = cursor + " ";
-        public string curSelectCursor = selectCursor + " "; 
-        public string curSecretCursor = secretCursor + " ";
+        public string curSelectCursor = selectCursor + " ";
         // Auto space lol. ^
 
         string[] cursorTypeChoice = {
@@ -32,10 +30,6 @@ namespace NocticOS.Settings
                     break;
                 case "selection":
                     CursorConfig("selection");
-                    break;
-
-                case "secret":
-                    CursorConfig("secret");
                     break;
             }
         }
@@ -96,10 +90,6 @@ namespace NocticOS.Settings
                     selectCursor = Console.ReadLine();
                     charParse = selectCursor;
                     break;
-                case "secret":
-                    secretCursor = Console.ReadLine();
-                    charParse = secretCursor;
-                    break;
                 case "back" or "exit":
                     ExitPrompt();
                     break;
@@ -119,7 +109,6 @@ namespace NocticOS.Settings
             }
             curCursor = cursor;
             curSelectCursor = selectCursor;
-            curSecretCursor = secretCursor;
             program.DoReturn(false);
         }
 
