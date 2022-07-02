@@ -18,7 +18,7 @@ namespace NocticOS.Main
 			string? pkgUrl = "";
 			string? path = "";
 
-			Console.Write("\nInput the package you want to install: ");
+			Console.Write("\nInput the package you want to install (Must be a GitHub repository): ");
 			pkgUrl = Console.ReadLine();
 			if (String.IsNullOrEmpty(pkgUrl)) {
 				Throw nullUrl = new Throw();
