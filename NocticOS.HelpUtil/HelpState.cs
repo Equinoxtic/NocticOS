@@ -11,12 +11,17 @@ namespace NocticOS.HelpUtil
         MathHelp mathHelp = new MathHelp();
 
         string[] cmdLs = {
+            "- HELP -",
             "help <command> - Shows information and help on a command.",
-            "date <flag> - Displays the current time and date.",
-            "build <flag> - Builds the NocticOS files and directories.",
+            " ",
+            "- STANDARD -",
             "input <type> - Standard Input for strings, integers and doubles.",
             "math <operation>  - Math for NocticOS. Does simple operations such as Addition, Subtraction, Multiplication and Division.",
             "create <type> - Allows you to create Custom Objects, Functions, and Classes!",
+            " ",
+            "- UTILITY -",
+            "date <flag> - Displays the current time and date.",
+            "build <flag> - Builds the NocticOS files and directories.",
             "config <flag> - Standard configuration for the Foreground, Background and Cursor for the OS."
         };
 
