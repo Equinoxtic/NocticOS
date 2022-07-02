@@ -64,6 +64,7 @@ namespace NocticOS.Settings
 
         void ConfigState(string curState) {
             Program program = new Program();
+            bool theValue = false;
             string statePrefix = "";
             string? choice = "";
             bool isConfig = true;
@@ -96,33 +97,16 @@ namespace NocticOS.Settings
                 } else {
                     switch(choice) {
                         case "Y" or "y":
-                            switch(curState) {
-                                case "show-time":
-                                    timeAllowed = true;
-                                    break;
-                                case "show-dotnet-version":
-                                    dotnetVersionShowing = true;
-                                    break;
-                                case "show-os-version":
-                                    osVersionShowing = true;
-                                    break;
-                            }
-                        break;
+                            theValue = true;
+                            break;
 
                         case "N" or "n":
-                            switch(curState) {
-                                case "show-time":
-                                    timeAllowed = false;
-                                    break;
-                                case "show-dotnet-version":
-                                    dotnetVersionShowing = false;
-                                    break;
-                                case "show-os-version":
-                                    osVersionShowing = false;
-                                    break;
-                            }
-                        break;
+                            theValue = false;
+                            break;
                     }
+                    timeAllowed = theValue;
+                    dotnetVersionShowing = theValue;
+                    osVersionShowing = theValue;
                 }
             } else {
                 Console.Write("\nDo you want to cancel this operation? [Y/N]: ");
